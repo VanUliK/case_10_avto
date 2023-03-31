@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="style.css">
+
+<body>
+
+
+  <h1>ВАРИАНТЫ ОКЛЕЙКИ АВТО</h1>
+  <button onclick="replaceBlockLeft()" class="button-1">Зоны риска</button>
+  <button onclick="replaceBlockRight()" class="button-2">Полная оклейка</button>
+  <div class="head">Стоимость оклейки автомобиля зависит от марки производителя материалов. Каждый из них имеет свои
+    особенности и сроки гарантии.</div>
+  <div class="half" id="half">
+    <div class="left">
+      <h2 class="head">Spectroll — 80 000 ₽
+      </h2>
+      <div class="text">Производство — Корея
+        Толщина — 160 микрон
+        Гарантия на пленку — 5 лет
+        Гарантия на установку — 2 года</div>
+    </div>
+    <div class="right">
+      <h2 class="head">LLumar — 105 000 ₽</h2>
+      <div class="text">Производство — США
+        Толщина — 210 микрон
+        Гарантия на плёнку — 10 лет
+        Гарантия на установку — бессрочная</div>
+    </div>
+    <div class="tel">Срок выполнения:
+      1 день</div>
+  </div>
+
+  <div class="full hidden" id="full">
+    <div class="left">
+      <h2 class="head">Spectroll — от 210 000 ₽
+      </h2>
+      <div class="text">Производство — Корея
+        Толщина — 160 микрон
+        Гарантия на пленку — 5 лет
+        Гарантия на установку — 2 года</div>
+    </div>
+    <div class="right">
+      <h2 class="head">LLumar — от 275 000 ₽</h2>
+      <div class="text">Производство — США
+        Толщина — 210 микрон
+        Гарантия на плёнку — 10 лет
+        Гарантия на установку — бессрочная</div>
+    </div>
+    <div class="tel">Срок выполнения:
+      3-5 дня</div>
+  </div>
+
+  <button class="zakaz">ЗАПИСАТЬСЯ</button>
+
+  <p id="elem" class="www ggg zzz"></p>
+
+
+  <script>
+
+
+    // const buttonELFull = document.querySelectorAll(".button-2");
+    const elemHalf = document.querySelector('#half');
+    const elemFull = document.querySelector('#full');
+
+    function replaceBlockLeft() {
+      // document.getElementById("half").innerHTML = document.getElementById("full").innerHTML
+      elemFull.classList.add('hidden');
+      elemHalf.classList.remove('hidden');
+    }
+
+
+    function replaceBlockRight() {
+      // document.getElementById("full").innerHTML = document.getElementById("half").innerHTML
+      elemHalf.classList.add('hidden');
+      elemFull.classList.remove('hidden');
+    }
+
+  </script>
+
+</body>
+
+</html>
