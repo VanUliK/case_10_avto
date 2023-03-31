@@ -1,15 +1,15 @@
+.hidden {
+  display: none;
+}
+
 .button-1 {
 }
 .button-2 {
 }
 .head {
 }
-.full {
+.half {
 }
-.hidden {
-  display: none;
-}
-
 .left {
 }
 .text {
@@ -18,5 +18,67 @@
 }
 .tel {
 }
+.full {
+}
+
 .zakaz {
+}
+.www {
+}
+.ggg {
+}
+.zzz {
+}
+.row {
+}
+.mb-3 {
+}
+.form-group {
+}
+.col-md-6 {
+}
+.col-sm-6 {
+}
+.badge {
+}
+.badge-warning {
+}
+.form-control {
+}
+.custom-control {
+}
+.custom-checkbox {
+}
+.d-flex {
+  display: flex;
+}
+.justify-content-center {
+}
+.left-block {
+}
+.col-md-3 {
+}
+.custom-control-input {
+}
+.custom-control-label {
+}
+.right-block {
+}
+.col-md-12 {
+}
+.rasstoyanie {
+}
+.custom-range {
+}
+.col-12 {
+}
+.rub {
+}
+.col-md-2 {
+}
+.btn-block {
+}
+.btn {
+}
+.btn-primary {
 }

@@ -5,6 +5,7 @@
 <body>
 
 
+  <!-- <div class="one">
   <h1>ВАРИАНТЫ ОКЛЕЙКИ АВТО</h1>
   <button onclick="replaceBlockLeft()" class="button-1">Зоны риска</button>
   <button onclick="replaceBlockRight()" class="button-2">Полная оклейка</button>
@@ -51,29 +52,279 @@
   </div>
 
   <button class="zakaz">ЗАПИСАТЬСЯ</button>
+</div> -->
 
-  <p id="elem" class="www ggg zzz"></p>
+
+  <form>
+
+    <div class="custom-control custom-checkbox row d-flex justify-content-center mb-3">
+      <div class="left-block">
+        <div class="col-md-3" style="visibility: visible;">
+          <input type="checkbox" id="optics" name="work" value=3500 class="custom-control-input" />
+          <label class="custom-control-label" for="optics">Оптика</label>
+        </div>
+
+        <div class="col-md-3" style="visibility: visible;">
+          <input type="checkbox" id="hood" name="work" value=10150 class="custom-control-input" />
+          <label class="custom-control-label" for="hood">Капот</label>
+        </div>
+
+        <div class="col-md-3" style="visibility: visible;">
+          <input type="checkbox" id="mirror" name="work" value=3800 class="custom-control-input" />
+          <label class="custom-control-label" for="mirror">Зеркала</label>
+        </div>
+
+        <div class="col-md-3" style="visibility: visible;">
+          <input type="checkbox" id="wings" name="work" value=9250 class="custom-control-input" />
+          <label class="custom-control-label" for="wings">Крылья</label>
+        </div>
+        <div class="col-md-3" style="visibility: visible;">
+          <input type="checkbox" id="thresholds" name="work" value=7750 class="custom-control-input" />
+          <label class="custom-control-label" for="thresholds">Пороги 2 шт.</label>
+        </div>
+        <div class="col-md-3" style="visibility: visible;">
+          <input type="checkbox" id="dooredges" name="work" value=2000 class="custom-control-input" />
+          <label class="custom-control-label" for="dooredges">Кромки двери 4 шт.</label>
+        </div>
+        <div class="col-md-3" style="visibility: visible;">
+          <input type="checkbox" id="loadingarea" name="work" value=2500 class="custom-control-input" />
+          <label class="custom-control-label" for="loadingarea">Погрузочная зона</label>
+        </div>
+        <div class="col-md-3" style="visibility: visible;">
+          <input type="checkbox" id="windshield" name="work" value=4750 class="custom-control-input" />
+          <label class="custom-control-label" for="windshield">Стойки лобового стекла 2 шт.</label>
+        </div>
+      </div>
+
+      <div class="right-block">
+        <div class="col-md-3" style="visibility: visible;">
+          <input type="checkbox" id="bumper" name="work" value=9250 class="custom-control-input" />
+          <label class="custom-control-label" for="bumper">Бампер</label>
+        </div>
+
+        <div class="col-md-3" style="visibility: visible;">
+          <input type="checkbox" id="ptf" name="work" value=1350 class="custom-control-input" />
+          <label class="custom-control-label" for="ptf">ПТФ</label>
+        </div>
+
+        <div class="col-md-3" style="visibility: visible;">
+          <input type="checkbox" id="handles" name="work" value=2000 class="custom-control-input" />
+          <label class="custom-control-label" for="handles">Под ручками 4 шт.</label>
+        </div>
+
+        <div class="col-md-3" style="visibility: visible;">
+          <input type="checkbox" id="roof" name="work" value=2750 class="custom-control-input" />
+          <label class="custom-control-label" for="roof">Часть крыши</label>
+        </div>
+
+        <div class="col-md-3" style="visibility: visible;">
+          <input type="checkbox" id="bonnet" name="work" value=4150 class="custom-control-input" />
+          <label class="custom-control-label" for="bonnet">Часть капота</label>
+        </div>
+        <div class="col-md-3" style="visibility: visible;">
+          <input type="checkbox" id="partwings" name="work" value=3800 class="custom-control-input" />
+          <label class="custom-control-label" for="partwings">Часть крыльев</label>
+        </div>
+
+        <div class="col-md-3" style="visibility: visible;">
+          <input type="checkbox" id="doorway" name="work" value=5000 class="custom-control-input" />
+          <label class="custom-control-label" for="doorway">Дверной проем 4 шт.</label>
+        </div>
+        <div class="col-md-3" style="visibility: visible;">
+          <input type="checkbox" id="pillars" name="work" value=4000 class="custom-control-input" />
+          <label class="custom-control-label" for="pillars">Глянцевые стойки дверей 4 шт.</label>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row col-12 mb-3"><span id="out">0.0</span> <span class="rub">₽</span></div>
+    <div class="row">
+      <div class="col-md-2 col-12">
+        <input type="button" name="adress" id="btn" class="btn-block btn btn-primary" value="Считать" />
+      </div>
+    </div>
+  </form>
+
+
+
+
 
 
   <script>
 
+    const optics = document.querySelector('#optics'),
+      hood = document.querySelector('#hood'),
+      mirror = document.querySelector('#mirror'),
+      wings = document.querySelector('#wings'),
+      thresholds = document.querySelector('#thresholds'),
+      dooredges = document.querySelector('#dooredges'),
+      loadingarea = document.querySelector('#loadingarea'),
+      windshield = document.querySelector('#windshield'),
+      bumper = document.querySelector('#bumper'),
+      ptf = document.querySelector('#ptf'),
+      handles = document.querySelector('#handles'),
+      roof = document.querySelector('#roof'),
+      bonnet = document.querySelector('#bonnet'),
+      partwings = document.querySelector('#partwings'),
+      doorway = document.querySelector('#doorway'),
+      pillars = document.querySelector('#pillars'),
+      checkbox = document.querySelector("input[name=work]");
 
-    // const buttonELFull = document.querySelectorAll(".button-2");
-    const elemHalf = document.querySelector('#half');
-    const elemFull = document.querySelector('#full');
 
-    function replaceBlockLeft() {
-      // document.getElementById("half").innerHTML = document.getElementById("full").innerHTML
-      elemFull.classList.add('hidden');
-      elemHalf.classList.remove('hidden');
+    // Select all checkboxes with the name 'settings' using querySelectorAll.
+    var checkboxes = document.querySelectorAll("input[type=checkbox][name=work]");
+
+    let enabledSettings = []
+    // Use Array.forEach to add an event listener to each checkbox.
+    checkboxes.forEach(function (checkbox) {
+      checkbox.addEventListener('change', function (e) {
+        enabledSettings =
+          Array.from(checkboxes) // Преобразует checkboxes в массив для использования filter и map.
+            .filter(i => i.checked) // Используйте Array.filter для удаления неотмеченных checkboxes.
+            .map(i => i.value) // Используйте Array.map для извлечения только значений флажков из массива объектов.
+        // console.log(enabledSettings)
+        // console.log(checkbox.value);
+        let sum = 0;
+        let count = 0;
+        if (checkbox.value) {
+          sum = checkbox.value;
+          count = sum * 1 + count;
+        }
+        else {
+          checkbox.value = 0;
+        }
+        console.log(count);
+
+      })
+
+
+      console.log(checkbox.value + ' ' + checkbox.id);
+    });
+
+
+    // Basic function  
+    btn.onclick = function () {
+
+      if (optics.checked) {
+        optics.value = 3500
+      }
+      else {
+        optics.value = 0
+      }
+      if (hood.checked) {
+        hood.value = 10150
+      }
+      else {
+        hood.value = 0
+      }
+      if (mirror.checked) {
+        mirror.value = 3800
+      }
+      else {
+        mirror.value = 0
+      }
+      if (wings.checked) {
+        wings.value = 9250
+        // partwings.setAttribute('checked', false);
+      }
+      else {
+        wings.value = 0
+      }
+      if (thresholds.checked) {
+        thresholds.value = 7750
+      }
+      else {
+        thresholds.value = 0
+      }
+      if (dooredges.checked) {
+        dooredges.value = 2000
+      }
+      else {
+        dooredges.value = 0
+      }
+      if (loadingarea.checked) {
+        loadingarea.value = 2500
+      }
+      else {
+        loadingarea.value = 0
+      }
+      if (windshield.checked) {
+        windshield.value = 4750
+      }
+      else {
+        windshield.value = 0
+      }
+      if (bumper.checked) {
+        bumper.value = 9250
+      }
+      else {
+        bumper.value = 0
+      }
+      if (ptf.checked) {
+        ptf.value = 1350
+      }
+      else {
+        ptf.value = 0
+      }
+      if (handles.checked) {
+        handles.value = 2000
+      }
+      else {
+        handles.value = 0
+      }
+      if (roof.checked) {
+        roof.value = 2750
+      }
+      else {
+        roof.value = 0
+      }
+      if (bonnet.checked) {
+        bonnet.value = 4150
+      }
+      else {
+        bonnet.value = 0
+      }
+      if (partwings.checked) {
+        partwings.value = 3800
+      }
+      else {
+        partwings.value = 0
+      }
+      if (doorway.checked) {
+        doorway.value = 5000
+      }
+      else {
+        doorway.value = 0
+      }
+      if (pillars.checked) {
+        pillars.value = 4000
+      }
+      else {
+        pillars.value = 0
+      }
+
+
+      let sum = Number(optics.value) + Number(hood.value) + Number(mirror.value) + Number(wings.value) + Number(thresholds.value) + Number(dooredges.value) + Number(loadingarea.value) + Number(windshield.value) + Number(bumper.value) + Number(ptf.value) + Number(handles.value) + Number(roof.value) + Number(bonnet.value) + Number(partwings.value) + Number(doorway.value) + Number(pillars.value);
+      out.innerHTML = sum;
     }
 
+  </script>
 
-    function replaceBlockRight() {
-      // document.getElementById("full").innerHTML = document.getElementById("half").innerHTML
-      elemHalf.classList.add('hidden');
-      elemFull.classList.remove('hidden');
-    }
+  <script>
+    //  // const buttonELFull = document.querySelectorAll(".button-2");
+    //  const elemHalf = document.querySelector('#half');
+    // const elemFull = document.querySelector('#full');
+    // function replaceBlockLeft() {
+    //   // document.getElementById("half").innerHTML = document.getElementById("full").innerHTML
+    //   elemFull.classList.add('hidden');
+    //   elemHalf.classList.remove('hidden');
+    // }
+    // function replaceBlockRight() {
+    //   // document.getElementById("full").innerHTML = document.getElementById("half").innerHTML
+    //   elemHalf.classList.add('hidden');
+    //   elemFull.classList.remove('hidden');
+    // }
 
   </script>
 
