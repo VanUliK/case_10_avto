@@ -2,83 +2,19 @@
   display: none;
 }
 
-.button-1 {
-}
-.button-2 {
-}
-.head {
-}
-.half {
-}
-.left {
-}
-.text {
-}
-.right {
-}
-.tel {
-}
-.full {
-}
-
-.zakaz {
-}
-.www {
-}
-.ggg {
-}
-.zzz {
-}
-.row {
-}
-.mb-3 {
-}
-.form-group {
-}
-.col-md-6 {
-}
-.col-sm-6 {
-}
-.badge {
-}
-.badge-warning {
-}
-.form-control {
-}
-.custom-control {
-}
-.custom-checkbox {
-}
 .d-flex {
   display: flex;
 }
-.justify-content-center {
+
+.calc-box__images {
+  /* width: 800px; */
 }
-.left-block {
+.show {
+  position: absolute;
 }
-.col-md-3 {
-}
-.custom-control-input {
-}
-.custom-control-label {
-}
-.right-block {
-}
-.col-md-12 {
-}
-.rasstoyanie {
-}
-.custom-range {
-}
-.col-12 {
-}
-.rub {
-}
-.col-md-2 {
-}
-.btn-block {
-}
-.btn {
-}
-.btn-primary {
+
+.svg-image {
+  position: relative;
+  opacity: 0.5;
+  color: brown;
 }

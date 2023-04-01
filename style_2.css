@@ -1,0 +1,11 @@
+.calc-box__images {
+  width: 800px;
+}
+.show {
+  position: absolute;
+}
+
+.svg-image {
+  position: relative;
+  opacity: 0.3;
+}
