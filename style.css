@@ -6,9 +6,6 @@
   display: flex;
 }
 
-.calc-box__images {
-  /* width: 800px; */
-}
 .show {
   position: absolute;
 }
@@ -17,4 +14,7 @@
   position: relative;
   opacity: 0.5;
   color: brown;
+}
+.price {
+  font-size: 24px;
 }
