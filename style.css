@@ -18,3 +18,62 @@
 .price {
   font-size: 24px;
 }
+
+.svg-image {
+}
+.skin-img {
+}
+.active {
+}
+.bamper:hover {
+  fill: rgb(83, 109, 109);
+}
+.hidden {
+}
+.krysha :hover {
+  fill: rgb(83, 109, 109);
+}
+.proem :hover {
+  fill: rgb(83, 109, 109);
+}
+.cls-1 {
+}
+.zerkalo:hover {
+  fill: rgb(83, 109, 109);
+}
+.capot :hover {
+  fill: rgb(83, 109, 109);
+}
+.kromki :hover {
+  fill: rgb(83, 109, 109);
+}
+.krylia :hover {
+  fill: rgb(83, 109, 109);
+}
+.optika :hover {
+  fill: rgb(83, 109, 109);
+}
+.porogi:hover {
+  fill: rgb(83, 109, 109);
+}
+.ptf:hover {
+  fill: rgb(83, 109, 109);
+}
+.ruchki:hover {
+  fill: rgb(83, 109, 109);
+}
+.stekla:hover {
+  fill: rgb(83, 109, 109);
+}
+.dverei :hover {
+  fill: rgb(83, 109, 109);
+}
+.chast-capot :hover {
+  fill: rgb(83, 109, 109);
+}
+.ch-krylia :hover {
+  fill: rgb(83, 109, 109);
+}
+.other-elem :hover {
+  fill: rgb(83, 109, 109);
+}
