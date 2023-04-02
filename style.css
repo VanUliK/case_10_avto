@@ -1,6 +1,9 @@
 .hidden {
   display: none;
 }
+.opacity {
+  opacity: 0;
+}
 
 .d-flex {
   display: flex;
@@ -13,14 +16,12 @@
 .svg-image {
   position: relative;
   opacity: 0.5;
-  color: brown;
+  fill: rgb(24, 35, 57);
 }
 .price {
   font-size: 24px;
 }
 
-.svg-image {
-}
 .skin-img {
 }
 .active {
@@ -28,15 +29,11 @@
 .bamper:hover {
   fill: rgb(83, 109, 109);
 }
-.hidden {
-}
 .krysha :hover {
   fill: rgb(83, 109, 109);
 }
 .proem :hover {
   fill: rgb(83, 109, 109);
-}
-.cls-1 {
 }
 .zerkalo:hover {
   fill: rgb(83, 109, 109);
