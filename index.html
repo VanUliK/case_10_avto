@@ -201,6 +201,7 @@
       </g>
     </svg>
   </div>
+  <script src="./price.js"></script>
 
   <script>
 
@@ -460,10 +461,10 @@
       pillarsSvg.classList.toggle('opacity')
       if (pillars.checked) {
         pillars.checked = false;
+        pillars.value = 0;
       }
       else {
         pillars.checked = true;
-        pillars.value = 0;
       }
     });
 
@@ -501,7 +502,8 @@
       if (mirror.checked) {
         mirror.value = 3800
         mirrorSvg.classList.remove('opacity')
-      } else {
+      }
+      else {
         mirror.value = 0
         mirrorSvg.classList.add('opacity')
       }
@@ -621,7 +623,6 @@
       //   console.log(priceEl[i].value);
       // }
 
-
       sum = Number(optics.value) + Number(hood.value) + Number(mirror.value) + Number(wings.value) + Number(thresholds.value) + Number(dooredges.value) + Number(loadingarea.value) + Number(windshield.value) + Number(bumper.value) + Number(ptf.value) + Number(handles.value) + Number(roof.value) + Number(bonnet.value) + Number(partwings.value) + Number(doorway.value) + Number(pillars.value);
 
       price.innerHTML = sum + ' ₽';
@@ -629,11 +630,8 @@
 
 
 
-
-
   </script>
 
-  <script src="./price.js"></script>
 
 </body>
 
