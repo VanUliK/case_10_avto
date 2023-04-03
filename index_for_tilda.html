@@ -1,16 +1,124 @@
-<!DOCTYPE html>
-<html>
-<link rel="stylesheet" href="style.css">
-<!-- https://platinum-garage.ru/services/zashhitnye-plenki/ -->
-<!-- https://glosscare.ru/servises#all-price -->
 <style>
+  .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .hidden {
+    display: none;
+  }
+
+  .opacity {
+    opacity: 0;
+  }
+
+  .button-block {
+    display: flex;
+    gap: 20px;
+  }
+
+  .checkbox-block {
+    display: flex;
+  }
+
+  .show {
+    position: absolute;
+  }
+
+  .svg-image {
+    position: relative;
+    opacity: 0.5;
+    fill: rgb(83, 109, 109);
+  }
+
+  .price {
+    font-size: 24px;
+  }
+
+  .bamper:hover {
+    fill: rgb(24, 35, 57);
+    cursor: cell;
+  }
+
+  .krysha:hover {
+    fill: rgb(24, 35, 57);
+    cursor: cell;
+  }
+
+  .proem:hover {
+    fill: rgb(24, 35, 57);
+    cursor: cell;
+  }
+
+  .zerkalo:hover {
+    fill: rgb(24, 35, 57);
+    cursor: cell;
+  }
+
+  .capot:hover {
+    fill: rgb(24, 35, 57);
+    cursor: cell;
+  }
+
+  .kromki:hover {
+    fill: rgb(24, 35, 57);
+    cursor: cell;
+  }
+
+  .krylia:hover {
+    fill: rgb(24, 35, 57);
+    cursor: cell;
+  }
+
+  .optika:hover {
+    fill: rgb(24, 35, 57);
+    cursor: cell;
+  }
+
+  .porogi:hover {
+    fill: rgb(24, 35, 57);
+    cursor: cell;
+  }
+
+  .ptf:hover {
+    fill: rgb(24, 35, 57);
+    cursor: cell;
+  }
+
+  .ruchki:hover {
+    fill: rgb(24, 35, 57);
+    cursor: cell;
+  }
+
+  .stekla:hover {
+    fill: rgb(24, 35, 57);
+    cursor: cell;
+  }
+
+  .dverei:hover {
+    fill: rgb(24, 35, 57);
+    cursor: cell;
+  }
+
+  .chast-capot:hover {
+    fill: rgb(24, 35, 57);
+    cursor: cell;
+  }
+
+  .ch-krylia:hover {
+    fill: rgb(24, 35, 57);
+    cursor: cell;
+  }
+
+  .other-elem:hover {
+    fill: rgb(24, 35, 57);
+    cursor: cell;
+  }
 </style>
 
-<body class="center">
-
+<div class="center">
   <form>
-
     <div class="checkbox-block">
       <div class="left-block">
         <div class="checkbox-element">
@@ -82,7 +190,7 @@
       </div>
     </div>
 
-    <div class="price"><span id="out">0.0</span> <span class="rub">₽</span></div>
+    <div class="price"><span id="out">0</span> <span class="rub">₽</span></div>
     <div class="button-block">
       <div class="button-clear">
         <input type="button" name="adress" id="btn" class="button" value="Снять всё" />
@@ -102,10 +210,9 @@
     </div>
   </form>
 
-
-
   <div class="box-images">
-    <img src="./img/skin-car-1.png" alt="" class="images-car show">
+    <img src="https://static.tildacdn.com/tild3462-3163-4265-a434-656630353230/skin-car-1.png" alt=""
+      class="images-car show">
     <svg class="svg-image" version="1.0" xmlns="http://www.w3.org/2000/svg" width="800px" height="372px"
       viewBox="0 0 2156.000000 1004.000000">
       <!-- Оптика -->
@@ -213,581 +320,530 @@
       </g>
     </svg>
   </div>
+</div>
+<script>
+  const
+    optics = document.querySelector('#skin-elem-optika'),
+    opticsSvg = document.querySelector('.optika'),
+    hood = document.querySelector('#skin-elem-capot'),
+    hoodSvg = document.querySelector('.capot'),
+    mirror = document.querySelector('#skin-elem-zerkalo'),
+    mirrorSvg = document.querySelector('.zerkalo'),
+    wings = document.querySelector('#skin-elem-krylia'),
+    wingsSvg = document.querySelector('.krylia'),
+    thresholds = document.querySelector('#skin-elem-porogi-2'),
+    thresholdsSvg = document.querySelector('.porogi'),
+    dooredges = document.querySelector('#skin-elem-kromki'),
+    dooredgesSvg = document.querySelector('.kromki'),
+    loadingarea = document.querySelector('#loadingarea'),
+    windshield = document.querySelector('#skin-elem-stoiki-stekla'),
+    windshieldSvg = document.querySelector('.stekla'),
+    bumper = document.querySelector('#skin-elem-bamper'),
+    bumperSvg = document.querySelector('.bamper'),
+    ptf = document.querySelector('#skin-elem-ptf'),
+    ptfSvg = document.querySelector('.ptf'),
+    handles = document.querySelector('#skin-elem-ruchki'),
+    handlesSvg = document.querySelector('.ruchki'),
+    roof = document.querySelector('#skin-elem-krysha'),
+    roofSvg = document.querySelector('.krysha'),
+    bonnet = document.querySelector('#skin-elem-chast-capot'),
+    bonnetSvg = document.querySelector('.chast-capot'),
+    partwings = document.querySelector('#skin-elem-ch-krylia'),
+    partwingsSvg = document.querySelector('.ch-krylia'),
+    doorway = document.querySelector('#skin-elem-dver-proem'),
+    doorwaySvg = document.querySelector('.proem'),
+    pillars = document.querySelector('#skin-elem-stoiki-dverei'),
+    pillarsSvg = document.querySelector('.dverei'),
+    otherElemSvg = document.querySelector('.other-elem'),
+    hidden = document.querySelector(".skin-img"),
+    click = document.querySelector('.button'),
+    carEl = document.querySelector('.svg-image'),
+    checkbox = document.querySelectorAll("input[name=work]"),
+    price = document.querySelector('.price'),
+    priceEl = document.querySelectorAll('.checkbox-element > input');
 
-  <script>
-    const
-      optics = document.querySelector('#skin-elem-optika'),
-      opticsSvg = document.querySelector('.optika'),
-      hood = document.querySelector('#skin-elem-capot'),
-      hoodSvg = document.querySelector('.capot'),
-      mirror = document.querySelector('#skin-elem-zerkalo'),
-      mirrorSvg = document.querySelector('.zerkalo'),
-      wings = document.querySelector('#skin-elem-krylia'),
-      wingsSvg = document.querySelector('.krylia'),
-      thresholds = document.querySelector('#skin-elem-porogi-2'),
-      thresholdsSvg = document.querySelector('.porogi'),
-      dooredges = document.querySelector('#skin-elem-kromki'),
-      dooredgesSvg = document.querySelector('.kromki'),
-      loadingarea = document.querySelector('#loadingarea'),
-      windshield = document.querySelector('#skin-elem-stoiki-stekla'),
-      windshieldSvg = document.querySelector('.stekla'),
-      bumper = document.querySelector('#skin-elem-bamper'),
-      bumperSvg = document.querySelector('.bamper'),
-      ptf = document.querySelector('#skin-elem-ptf'),
-      ptfSvg = document.querySelector('.ptf'),
-      handles = document.querySelector('#skin-elem-ruchki'),
-      handlesSvg = document.querySelector('.ruchki'),
-      roof = document.querySelector('#skin-elem-krysha'),
-      roofSvg = document.querySelector('.krysha'),
-      bonnet = document.querySelector('#skin-elem-chast-capot'),
-      bonnetSvg = document.querySelector('.chast-capot'),
-      partwings = document.querySelector('#skin-elem-ch-krylia'),
-      partwingsSvg = document.querySelector('.ch-krylia'),
-      doorway = document.querySelector('#skin-elem-dver-proem'),
-      doorwaySvg = document.querySelector('.proem'),
-      pillars = document.querySelector('#skin-elem-stoiki-dverei'),
-      pillarsSvg = document.querySelector('.dverei'),
-      otherElemSvg = document.querySelector('.other-elem'),
-      hidden = document.querySelector(".skin-img"),
-      click = document.querySelector('.button'),
-      carEl = document.querySelector('.svg-image'),
-      checkbox = document.querySelectorAll("input[name=work]"),
-      price = document.querySelector('.price'),
-      priceEl = document.querySelectorAll('.checkbox-element > input');
+
+  let sum = 0;
+  // Нажатие на кнопку "Стереть всё"
+  function clearEl(e) {
+    {
+      for (let i = 0; i < carEl.children.length; i++) {
+        const element = carEl.children[i];
+        element.classList.add('opacity')
+        Array.prototype.forEach.call(checkbox, function (cb) {
+          cb.checked = e.target.checked;
+        })
+
+        price.innerHTML = '0.0 ₽';
+        sum = 0;
+      }
+      otherElemSvg.classList.add('hidden')
+    };
+  }
+  click.addEventListener('click', function (e) {
+    clearEl(e)
+  });
 
 
-    let sum = 0;
-    // Нажатие на кнопку "Стереть всё"
-    function clearEl(e) {
-      {
-        for (let i = 0; i < carEl.children.length; i++) {
-          const element = carEl.children[i];
-          element.classList.add('opacity')
-          Array.prototype.forEach.call(checkbox, function (cb) {
-            cb.checked = e.target.checked;
-          })
-          price.innerHTML = '0.0 ₽';
-          sum = 0;
-        }
-      };
+  // Готовые наборы
+  const part1 = document.querySelector('.part-1');
+  part1.addEventListener('click', function (e) {
+    //стереть все элементы
+    clearEl(e)
+    //выбраные элементы
+    opticEl() //Оптика
+    hoodEl() //Капот
+    mirrorEl() //Зеркала 
+    wingsEl() // Крылья 
+    thresholdsEl() // Пороги 2 шт. 
+    dooredgesEl() // Кромки двери 4 шт.
+    windshieldEl() // Стойки лобового стекла 2 шт. 
+    bumperEl() // Бампер 
+    ptfEl() // ПТФ 
+    handlesEl() // Под ручками 4 шт. 
+    roofEl() // Часть крыши 
+    bonnetEl() // Часть капота
+    partwingsEl() // Часть крыльев 
+    doorwayEl() // Дверной проем 4 шт.
+    pillarsEl() // Глянцевые стойки дверей 4 шт. 
+    loadingarea.checked = true;
+  });
+
+  const part2 = document.querySelector('.part-2');
+  part2.addEventListener('click', function (e) {
+    //стереть все элементы
+    clearEl(e)
+    //выбраные элементы
+    opticEl() //Оптика
+    hoodEl() //Капот
+    mirrorEl() //Зеркала 
+    wingsEl() // Крылья 
+    thresholdsEl() // Пороги 2 шт. 
+    dooredgesEl() // Кромки двери 4 шт.
+    windshieldEl() // Стойки лобового стекла 2 шт. 
+
+  });
+
+  const part3 = document.querySelector('.part-3');
+  part3.addEventListener('click', function (e) {
+    //стереть все элементы
+    clearEl(e)
+    //выбраные элементы
+    opticEl() //Оптика
+    hoodEl() //Капот
+    roofEl() // Часть крыши 
+    bonnetEl() // Часть капота
+    partwingsEl() // Часть крыльев 
+    thresholdsEl() // Пороги 2 шт. 
+    dooredgesEl() // Кромки двери 4 шт.
+    windshieldEl() // Стойки лобового стекла 2 шт. 
+
+  });
+
+  const part4 = document.querySelector('.part-4');
+  part4.addEventListener('click', function (e) {
+    //стереть все элементы
+    clearEl(e)
+    otherElemSvg.classList.remove('opacity')
+    otherElemSvg.classList.remove('hidden')
+    opticEl() //Оптика
+    hoodEl() //Капот
+    mirrorEl() //Зеркала 
+    wingsEl() // Крылья 
+    thresholdsEl() // Пороги 2 шт. 
+    dooredgesEl() // Кромки двери 4 шт.
+    windshieldEl() // Стойки лобового стекла 2 шт. 
+    bumperEl() // Бампер 
+    ptfEl() // ПТФ 
+    handlesEl() // Под ручками 4 шт. 
+    roofEl() // Часть крыши 
+    // bonnetEl() // Часть капота
+    // partwingsEl() // Часть крыльев 
+    doorwayEl() // Дверной проем 4 шт.
+    pillarsEl() // Глянцевые стойки дверей 4 шт. 
+    loadingarea.checked = true;
+
+  });
+
+  // Оптика
+  function opticEl() {
+    opticsSvg.classList.toggle('opacity')
+    if (optics.checked) {
+      optics.checked = false;
     }
-    click.addEventListener('click', function (e) {
-      clearEl(e)
-    });
-
-
-    // for (let i = 0; i < Array.from(carEl.children).length; i++) {
-    //   const carElSvg = Array.from(carEl.children)[i];
-    //   carElSvg.addEventListener('click', function (e) {
-    //     this.classList.toggle('opacity')
-    //     if (this.checked) {
-    //       this.checked = false;
-    //       Array.from(priceEl)[i].checked = false;
-    //       console.log(Array.from(priceEl)[i].value);
-    //       Array.from(priceEl)[i].value = 0;
-    //       console.log(Array.from(priceEl)[i]);
-
-    //     }
-    //     else {
-    //       this.checked = true;
-    //       Array.from(priceEl)[i].checked = true;
-    //       console.log(Array.from(priceEl)[i].value);
-
-    //     }
-    //   });
-    // }
-
-    // Готовые наборы
-    const part1 = document.querySelector('.part-1');
-    part1.addEventListener('click', function (e) {
-      //стереть все элементы
-      clearEl(e)
-      //выбраные элементы
-      opticEl() //Оптика
-      hoodEl() //Капот
-      mirrorEl() //Зеркала 
-      wingsEl() // Крылья 
-      thresholdsEl() // Пороги 2 шт. 
-      dooredgesEl() // Кромки двери 4 шт.
-      windshieldEl() // Стойки лобового стекла 2 шт. 
-      bumperEl() // Бампер 
-      ptfEl() // ПТФ 
-      handlesEl() // Под ручками 4 шт. 
-      roofEl() // Часть крыши 
-      bonnetEl() // Часть капота
-      partwingsEl() // Часть крыльев 
-      doorwayEl() // Дверной проем 4 шт.
-      pillarsEl() // Глянцевые стойки дверей 4 шт. 
-      loadingarea.checked = true;
-    });
-
-    const part2 = document.querySelector('.part-2');
-    part2.addEventListener('click', function (e) {
-      //стереть все элементы
-      clearEl(e)
-      //выбраные элементы
-      opticEl() //Оптика
-      hoodEl() //Капот
-      mirrorEl() //Зеркала 
-      wingsEl() // Крылья 
-      thresholdsEl() // Пороги 2 шт. 
-      dooredgesEl() // Кромки двери 4 шт.
-      windshieldEl() // Стойки лобового стекла 2 шт. 
-
-    });
-
-    const part3 = document.querySelector('.part-3');
-    part3.addEventListener('click', function (e) {
-      //стереть все элементы
-      clearEl(e)
-      //выбраные элементы
-      opticEl() //Оптика
-      hoodEl() //Капот
-      roofEl() // Часть крыши 
-      bonnetEl() // Часть капота
-      partwingsEl() // Часть крыльев 
-      thresholdsEl() // Пороги 2 шт. 
-      dooredgesEl() // Кромки двери 4 шт.
-      windshieldEl() // Стойки лобового стекла 2 шт. 
-
-    });
-
-    const part4 = document.querySelector('.part-4');
-    part4.addEventListener('click', function (e) {
-      otherElemSvg.classList.remove('hidden')
-      opticEl() //Оптика
-      hoodEl() //Капот
-      mirrorEl() //Зеркала 
-      wingsEl() // Крылья 
-      thresholdsEl() // Пороги 2 шт. 
-      dooredgesEl() // Кромки двери 4 шт.
-      windshieldEl() // Стойки лобового стекла 2 шт. 
-      bumperEl() // Бампер 
-      ptfEl() // ПТФ 
-      handlesEl() // Под ручками 4 шт. 
-      roofEl() // Часть крыши 
-      // bonnetEl() // Часть капота
-      // partwingsEl() // Часть крыльев 
-      doorwayEl() // Дверной проем 4 шт.
-      pillarsEl() // Глянцевые стойки дверей 4 шт. 
-      loadingarea.checked = true;
-
-    });
-
-    // Оптика
-    function opticEl() {
-      opticsSvg.classList.toggle('opacity')
-      if (optics.checked) {
-        optics.checked = false;
-        optics.value = 0;
-      }
-      else {
-        optics.checked = true;
-        optics.value = 3500;
-      }
+    else {
+      optics.checked = true;
     }
-    opticsSvg.addEventListener('click', function () {
-      opticEl();
-    });
+  }
+  opticsSvg.addEventListener('click', function () {
+    opticEl();
+  });
 
-    // Капот
-    function hoodEl() {
-      hoodSvg.classList.toggle('opacity')
-      bonnetSvg.classList.add('opacity')
-      bonnet.checked = false;
-      if (hood.checked) {
-        hood.checked = false;
-        hood.value = 0;
-      }
-      else {
-        hood.checked = true;
-        hood.value = 10150;
-      }
-    }
-    hoodSvg.addEventListener('click', function () {
-      hoodEl()
-    });
-
-    // Зеркала 
-    function mirrorEl() {
-      mirrorSvg.classList.toggle('opacity')
-      if (mirror.checked) {
-        mirror.checked = false;
-        mirror.value = 0;
-      }
-      else {
-        mirror.checked = true;
-        mirror.value = 3800
-      }
-    }
-    mirrorSvg.addEventListener('click', function () {
-      mirrorEl()
-    });
-
-    // Крылья 
-    function wingsEl() {
-      wingsSvg.classList.toggle('opacity')
-      partwingsSvg.classList.add('opacity')
-      partwings.checked = false;
-      if (wings.checked) {
-        wings.checked = false;
-        wings.value = 0;
-      }
-      else {
-        wings.checked = true;
-        wings.value = 9250
-      }
-    }
-    wingsSvg.addEventListener('click', function () {
-      wingsEl()
-    });
-
-    // Пороги 2 шт. 
-    function thresholdsEl() {
-      thresholdsSvg.classList.toggle('opacity')
-      if (thresholds.checked) {
-        thresholds.checked = false;
-        thresholds.value = 0;
-      }
-      else {
-        thresholds.checked = true;
-        thresholds.value = 7750
-      }
-    }
-    thresholdsSvg.addEventListener('click', function () {
-      thresholdsEl()
-    });
-
-    // Кромки двери 4 шт.
-    function dooredgesEl() {
-      dooredgesSvg.classList.toggle('opacity')
-      if (dooredges.checked) {
-        dooredges.checked = false;
-        dooredges.value = 0;
-      }
-      else {
-        dooredges.checked = true;
-        dooredges.value = 2000
-      }
-    }
-    dooredgesSvg.addEventListener('click', function () {
-      dooredgesEl()
-    });
-
-    // Стойки лобового стекла 2 шт. 
-    function windshieldEl() {
-      windshieldSvg.classList.toggle('opacity')
-      if (windshield.checked) {
-        windshield.checked = false;
-        windshield.value = 0;
-      }
-      else {
-        windshield.checked = true;
-        windshield.value = 4750
-      }
-    }
-    windshieldSvg.addEventListener('click', function () {
-      windshieldEl()
-    });
-
-    // Бампер 
-    function bumperEl() {
-      bumperSvg.classList.toggle('opacity')
-      if (bumper.checked) {
-        bumper.checked = false;
-        bumper.value = 0;
-      }
-      else {
-        bumper.checked = true;
-        bumper.value = 9250
-      }
-    }
-    bumperSvg.addEventListener('click', function () {
-      bumperEl()
-    });
-
-    // ПТФ 
-    function ptfEl() {
-      ptfSvg.classList.toggle('opacity')
-      if (ptf.checked) {
-        ptf.checked = false;
-        ptf.value = 0;
-      }
-      else {
-        ptf.checked = true;
-        ptf.value = 1350
-      }
-    }
-    ptfSvg.addEventListener('click', function () {
-      ptfEl()
-    });
-
-    // Под ручками 4 шт. 
-    function handlesEl() {
-      handlesSvg.classList.toggle('opacity')
-      if (handles.checked) {
-        handles.checked = false;
-        handles.value = 0;
-      }
-      else {
-        handles.checked = true;
-        handles.value = 2000
-      }
-    }
-    handlesSvg.addEventListener('click', function () {
-      handlesEl()
-    });
-
-    // Часть крыши 
-    function roofEl() {
-      roofSvg.classList.toggle('opacity')
-      if (roof.checked) {
-        roof.checked = false;
-        roof.value = 0;
-      }
-      else {
-        roof.checked = true;
-        roof.value = 2750
-      }
-    }
-    roofSvg.addEventListener('click', function () {
-      roofEl()
-    });
-
-    // Часть капота 
-    function bonnetEl() {
-      bonnetSvg.classList.toggle('opacity')
-      hoodSvg.classList.add('opacity')
+  // Капот
+  function hoodEl() {
+    hoodSvg.classList.toggle('opacity')
+    bonnetSvg.classList.add('opacity')
+    bonnet.checked = false;
+    if (hood.checked) {
       hood.checked = false;
-      if (bonnet.checked) {
-        bonnet.checked = false;
-        bonnet.value = 0;
-      }
-      else {
-        bonnet.checked = true;
-        bonnet.value = 4150
-      }
     }
-    bonnetSvg.addEventListener('click', function () {
-      bonnetEl()
-    });
+    else {
+      hood.checked = true;
+    }
+  }
+  hoodSvg.addEventListener('click', function () {
+    hoodEl()
+  });
 
-    // Часть крыльев 
-    function partwingsEl() {
-      partwingsSvg.classList.toggle('opacity')
-      wingsSvg.classList.add('opacity')
+  // Зеркала 
+  function mirrorEl() {
+    mirrorSvg.classList.toggle('opacity')
+    if (mirror.checked) {
+      mirror.checked = false;
+    }
+    else {
+      mirror.checked = true;
+    }
+  }
+  mirrorSvg.addEventListener('click', function () {
+    mirrorEl()
+  });
+
+  // Крылья 
+  function wingsEl() {
+    wingsSvg.classList.toggle('opacity')
+    partwingsSvg.classList.add('opacity')
+    partwings.checked = false;
+    if (wings.checked) {
       wings.checked = false;
-      if (partwings.checked) {
-        partwings.checked = false;
-        partwings.value = 0;
-      }
-      else {
-        partwings.checked = true;
-        partwings.value = 3800
-      }
     }
-    partwingsSvg.addEventListener('click', function () {
-      partwingsEl()
-    });
+    else {
+      wings.checked = true;
+    }
+  }
+  wingsSvg.addEventListener('click', function () {
+    wingsEl()
+  });
 
+  // Пороги 2 шт. 
+  function thresholdsEl() {
+    thresholdsSvg.classList.toggle('opacity')
+    if (thresholds.checked) {
+      thresholds.checked = false;
+    }
+    else {
+      thresholds.checked = true;
+    }
+  }
+  thresholdsSvg.addEventListener('click', function () {
+    thresholdsEl()
+  });
+
+  // Кромки двери 4 шт.
+  function dooredgesEl() {
+    dooredgesSvg.classList.toggle('opacity')
+    if (dooredges.checked) {
+      dooredges.checked = false;
+    }
+    else {
+      dooredges.checked = true;
+    }
+  }
+  dooredgesSvg.addEventListener('click', function () {
+    dooredgesEl()
+  });
+
+  // Стойки лобового стекла 2 шт. 
+  function windshieldEl() {
+    windshieldSvg.classList.toggle('opacity')
+    if (windshield.checked) {
+      windshield.checked = false;
+    }
+    else {
+      windshield.checked = true;
+    }
+  }
+  windshieldSvg.addEventListener('click', function () {
+    windshieldEl()
+  });
+
+  // Бампер 
+  function bumperEl() {
+    bumperSvg.classList.toggle('opacity')
+    if (bumper.checked) {
+      bumper.checked = false;
+    }
+    else {
+      bumper.checked = true;
+    }
+  }
+  bumperSvg.addEventListener('click', function () {
+    bumperEl()
+  });
+
+  // ПТФ 
+  function ptfEl() {
+    ptfSvg.classList.toggle('opacity')
+    if (ptf.checked) {
+      ptf.checked = false;
+    }
+    else {
+      ptf.checked = true;
+    }
+  }
+  ptfSvg.addEventListener('click', function () {
+    ptfEl()
+  });
+
+  // Под ручками 4 шт. 
+  function handlesEl() {
+    handlesSvg.classList.toggle('opacity')
+    if (handles.checked) {
+      handles.checked = false;
+    }
+    else {
+      handles.checked = true;
+    }
+  }
+  handlesSvg.addEventListener('click', function () {
+    handlesEl()
+  });
+
+  // Часть крыши 
+  function roofEl() {
+    roofSvg.classList.toggle('opacity')
+    if (roof.checked) {
+      roof.checked = false;
+    }
+    else {
+      roof.checked = true;
+    }
+  }
+  roofSvg.addEventListener('click', function () {
+    roofEl()
+  });
+
+  // Часть капота 
+  function bonnetEl() {
+    bonnetSvg.classList.toggle('opacity')
+    hoodSvg.classList.add('opacity')
+    hood.checked = false;
+    if (bonnet.checked) {
+      bonnet.checked = false;
+    }
+    else {
+      bonnet.checked = true;
+    }
+  }
+  bonnetSvg.addEventListener('click', function () {
+    bonnetEl()
+  });
+
+  // Часть крыльев 
+  function partwingsEl() {
+    partwingsSvg.classList.toggle('opacity')
+    wingsSvg.classList.add('opacity')
+    wings.checked = false;
+    if (partwings.checked) {
+      partwings.checked = false;
+    }
+    else {
+      partwings.checked = true;
+    }
+  }
+  partwingsSvg.addEventListener('click', function () {
+    partwingsEl()
+  });
+
+  // Дверной проем 4 шт.
+  function doorwayEl() {
+    doorwaySvg.classList.toggle('opacity')
+    if (doorway.checked) {
+      doorway.checked = false;
+    }
+    else {
+      doorway.checked = true;
+    }
+  }
+  doorwaySvg.addEventListener('click', function () {
+    doorwayEl()
+  });
+
+  // Глянцевые стойки дверей 4 шт. 
+  function pillarsEl() {
+    pillarsSvg.classList.toggle('opacity')
+    if (pillars.checked) {
+      pillars.checked = false;
+    }
+    else {
+      pillars.checked = true;
+    }
+  }
+  pillarsSvg.addEventListener('click', function () {
+    pillarsEl();
+  });
+
+  // Оставщиеся части кузова 
+  otherElemSvg.addEventListener('click', function () {
+    otherElemSvg.classList.toggle('hidden')
+  });
+
+
+
+  // Здесь задаются цены
+
+  document.addEventListener('click', function (e) {
+    // Оптика
+    if (optics.checked) {
+      optics.value = 5000
+      opticsSvg.classList.remove('opacity')
+    }
+    else {
+      optics.value = 0
+      opticsSvg.classList.add('opacity')
+    }
+    // Капот
+    if (hood.checked) {
+      hood.value = 19000
+      bonnet.checked = false;
+      hoodSvg.classList.remove('opacity')
+    }
+    else {
+      hood.value = 0
+      hoodSvg.classList.add('opacity')
+    }
+    // Часть капота 
+    if (bonnet.checked) {
+      bonnet.value = 4150
+      hood.checked = false;
+      bonnetSvg.classList.remove('opacity')
+    }
+    else {
+      bonnet.value = 0
+      bonnetSvg.classList.add('opacity')
+    }
+    // Зеркала 
+    if (mirror.checked) {
+      mirror.value = 4000
+      mirrorSvg.classList.remove('opacity')
+    }
+    else {
+      mirror.value = 0
+      mirrorSvg.classList.add('opacity')
+    }
+    // Крылья 
+    if (wings.checked) {
+      wings.value = 9800
+      partwings.checked = false;
+      wingsSvg.classList.remove('opacity')
+    }
+    else {
+      wings.value = 0
+      wingsSvg.classList.add('opacity')
+    }
+    // Часть крыльев 
+    if (partwings.checked) {
+      partwings.value = 3800
+      wings.checked = false;
+      partwingsSvg.classList.remove('opacity')
+    }
+    else {
+      partwings.value = 0
+      partwingsSvg.classList.add('opacity')
+    }
+    // Пороги 2 шт. 
+    if (thresholds.checked) {
+      thresholds.value = 7750
+      thresholdsSvg.classList.remove('opacity')
+    }
+    else {
+      thresholds.value = 0
+      thresholdsSvg.classList.add('opacity')
+
+    }
+    // Кромки двери 4 шт.
+    if (dooredges.checked) {
+      dooredges.value = 2000
+      dooredgesSvg.classList.remove('opacity')
+    }
+    else {
+      dooredges.value = 0
+      dooredgesSvg.classList.add('opacity')
+    }
+    // Погрузочная зона 
+    if (loadingarea.checked) {
+      loadingarea.value = 2500
+    }
+    else {
+      loadingarea.value = 0
+    }
+    // Стойки лобового стекла 2 шт. 
+    if (windshield.checked) {
+      windshield.value = 4750
+      windshieldSvg.classList.remove('opacity')
+    }
+    else {
+      windshield.value = 0
+      windshieldSvg.classList.add('opacity')
+    }
+    // Бампер 
+    if (bumper.checked) {
+      bumper.value = 18000
+      bumperSvg.classList.remove('opacity')
+    }
+    else {
+      bumper.value = 0
+      bumperSvg.classList.add('opacity')
+
+    }
+    // ПТФ 
+    if (ptf.checked) {
+      ptf.value = 2000
+      ptfSvg.classList.remove('opacity')
+    }
+    else {
+      ptf.value = 0
+      ptfSvg.classList.add('opacity')
+    }
+    // Под ручками 4 шт. 
+    if (handles.checked) {
+      handles.value = 2000
+      handlesSvg.classList.remove('opacity')
+    }
+    else {
+      handles.value = 0
+      handlesSvg.classList.add('opacity')
+    }
+    // Часть крыши 
+    if (roof.checked) {
+      roof.value = 2750
+      roofSvg.classList.remove('opacity')
+    }
+    else {
+      roof.value = 0
+      roofSvg.classList.add('opacity')
+    }
     // Дверной проем 4 шт.
-    function doorwayEl() {
-      doorwaySvg.classList.toggle('opacity')
-      if (doorway.checked) {
-        doorway.checked = false;
-        doorway.value = 0;
-      }
-      else {
-        doorway.checked = true;
-        doorway.value = 5000
-      }
+    if (doorway.checked) {
+      doorway.value = 5000
+      doorwaySvg.classList.remove('opacity')
     }
-    doorwaySvg.addEventListener('click', function () {
-      doorwayEl()
-    });
-
+    else {
+      doorway.value = 0
+      doorwaySvg.classList.add('opacity')
+    }
     // Глянцевые стойки дверей 4 шт. 
-    function pillarsEl() {
-      pillarsSvg.classList.toggle('opacity')
-      if (pillars.checked) {
-        pillars.checked = false;
-        pillars.value = 0;
-      }
-      else {
-        pillars.checked = true;
-        pillars.value = 4000
-      }
+    if (pillars.checked) {
+      pillars.value = 4000
+      pillarsSvg.classList.remove('opacity')
     }
-    pillarsSvg.addEventListener('click', function () {
-      pillarsEl();
-    });
+    else {
+      pillars.value = 0
+      pillarsSvg.classList.add('opacity')
+    }
 
-    // Оставщиеся части кузова 
-    otherElemSvg.addEventListener('click', function () {
-      otherElemSvg.classList.toggle('hidden')
-    });
+    sum = Number(optics.value) + Number(hood.value) + Number(mirror.value) + Number(wings.value) + Number(thresholds.value) + Number(dooredges.value) + Number(loadingarea.value) + Number(windshield.value) + Number(bumper.value) + Number(ptf.value) + Number(handles.value) + Number(roof.value) + Number(bonnet.value) + Number(partwings.value) + Number(doorway.value) + Number(pillars.value);
 
-
-    document.addEventListener('click', function (e) {
-      // Оптика
-      if (optics.checked) {
-        optics.value = 3500
-        opticsSvg.classList.remove('opacity')
-      }
-      else {
-        optics.value = 0
-        opticsSvg.classList.add('opacity')
-      }
-      // Капот
-      if (hood.checked) {
-        hood.value = 10150
-        bonnet.checked = false;
-        hoodSvg.classList.remove('opacity')
-      }
-      else {
-        hood.value = 0
-        hoodSvg.classList.add('opacity')
-      }
-      // Часть капота 
-      if (bonnet.checked) {
-        bonnet.value = 4150
-        hood.checked = false;
-        bonnetSvg.classList.remove('opacity')
-      }
-      else {
-        bonnet.value = 0
-        bonnetSvg.classList.add('opacity')
-      }
-      // Зеркала 
-      if (mirror.checked) {
-        mirror.value = 3800
-        mirrorSvg.classList.remove('opacity')
-      }
-      else {
-        mirror.value = 0
-        mirrorSvg.classList.add('opacity')
-      }
-      // Крылья 
-      if (wings.checked) {
-        wings.value = 9250
-        partwings.checked = false;
-        wingsSvg.classList.remove('opacity')
-      }
-      else {
-        wings.value = 0
-        wingsSvg.classList.add('opacity')
-      }
-      // Часть крыльев 
-      if (partwings.checked) {
-        partwings.value = 3800
-        wings.checked = false;
-        partwingsSvg.classList.remove('opacity')
-      }
-      else {
-        partwings.value = 0
-        partwingsSvg.classList.add('opacity')
-      }
-      // Пороги 2 шт. 
-      if (thresholds.checked) {
-        thresholds.value = 7750
-        thresholdsSvg.classList.remove('opacity')
-      }
-      else {
-        thresholds.value = 0
-        thresholdsSvg.classList.add('opacity')
-
-      }
-      // Кромки двери 4 шт.
-      if (dooredges.checked) {
-        dooredges.value = 2000
-        dooredgesSvg.classList.remove('opacity')
-      }
-      else {
-        dooredges.value = 0
-        dooredgesSvg.classList.add('opacity')
-      }
-      // Погрузочная зона 
-      if (loadingarea.checked) {
-        loadingarea.value = 2500
-      }
-      else {
-        loadingarea.value = 0
-      }
-      // Стойки лобового стекла 2 шт. 
-      if (windshield.checked) {
-        windshield.value = 4750
-        windshieldSvg.classList.remove('opacity')
-      }
-      else {
-        windshield.value = 0
-        windshieldSvg.classList.add('opacity')
-      }
-      // Бампер 
-      if (bumper.checked) {
-        bumper.value = 9250
-        bumperSvg.classList.remove('opacity')
-      }
-      else {
-        bumper.value = 0
-        bumperSvg.classList.add('opacity')
-
-      }
-      // ПТФ 
-      if (ptf.checked) {
-        ptf.value = 1350
-        ptfSvg.classList.remove('opacity')
-      }
-      else {
-        ptf.value = 0
-        ptfSvg.classList.add('opacity')
-      }
-      // Под ручками 4 шт. 
-      if (handles.checked) {
-        handles.value = 2000
-        handlesSvg.classList.remove('opacity')
-      }
-      else {
-        handles.value = 0
-        handlesSvg.classList.add('opacity')
-      }
-      // Часть крыши 
-      if (roof.checked) {
-        roof.value = 2750
-        roofSvg.classList.remove('opacity')
-      }
-      else {
-        roof.value = 0
-        roofSvg.classList.add('opacity')
-      }
-      // Дверной проем 4 шт.
-      if (doorway.checked) {
-        doorway.value = 5000
-        doorwaySvg.classList.remove('opacity')
-      }
-      else {
-        doorway.value = 0
-        doorwaySvg.classList.add('opacity')
-      }
-      // Глянцевые стойки дверей 4 шт. 
-      if (pillars.checked) {
-        pillars.value = 4000
-        pillarsSvg.classList.remove('opacity')
-      }
-      else {
-        pillars.value = 0
-        pillarsSvg.classList.add('opacity')
-      }
-
-
-      sum = Number(optics.value) + Number(hood.value) + Number(mirror.value) + Number(wings.value) + Number(thresholds.value) + Number(dooredges.value) + Number(loadingarea.value) + Number(windshield.value) + Number(bumper.value) + Number(ptf.value) + Number(handles.value) + Number(roof.value) + Number(bonnet.value) + Number(partwings.value) + Number(doorway.value) + Number(pillars.value);
-
-      price.innerHTML = sum + ' ₽';
-    });
-
-
-  </script>
-
-
-</body>
-
-</html>
+    price.innerHTML = sum + ' ₽';
+  });
+</script>
