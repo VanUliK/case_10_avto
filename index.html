@@ -354,6 +354,9 @@
 
     const part4 = document.querySelector('.part-4');
     part4.addEventListener('click', function (e) {
+      //стереть все элементы
+      clearEl(e)
+      otherElemSvg.classList.remove('opacity')
       otherElemSvg.classList.remove('hidden')
       opticEl() //Оптика
       hoodEl() //Капот
