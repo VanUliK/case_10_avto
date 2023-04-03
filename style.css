@@ -16,7 +16,7 @@
 .svg-image {
   position: relative;
   opacity: 0.5;
-  fill: rgb(24, 35, 57);
+  fill: rgb(83, 109, 109);
 }
 .price {
   font-size: 24px;
@@ -26,51 +26,67 @@
 }
 .active {
 }
-.bamper:hover {
-  fill: rgb(83, 109, 109);
+.bamper :hover {
+  fill: rgb(24, 35, 57);
+  cursor: cell;
 }
 .krysha :hover {
-  fill: rgb(83, 109, 109);
+  fill: rgb(24, 35, 57);
+  cursor: cell;
 }
 .proem :hover {
-  fill: rgb(83, 109, 109);
+  fill: rgb(24, 35, 57);
+  cursor: cell;
 }
 .zerkalo:hover {
-  fill: rgb(83, 109, 109);
+  fill: rgb(24, 35, 57);
+  cursor: cell;
 }
 .capot :hover {
-  fill: rgb(83, 109, 109);
+  fill: rgb(24, 35, 57);
+  cursor: cell;
 }
 .kromki :hover {
-  fill: rgb(83, 109, 109);
+  fill: rgb(24, 35, 57);
+  cursor: cell;
 }
 .krylia :hover {
-  fill: rgb(83, 109, 109);
+  fill: rgb(24, 35, 57);
+  cursor: cell;
 }
 .optika :hover {
-  fill: rgb(83, 109, 109);
+  fill: rgb(24, 35, 57);
+  cursor: cell;
 }
 .porogi:hover {
-  fill: rgb(83, 109, 109);
+  fill: rgb(24, 35, 57);
+  cursor: cell;
 }
 .ptf:hover {
-  fill: rgb(83, 109, 109);
+  fill: rgb(24, 35, 57);
+  cursor: cell;
 }
 .ruchki:hover {
-  fill: rgb(83, 109, 109);
+  fill: rgb(24, 35, 57);
+  cursor: cell;
 }
 .stekla:hover {
-  fill: rgb(83, 109, 109);
+  fill: rgb(24, 35, 57);
+  cursor: cell;
 }
 .dverei :hover {
-  fill: rgb(83, 109, 109);
+  fill: rgb(24, 35, 57);
+  cursor: cell;
 }
 .chast-capot :hover {
-  fill: rgb(83, 109, 109);
+  fill: rgb(24, 35, 57);
+  cursor: cell;
 }
 .ch-krylia :hover {
-  fill: rgb(83, 109, 109);
+  fill: rgb(24, 35, 57);
+  cursor: cell;
 }
 .other-elem :hover {
-  fill: rgb(83, 109, 109);
+  fill: rgb(24, 35, 57);
+  cursor: cell;
 }
