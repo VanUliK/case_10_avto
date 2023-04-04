@@ -79,30 +79,72 @@
           <input type="checkbox" id="skin-elem-stoiki-dverei" name="work" class="checkbox-input" />
           <label class="checkbox-label" for="skin-elem-stoiki-dverei">Глянцевые стойки дверей 4 шт.</label>
         </div>
-        <div class="checkbox-other-element">
+        <div class="checkbox-element hidden">
           <input type="checkbox" id="other-elem" name="work" class="checkbox-input" />
           <label class="checkbox-label" for="other-elem">Оставшиеся части</label>
         </div>
       </div>
     </div>
 
+    <!-- 1
+https://static.tildacdn.com/tild3766-3762-4436-a537-333232363435/Group_129.svg
+2
+https://static.tildacdn.com/tild3932-3461-4339-b938-333838616565/Group_125.svg
+3
+https://static.tildacdn.com/tild3662-6431-4230-b537-323539663234/Group_131.svg
+4
+https://static.tildacdn.com/tild3237-3235-4438-a631-356630633565/Group_134.svg 
+-->
+
     <div class="price"><span id="out">0.0</span> <span class="rub">₽</span></div>
     <div class="button-block">
       <div class="button-clear">
         <input type="button" name="adress" id="btn" class="button" value="Снять всё" />
       </div>
-      <div class="part-1">
-        <input type="button" name="adress" id="btn" class="button" value="Part 1" />
+      Комплексы по оклейке бронеплёнкой Hexis 180 микрон со скидкой 10%
+      <div class="block-part">
+        <div class="part-1">
+          <input type="button" name="adress" id="btn" class="button-1" value="Пакет минимальный" />
+          <img src="https://static.tildacdn.com/tild3766-3762-4436-a537-333232363435/Group_129.svg" alt="">
+          <div class="dsc">
+            <p class="head-dsc">Пакет минимальный:</p>
+            <p class="head-dsc">Часть капота (60см).</p>
+            <p class="head-dsc">Часть передних крыльев.</p>
+            <p class="head-dsc">Фары.</p>
+            <p class="head-dsc">Стойки лобового.</p>
+            <p class="head-dsc">стекла.</p>
+            <p class="head-dsc">Полоса на крышу.</p>
+          </div>
+        </div>
+        <div class="part-2">
+          <input type="button" name="adress" id="btn" class="button" value="Пакет Оптимальный" />
+          <img src="https://static.tildacdn.com/tild3932-3461-4339-b938-333838616565/Group_125.svg" alt="">
+          <div class="dsc">
+            <p class="head-dsc">Пакет Оптимальный:</p>
+            <p class="head-dsc">Капот.</p>
+            <p class="head-dsc">Фары.</p>
+            <p class="head-dsc">Передний бампер.</p>
+            <p class="head-dsc">Крылья.</p>
+            <p class="head-dsc">Стойки лобового стекла.</p>
+            <p class="head-dsc">Полоса на крышу.</p>
+            <p class="head-dsc">Зеркала.</p>
+          </div>
+        </div>
+        <div class="part-3">
+          <input type="button" name="adress" id="btn" class="button" value="Пакет максимальный" />
+          <img src="https://static.tildacdn.com/tild3662-6431-4230-b537-323539663234/Group_131.svg" alt="">
+          <p class="head-dsc">Пакет максимальный:</p>
+          <p class="head-dsc">Полная оклейка автомобиля (без крыши ввиду возможного наличия люка)</p>
+        </div>
+        <div class="part-4">
+          <input type="button" name="adress" id="btn" class="button-4" value="Пакет максимальный" />
+          <img src="https://static.tildacdn.com/tild3237-3235-4438-a631-356630633565/Group_134.svg" alt="">
+          <div class="dsc">
+            <p class="head-dsc">Индивидуальный:</p>
+          </div>
+        </div>
       </div>
-      <div class="part-2">
-        <input type="button" name="adress" id="btn" class="button" value="Part 2" />
-      </div>
-      <div class="part-3">
-        <input type="button" name="adress" id="btn" class="button" value="Part 3" />
-      </div>
-      <div class="part-4">
-        <input type="button" name="adress" id="btn" class="button" value="Полная оклейка кузова" />
-      </div>
+    </div>
     </div>
   </form>
 
@@ -286,23 +328,13 @@
     part1.addEventListener('click', function (e) {
       //стереть все элементы
       clearEl(e)
+
       //выбраные элементы
-      opticEl() //Оптика
-      hoodEl() //Капот
-      mirrorEl() //Зеркала 
-      wingsEl() // Крылья 
-      thresholdsEl() // Пороги 2 шт. 
-      dooredgesEl() // Кромки двери 4 шт.
-      windshieldEl() // Стойки лобового стекла 2 шт. 
-      bumperEl() // Бампер 
-      ptfEl() // ПТФ 
-      handlesEl() // Под ручками 4 шт. 
       roofEl() // Часть крыши 
       bonnetEl() // Часть капота
       partwingsEl() // Часть крыльев 
-      doorwayEl() // Дверной проем 4 шт.
-      pillarsEl() // Глянцевые стойки дверей 4 шт. 
-      loadingarea.checked = true;
+      opticEl() //Оптика
+      windshieldEl() // Стойки лобового стекла 2 шт. 
     });
 
     const part2 = document.querySelector('.part-2');
@@ -312,32 +344,16 @@
       //выбраные элементы
       opticEl() //Оптика
       hoodEl() //Капот
-      mirrorEl() //Зеркала 
+      bumperEl() // Бампер 
       wingsEl() // Крылья 
-      thresholdsEl() // Пороги 2 шт. 
-      dooredgesEl() // Кромки двери 4 шт.
       windshieldEl() // Стойки лобового стекла 2 шт. 
+      roofEl() // Часть крыши 
+      mirrorEl() //Зеркала 
 
     });
 
     const part3 = document.querySelector('.part-3');
     part3.addEventListener('click', function (e) {
-      //стереть все элементы
-      clearEl(e)
-      //выбраные элементы
-      opticEl() //Оптика
-      hoodEl() //Капот
-      roofEl() // Часть крыши 
-      bonnetEl() // Часть капота
-      partwingsEl() // Часть крыльев 
-      thresholdsEl() // Пороги 2 шт. 
-      dooredgesEl() // Кромки двери 4 шт.
-      windshieldEl() // Стойки лобового стекла 2 шт. 
-
-    });
-
-    const part4 = document.querySelector('.part-4');
-    part4.addEventListener('click', function (e) {
       //стереть все элементы
       clearEl(e)
       otherElemSvg.classList.remove('opacity')
@@ -352,14 +368,34 @@
       bumperEl() // Бампер 
       ptfEl() // ПТФ 
       handlesEl() // Под ручками 4 шт. 
-      roofEl() // Часть крыши 
-      // bonnetEl() // Часть капота
-      // partwingsEl() // Часть крыльев 
       doorwayEl() // Дверной проем 4 шт.
       pillarsEl() // Глянцевые стойки дверей 4 шт. 
       loadingarea.checked = true;
       otherEl()
+    });
 
+    const part4 = document.querySelector('.part-4');
+    part4.addEventListener('click', function (e) {
+      // clearEl(e)
+      // otherElemSvg.classList.remove('opacity')
+      // otherElemSvg.classList.remove('hidden')
+      // opticEl() //Оптика
+      // hoodEl() //Капот
+      // mirrorEl() //Зеркала 
+      // wingsEl() // Крылья 
+      // thresholdsEl() // Пороги 2 шт. 
+      // dooredgesEl() // Кромки двери 4 шт.
+      // windshieldEl() // Стойки лобового стекла 2 шт. 
+      // bumperEl() // Бампер 
+      // ptfEl() // ПТФ 
+      // handlesEl() // Под ручками 4 шт. 
+      // roofEl() // Часть крыши 
+      // // bonnetEl() // Часть капота
+      // // partwingsEl() // Часть крыльев 
+      // doorwayEl() // Дверной проем 4 шт.
+      // pillarsEl() // Глянцевые стойки дверей 4 шт. 
+      // loadingarea.checked = true;
+      // otherEl()
     });
     // -----------------------------------------------------------
     // -----------------------------------------------------------
