@@ -1,11 +1,13 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 .center {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* background-color: #ec622a; */
 }
 
 .hidden {
@@ -17,17 +19,94 @@
 }
 
 .block-part {
+  padding-top: 40px;
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(3, 3fr);
+  grid-template-columns: repeat(4, 140px);
+  justify-content: center;
+}
+.part-1,
+.part-2,
+.part-3,
+.part-4 {
+  display: flex;
+  flex-direction: column;
 }
 
+.tilda-block {
+  background-color: #fff;
+  width: 800px;
+  padding-top: 30px;
+  border-radius: 30px;
+}
+.up-dsc {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 20px;
+}
+.block-text-dsc {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 380px;
+  background-color: rgba(200, 200, 200, 0.7);
+  border-radius: 15px;
+}
+.text-dsc {
+  padding: 20px;
+  color: #ec622a;
+  font-family: Onest;
+  font-size: 20px;
+  font-weight: 500;
+}
+.button-img {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+.button-img:hover {
+  border: 2px solid #ec622a;
+  cursor: pointer;
+}
 .checkbox-block {
   display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+  font-size: 18px;
+}
+
+.price-block-itog {
+  padding-left: 30px;
 }
 
 .show {
   position: absolute;
+}
+.images-car {
+  border-radius: 30px;
+}
+
+.text {
+  font-family: "Onest", Arial, sans-serif;
+  font-weight: 300;
+}
+.prev-text {
+  font-family: "Onest";
+  padding-bottom: 5px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.dsc-text {
+  color: #000000;
+  font-size: 10px;
+  font-family: "Onest", Arial, sans-serif;
+  line-height: 1.15;
+  font-weight: 300;
+  opacity: 0.6;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+}
+.head-dsc {
+  line-height: 1.1;
 }
 
 /* цвет выделенных элементов */
@@ -38,7 +117,10 @@
 }
 
 .price {
-  font-size: 24px;
+  color: rgb(236, 98, 42);
+  font-family: Onest;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 /* цвет элементов при наведении */
@@ -127,10 +209,16 @@
     width: 640px;
     height: 297px;
   }
-
   .svg-image {
     width: 640px;
     height: 297px;
+  }
+  .tilda-block {
+    background-color: #fff;
+    width: 640px;
+  }
+  .checkbox-block {
+    font-size: 16px;
   }
 }
 
@@ -144,30 +232,48 @@
     width: 500px;
     height: 232px;
   }
+  .tilda-block {
+    background-color: #fff;
+    width: 500px;
+  }
+  .block-part {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 150px);
+  }
+  .block-text-dsc {
+    margin: 0;
+  }
+  .up-dsc {
+    display: flex;
+    justify-content: center;
+  }
+  .checkbox-block {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 480px) {
-  .checkbox-block {
-    display: block;
-  }
-
-  .button-block {
-    display: block;
-  }
-  .button-1 {
-    width: 100px;
-    height: 100px;
-    border: 2px solid #182339;
-  }
-
   .images-car {
     width: 400px;
     height: 186px;
   }
-
   .svg-image {
     width: 400px;
     height: 186px;
+  }
+  .tilda-block {
+    background-color: #fff;
+    width: 400px;
+  }
+  .block-part {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(1, 120px);
+  }
+  .checkbox-block {
+    flex-direction: column;
+    padding-left: 50px;
   }
 }
 
@@ -176,9 +282,15 @@
     width: 300px;
     height: 139px;
   }
-
   .svg-image {
     width: 300px;
     height: 139px;
+  }
+  .tilda-block {
+    background-color: #fff;
+    width: 300px;
+  }
+  .text-dsc {
+    font-size: 16px;
   }
 }
