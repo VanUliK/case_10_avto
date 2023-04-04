@@ -79,6 +79,10 @@
           <input type="checkbox" id="skin-elem-stoiki-dverei" name="work" class="checkbox-input" />
           <label class="checkbox-label" for="skin-elem-stoiki-dverei">Глянцевые стойки дверей 4 шт.</label>
         </div>
+        <div class="checkbox-other-element">
+          <input type="checkbox" id="other-elem" name="work" class="checkbox-input" />
+          <label class="checkbox-label" for="other-elem">Оставшиеся части</label>
+        </div>
       </div>
     </div>
 
@@ -176,7 +180,7 @@
         </path>
       </g>
       <!-- Часть крыши  -->
-      <g data-name="skin-elem-krysha" class="  krysha opacity">
+      <g data-name="skin-elem-krysha" class="krysha opacity">
         <path
           d="M1179.5,156.5c-52.5,5.5-74.8,7.6-82,8.6-20.2,2.7-60.6,9.2-76.5,12.4-9.6,1.9-21.8,4.2-27,5-30.3,4.6-60.8,12.8-81.2,21.9l-5.3,2.4,3,1.2c5,2,8.7,1.4,18.6-2.8,9-3.8,10.9-4.3,34-7.1C1080,187,1206,182,1323,188.8l19.5,1.8,6.3-3.7c.27-.33,2.69,2.26,3.25,1.78,4.7-4,17.89-16.5,27.45-20,11.2-4.2,34.5-7.7,36.5-8.2C1392,152,1232,151,1179.5,156.5Z">
         </path>
@@ -247,6 +251,7 @@
       doorwaySvg = document.querySelector('.proem'),
       pillars = document.querySelector('#skin-elem-stoiki-dverei'),
       pillarsSvg = document.querySelector('.dverei'),
+      otherElem = document.querySelector('#other-elem'),
       otherElemSvg = document.querySelector('.other-elem'),
       hidden = document.querySelector(".skin-img"),
       click = document.querySelector('.button'),
@@ -275,27 +280,6 @@
       clearEl(e)
     });
 
-
-    // for (let i = 0; i < Array.from(carEl.children).length; i++) {
-    //   const carElSvg = Array.from(carEl.children)[i];
-    //   carElSvg.addEventListener('click', function (e) {
-    //     this.classList.toggle('opacity')
-    //     if (this.checked) {
-    //       this.checked = false;
-    //       Array.from(priceEl)[i].checked = false;
-    //       console.log(Array.from(priceEl)[i].value);
-    //       Array.from(priceEl)[i].value = 0;
-    //       console.log(Array.from(priceEl)[i]);
-
-    //     }
-    //     else {
-    //       this.checked = true;
-    //       Array.from(priceEl)[i].checked = true;
-    //       console.log(Array.from(priceEl)[i].value);
-
-    //     }
-    //   });
-    // }
 
     // Готовые наборы
     const part1 = document.querySelector('.part-1');
@@ -374,8 +358,34 @@
       doorwayEl() // Дверной проем 4 шт.
       pillarsEl() // Глянцевые стойки дверей 4 шт. 
       loadingarea.checked = true;
+      otherEl()
 
     });
+    // -----------------------------------------------------------
+    // -----------------------------------------------------------
+    // -----------------------------------------------------------
+    // Прайс-лист
+    let opticPrice = 5000,
+      kapotPrice = 19000,
+      chastKapotaPrice = 4150,
+      zerkaloPrice = 3800,
+      kryloPrice = 9250,
+      porogiPrice = 7750,
+      kromkiDvereiPrice = 2000,
+      stoykiLobovogoSteklaPrice = 4750,
+      bamperPrice = 9250,
+      ptfPrice = 1350,
+      ruchkiPrice = 2000,
+      chastKryshiPrice = 2750,
+      chastKrylaPrice = 3800,
+      stoykiDveriPrice = 4000,
+      dvernProemPrice = 5000,
+      pogruzZonaPrice = 2500,
+      ostavshChastiPrice = 100000;
+    // -----------------------------------------------------------
+    // -----------------------------------------------------------
+    // -----------------------------------------------------------
+
 
     // Оптика
     function opticEl() {
@@ -386,7 +396,7 @@
       }
       else {
         optics.checked = true;
-        optics.value = 3500;
+        optics.value = opticPrice;
       }
     }
     opticsSvg.addEventListener('click', function () {
@@ -404,7 +414,7 @@
       }
       else {
         hood.checked = true;
-        hood.value = 10150;
+        hood.value = kapotPrice; zerkaloPrice;
       }
     }
     hoodSvg.addEventListener('click', function () {
@@ -420,7 +430,7 @@
       }
       else {
         mirror.checked = true;
-        mirror.value = 3800
+        mirror.value = zerkaloPrice;
       }
     }
     mirrorSvg.addEventListener('click', function () {
@@ -438,7 +448,7 @@
       }
       else {
         wings.checked = true;
-        wings.value = 9250
+        wings.value = kryloPrice;
       }
     }
     wingsSvg.addEventListener('click', function () {
@@ -454,7 +464,7 @@
       }
       else {
         thresholds.checked = true;
-        thresholds.value = 7750
+        thresholds.value = porogiPrice;
       }
     }
     thresholdsSvg.addEventListener('click', function () {
@@ -470,7 +480,7 @@
       }
       else {
         dooredges.checked = true;
-        dooredges.value = 2000
+        dooredges.value = kromkiDvereiPrice;
       }
     }
     dooredgesSvg.addEventListener('click', function () {
@@ -486,7 +496,7 @@
       }
       else {
         windshield.checked = true;
-        windshield.value = 4750
+        windshield.value = stoykiLobovogoSteklaPrice;
       }
     }
     windshieldSvg.addEventListener('click', function () {
@@ -502,7 +512,7 @@
       }
       else {
         bumper.checked = true;
-        bumper.value = 9250
+        bumper.value = bamperPrice;
       }
     }
     bumperSvg.addEventListener('click', function () {
@@ -518,7 +528,7 @@
       }
       else {
         ptf.checked = true;
-        ptf.value = 1350
+        ptf.value = ptfPrice;
       }
     }
     ptfSvg.addEventListener('click', function () {
@@ -534,7 +544,7 @@
       }
       else {
         handles.checked = true;
-        handles.value = 2000
+        handles.value = ruchkiPrice;
       }
     }
     handlesSvg.addEventListener('click', function () {
@@ -550,7 +560,7 @@
       }
       else {
         roof.checked = true;
-        roof.value = 2750
+        roof.value = chastKryshiPrice;
       }
     }
     roofSvg.addEventListener('click', function () {
@@ -568,7 +578,7 @@
       }
       else {
         bonnet.checked = true;
-        bonnet.value = 4150
+        bonnet.value = chastKapotaPrice;
       }
     }
     bonnetSvg.addEventListener('click', function () {
@@ -586,7 +596,7 @@
       }
       else {
         partwings.checked = true;
-        partwings.value = 3800
+        partwings.value = chastKrylaPrice;
       }
     }
     partwingsSvg.addEventListener('click', function () {
@@ -602,7 +612,7 @@
       }
       else {
         doorway.checked = true;
-        doorway.value = 5000
+        doorway.value = dvernProemPrice;
       }
     }
     doorwaySvg.addEventListener('click', function () {
@@ -618,7 +628,7 @@
       }
       else {
         pillars.checked = true;
-        pillars.value = 4000
+        pillars.value = stoykiDveriPrice;
       }
     }
     pillarsSvg.addEventListener('click', function () {
@@ -626,15 +636,29 @@
     });
 
     // Оставщиеся части кузова 
-    otherElemSvg.addEventListener('click', function () {
+    function otherEl() {
       otherElemSvg.classList.toggle('hidden')
+      if (otherElem.checked) {
+        otherElem.checked = false;
+        otherElem.value = 0;
+      }
+      else {
+        otherElem.checked = true;
+        otherElem.value = ostavshChastiPrice;
+      }
+    }
+    otherElemSvg.addEventListener('click', function () {
+      otherEl()
     });
 
+    // ---------------------------------------------------------
+    // ---------------------------------------------------------
+    // ---------------------------------------------------------
 
     document.addEventListener('click', function (e) {
       // Оптика
       if (optics.checked) {
-        optics.value = 3500
+        optics.value = opticPrice
         opticsSvg.classList.remove('opacity')
       }
       else {
@@ -643,7 +667,7 @@
       }
       // Капот
       if (hood.checked) {
-        hood.value = 10150
+        hood.value = kapotPrice;
         bonnet.checked = false;
         hoodSvg.classList.remove('opacity')
       }
@@ -653,7 +677,7 @@
       }
       // Часть капота 
       if (bonnet.checked) {
-        bonnet.value = 4150
+        bonnet.value = chastKapotaPrice;
         hood.checked = false;
         bonnetSvg.classList.remove('opacity')
       }
@@ -663,7 +687,7 @@
       }
       // Зеркала 
       if (mirror.checked) {
-        mirror.value = 3800
+        mirror.value = zerkaloPrice;
         mirrorSvg.classList.remove('opacity')
       }
       else {
@@ -672,7 +696,7 @@
       }
       // Крылья 
       if (wings.checked) {
-        wings.value = 9250
+        wings.value = kryloPrice;
         partwings.checked = false;
         wingsSvg.classList.remove('opacity')
       }
@@ -682,7 +706,7 @@
       }
       // Часть крыльев 
       if (partwings.checked) {
-        partwings.value = 3800
+        partwings.value = chastKrylaPrice;
         wings.checked = false;
         partwingsSvg.classList.remove('opacity')
       }
@@ -692,7 +716,7 @@
       }
       // Пороги 2 шт. 
       if (thresholds.checked) {
-        thresholds.value = 7750
+        thresholds.value = porogiPrice;
         thresholdsSvg.classList.remove('opacity')
       }
       else {
@@ -702,7 +726,7 @@
       }
       // Кромки двери 4 шт.
       if (dooredges.checked) {
-        dooredges.value = 2000
+        dooredges.value = kromkiDvereiPrice;
         dooredgesSvg.classList.remove('opacity')
       }
       else {
@@ -711,14 +735,14 @@
       }
       // Погрузочная зона 
       if (loadingarea.checked) {
-        loadingarea.value = 2500
+        loadingarea.value = pogruzZonaPrice;
       }
       else {
         loadingarea.value = 0
       }
       // Стойки лобового стекла 2 шт. 
       if (windshield.checked) {
-        windshield.value = 4750
+        windshield.value = stoykiLobovogoSteklaPrice;
         windshieldSvg.classList.remove('opacity')
       }
       else {
@@ -727,7 +751,7 @@
       }
       // Бампер 
       if (bumper.checked) {
-        bumper.value = 9250
+        bumper.value = bamperPrice;
         bumperSvg.classList.remove('opacity')
       }
       else {
@@ -737,7 +761,7 @@
       }
       // ПТФ 
       if (ptf.checked) {
-        ptf.value = 1350
+        ptf.value = ptfPrice;
         ptfSvg.classList.remove('opacity')
       }
       else {
@@ -746,7 +770,7 @@
       }
       // Под ручками 4 шт. 
       if (handles.checked) {
-        handles.value = 2000
+        handles.value = ruchkiPrice;
         handlesSvg.classList.remove('opacity')
       }
       else {
@@ -755,7 +779,7 @@
       }
       // Часть крыши 
       if (roof.checked) {
-        roof.value = 2750
+        roof.value = chastKryshiPrice;
         roofSvg.classList.remove('opacity')
       }
       else {
@@ -764,7 +788,7 @@
       }
       // Дверной проем 4 шт.
       if (doorway.checked) {
-        doorway.value = 5000
+        doorway.value = dvernProemPrice;
         doorwaySvg.classList.remove('opacity')
       }
       else {
@@ -773,16 +797,24 @@
       }
       // Глянцевые стойки дверей 4 шт. 
       if (pillars.checked) {
-        pillars.value = 4000
+        pillars.value = stoykiDveriPrice;
         pillarsSvg.classList.remove('opacity')
       }
       else {
         pillars.value = 0
         pillarsSvg.classList.add('opacity')
       }
+      // Оставщиеся части кузова 
+      if (otherElem.checked) {
+        otherElem.value = ostavshChastiPrice;
+        otherElemSvg.classList.remove('hidden')
+      }
+      else {
+        otherElem.value = 0
+        otherElemSvg.classList.add('hidden')
+      }
 
-
-      sum = Number(optics.value) + Number(hood.value) + Number(mirror.value) + Number(wings.value) + Number(thresholds.value) + Number(dooredges.value) + Number(loadingarea.value) + Number(windshield.value) + Number(bumper.value) + Number(ptf.value) + Number(handles.value) + Number(roof.value) + Number(bonnet.value) + Number(partwings.value) + Number(doorway.value) + Number(pillars.value);
+      sum = Number(optics.value) + Number(hood.value) + Number(mirror.value) + Number(wings.value) + Number(thresholds.value) + Number(dooredges.value) + Number(loadingarea.value) + Number(windshield.value) + Number(bumper.value) + Number(ptf.value) + Number(handles.value) + Number(roof.value) + Number(bonnet.value) + Number(partwings.value) + Number(doorway.value) + Number(pillars.value) + Number(otherElem.value);
 
       price.innerHTML = sum + ' ₽';
     });

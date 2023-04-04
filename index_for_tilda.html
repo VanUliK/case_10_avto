@@ -13,6 +13,10 @@
     opacity: 0;
   }
 
+  .checkbox-other-element {
+    display: none;
+  }
+
   .button-block {
     display: flex;
     gap: 20px;
@@ -26,94 +30,153 @@
     position: absolute;
   }
 
+
+  /* цвет выделенных элементов */
   .svg-image {
     position: relative;
     opacity: 0.5;
-    fill: rgb(83, 109, 109);
+    fill: #536d6d;
   }
 
   .price {
     font-size: 24px;
   }
 
+  /* цвет элементов при наведении */
   .bamper:hover {
-    fill: rgb(24, 35, 57);
+    fill: #182339;
     cursor: cell;
   }
 
   .krysha:hover {
-    fill: rgb(24, 35, 57);
+    fill: #182339;
     cursor: cell;
   }
 
   .proem:hover {
-    fill: rgb(24, 35, 57);
+    fill: #182339;
     cursor: cell;
   }
 
   .zerkalo:hover {
-    fill: rgb(24, 35, 57);
+    fill: #182339;
     cursor: cell;
   }
 
   .capot:hover {
-    fill: rgb(24, 35, 57);
+    fill: #182339;
     cursor: cell;
   }
 
   .kromki:hover {
-    fill: rgb(24, 35, 57);
+    fill: #182339;
     cursor: cell;
   }
 
   .krylia:hover {
-    fill: rgb(24, 35, 57);
+    fill: #182339;
     cursor: cell;
   }
 
   .optika:hover {
-    fill: rgb(24, 35, 57);
+    fill: #182339;
     cursor: cell;
   }
 
   .porogi:hover {
-    fill: rgb(24, 35, 57);
+    fill: #182339;
     cursor: cell;
   }
 
   .ptf:hover {
-    fill: rgb(24, 35, 57);
+    fill: #182339;
     cursor: cell;
   }
 
   .ruchki:hover {
-    fill: rgb(24, 35, 57);
+    fill: #182339;
     cursor: cell;
   }
 
   .stekla:hover {
-    fill: rgb(24, 35, 57);
+    fill: #182339;
     cursor: cell;
   }
 
   .dverei:hover {
-    fill: rgb(24, 35, 57);
+    fill: #182339;
     cursor: cell;
   }
 
   .chast-capot:hover {
-    fill: rgb(24, 35, 57);
+    fill: #182339;
     cursor: cell;
   }
 
   .ch-krylia:hover {
-    fill: rgb(24, 35, 57);
+    fill: #182339;
     cursor: cell;
   }
 
   .other-elem:hover {
-    fill: rgb(24, 35, 57);
+    fill: #182339;
     cursor: cell;
+  }
+
+  @media (max-width: 980px) {
+    .images-car {
+      width: 640px;
+      height: 297px;
+    }
+
+    .svg-image {
+      width: 640px;
+      height: 297px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .images-car {
+      width: 500px;
+      height: 232px;
+    }
+
+    .svg-image {
+      width: 500px;
+      height: 232px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .checkbox-block {
+      display: block;
+    }
+
+    .button-block {
+      display: block;
+    }
+
+    .images-car {
+      width: 400px;
+      height: 186px;
+    }
+
+    .svg-image {
+      width: 400px;
+      height: 186px;
+    }
+  }
+
+  @media (max-width: 320px) {
+    .images-car {
+      width: 300px;
+      height: 139px;
+    }
+
+    .svg-image {
+      width: 300px;
+      height: 139px;
+    }
   }
 </style>
 
@@ -187,10 +250,14 @@
           <input type="checkbox" id="skin-elem-stoiki-dverei" name="work" class="checkbox-input" />
           <label class="checkbox-label" for="skin-elem-stoiki-dverei">Глянцевые стойки дверей 4 шт.</label>
         </div>
+        <div class="checkbox-other-element">
+          <input type="checkbox" id="other-elem" name="work" class="checkbox-input" />
+          <label class="checkbox-label" for="other-elem">Оставшиеся части</label>
+        </div>
       </div>
     </div>
 
-    <div class="price"><span id="out">0</span> <span class="rub">₽</span></div>
+    <div class="price"><span id="out">0.0</span> <span class="rub">₽</span></div>
     <div class="button-block">
       <div class="button-clear">
         <input type="button" name="adress" id="btn" class="button" value="Снять всё" />
@@ -283,7 +350,7 @@
         </path>
       </g>
       <!-- Часть крыши  -->
-      <g data-name="skin-elem-krysha" class="  krysha opacity">
+      <g data-name="skin-elem-krysha" class="krysha opacity">
         <path
           d="M1179.5,156.5c-52.5,5.5-74.8,7.6-82,8.6-20.2,2.7-60.6,9.2-76.5,12.4-9.6,1.9-21.8,4.2-27,5-30.3,4.6-60.8,12.8-81.2,21.9l-5.3,2.4,3,1.2c5,2,8.7,1.4,18.6-2.8,9-3.8,10.9-4.3,34-7.1C1080,187,1206,182,1323,188.8l19.5,1.8,6.3-3.7c.27-.33,2.69,2.26,3.25,1.78,4.7-4,17.89-16.5,27.45-20,11.2-4.2,34.5-7.7,36.5-8.2C1392,152,1232,151,1179.5,156.5Z">
         </path>
@@ -354,6 +421,7 @@
     doorwaySvg = document.querySelector('.proem'),
     pillars = document.querySelector('#skin-elem-stoiki-dverei'),
     pillarsSvg = document.querySelector('.dverei'),
+    otherElem = document.querySelector('#other-elem'),
     otherElemSvg = document.querySelector('.other-elem'),
     hidden = document.querySelector(".skin-img"),
     click = document.querySelector('.button'),
@@ -373,11 +441,9 @@
         Array.prototype.forEach.call(checkbox, function (cb) {
           cb.checked = e.target.checked;
         })
-
         price.innerHTML = '0.0 ₽';
         sum = 0;
       }
-      otherElemSvg.classList.add('hidden')
     };
   }
   click.addEventListener('click', function (e) {
@@ -462,17 +528,45 @@
     doorwayEl() // Дверной проем 4 шт.
     pillarsEl() // Глянцевые стойки дверей 4 шт. 
     loadingarea.checked = true;
+    otherEl()
 
   });
+  // -----------------------------------------------------------
+  // -----------------------------------------------------------
+  // -----------------------------------------------------------
+  // Прайс-лист
+  let opticPrice = 5000,
+    kapotPrice = 19000,
+    chastKapotaPrice = 4150,
+    zerkaloPrice = 3800,
+    kryloPrice = 9250,
+    porogiPrice = 7750,
+    kromkiDvereiPrice = 2000,
+    stoykiLobovogoSteklaPrice = 4750,
+    bamperPrice = 9250,
+    ptfPrice = 1350,
+    ruchkiPrice = 2000,
+    chastKryshiPrice = 2750,
+    chastKrylaPrice = 3800,
+    stoykiDveriPrice = 4000,
+    dvernProemPrice = 5000,
+    pogruzZonaPrice = 2500,
+    ostavshChastiPrice = 100000;
+  // -----------------------------------------------------------
+  // -----------------------------------------------------------
+  // -----------------------------------------------------------
+
 
   // Оптика
   function opticEl() {
     opticsSvg.classList.toggle('opacity')
     if (optics.checked) {
       optics.checked = false;
+      optics.value = 0;
     }
     else {
       optics.checked = true;
+      optics.value = opticPrice;
     }
   }
   opticsSvg.addEventListener('click', function () {
@@ -486,9 +580,11 @@
     bonnet.checked = false;
     if (hood.checked) {
       hood.checked = false;
+      hood.value = 0;
     }
     else {
       hood.checked = true;
+      hood.value = kapotPrice; zerkaloPrice;
     }
   }
   hoodSvg.addEventListener('click', function () {
@@ -500,9 +596,11 @@
     mirrorSvg.classList.toggle('opacity')
     if (mirror.checked) {
       mirror.checked = false;
+      mirror.value = 0;
     }
     else {
       mirror.checked = true;
+      mirror.value = zerkaloPrice;
     }
   }
   mirrorSvg.addEventListener('click', function () {
@@ -516,9 +614,11 @@
     partwings.checked = false;
     if (wings.checked) {
       wings.checked = false;
+      wings.value = 0;
     }
     else {
       wings.checked = true;
+      wings.value = kryloPrice;
     }
   }
   wingsSvg.addEventListener('click', function () {
@@ -530,9 +630,11 @@
     thresholdsSvg.classList.toggle('opacity')
     if (thresholds.checked) {
       thresholds.checked = false;
+      thresholds.value = 0;
     }
     else {
       thresholds.checked = true;
+      thresholds.value = porogiPrice;
     }
   }
   thresholdsSvg.addEventListener('click', function () {
@@ -544,9 +646,11 @@
     dooredgesSvg.classList.toggle('opacity')
     if (dooredges.checked) {
       dooredges.checked = false;
+      dooredges.value = 0;
     }
     else {
       dooredges.checked = true;
+      dooredges.value = kromkiDvereiPrice;
     }
   }
   dooredgesSvg.addEventListener('click', function () {
@@ -558,9 +662,11 @@
     windshieldSvg.classList.toggle('opacity')
     if (windshield.checked) {
       windshield.checked = false;
+      windshield.value = 0;
     }
     else {
       windshield.checked = true;
+      windshield.value = stoykiLobovogoSteklaPrice;
     }
   }
   windshieldSvg.addEventListener('click', function () {
@@ -572,9 +678,11 @@
     bumperSvg.classList.toggle('opacity')
     if (bumper.checked) {
       bumper.checked = false;
+      bumper.value = 0;
     }
     else {
       bumper.checked = true;
+      bumper.value = bamperPrice;
     }
   }
   bumperSvg.addEventListener('click', function () {
@@ -586,9 +694,11 @@
     ptfSvg.classList.toggle('opacity')
     if (ptf.checked) {
       ptf.checked = false;
+      ptf.value = 0;
     }
     else {
       ptf.checked = true;
+      ptf.value = ptfPrice;
     }
   }
   ptfSvg.addEventListener('click', function () {
@@ -600,9 +710,11 @@
     handlesSvg.classList.toggle('opacity')
     if (handles.checked) {
       handles.checked = false;
+      handles.value = 0;
     }
     else {
       handles.checked = true;
+      handles.value = ruchkiPrice;
     }
   }
   handlesSvg.addEventListener('click', function () {
@@ -614,9 +726,11 @@
     roofSvg.classList.toggle('opacity')
     if (roof.checked) {
       roof.checked = false;
+      roof.value = 0;
     }
     else {
       roof.checked = true;
+      roof.value = chastKryshiPrice;
     }
   }
   roofSvg.addEventListener('click', function () {
@@ -630,9 +744,11 @@
     hood.checked = false;
     if (bonnet.checked) {
       bonnet.checked = false;
+      bonnet.value = 0;
     }
     else {
       bonnet.checked = true;
+      bonnet.value = chastKapotaPrice;
     }
   }
   bonnetSvg.addEventListener('click', function () {
@@ -646,9 +762,11 @@
     wings.checked = false;
     if (partwings.checked) {
       partwings.checked = false;
+      partwings.value = 0;
     }
     else {
       partwings.checked = true;
+      partwings.value = chastKrylaPrice;
     }
   }
   partwingsSvg.addEventListener('click', function () {
@@ -660,9 +778,11 @@
     doorwaySvg.classList.toggle('opacity')
     if (doorway.checked) {
       doorway.checked = false;
+      doorway.value = 0;
     }
     else {
       doorway.checked = true;
+      doorway.value = dvernProemPrice;
     }
   }
   doorwaySvg.addEventListener('click', function () {
@@ -674,9 +794,11 @@
     pillarsSvg.classList.toggle('opacity')
     if (pillars.checked) {
       pillars.checked = false;
+      pillars.value = 0;
     }
     else {
       pillars.checked = true;
+      pillars.value = stoykiDveriPrice;
     }
   }
   pillarsSvg.addEventListener('click', function () {
@@ -684,18 +806,29 @@
   });
 
   // Оставщиеся части кузова 
-  otherElemSvg.addEventListener('click', function () {
+  function otherEl() {
     otherElemSvg.classList.toggle('hidden')
+    if (otherElem.checked) {
+      otherElem.checked = false;
+      otherElem.value = 0;
+    }
+    else {
+      otherElem.checked = true;
+      otherElem.value = ostavshChastiPrice;
+    }
+  }
+  otherElemSvg.addEventListener('click', function () {
+    otherEl()
   });
 
-
-
-  // Здесь задаются цены
+  // ---------------------------------------------------------
+  // ---------------------------------------------------------
+  // ---------------------------------------------------------
 
   document.addEventListener('click', function (e) {
     // Оптика
     if (optics.checked) {
-      optics.value = 5000
+      optics.value = opticPrice
       opticsSvg.classList.remove('opacity')
     }
     else {
@@ -704,7 +837,7 @@
     }
     // Капот
     if (hood.checked) {
-      hood.value = 19000
+      hood.value = kapotPrice;
       bonnet.checked = false;
       hoodSvg.classList.remove('opacity')
     }
@@ -714,7 +847,7 @@
     }
     // Часть капота 
     if (bonnet.checked) {
-      bonnet.value = 4150
+      bonnet.value = chastKapotaPrice;
       hood.checked = false;
       bonnetSvg.classList.remove('opacity')
     }
@@ -724,7 +857,7 @@
     }
     // Зеркала 
     if (mirror.checked) {
-      mirror.value = 4000
+      mirror.value = zerkaloPrice;
       mirrorSvg.classList.remove('opacity')
     }
     else {
@@ -733,7 +866,7 @@
     }
     // Крылья 
     if (wings.checked) {
-      wings.value = 9800
+      wings.value = kryloPrice;
       partwings.checked = false;
       wingsSvg.classList.remove('opacity')
     }
@@ -743,7 +876,7 @@
     }
     // Часть крыльев 
     if (partwings.checked) {
-      partwings.value = 3800
+      partwings.value = chastKrylaPrice;
       wings.checked = false;
       partwingsSvg.classList.remove('opacity')
     }
@@ -753,7 +886,7 @@
     }
     // Пороги 2 шт. 
     if (thresholds.checked) {
-      thresholds.value = 7750
+      thresholds.value = porogiPrice;
       thresholdsSvg.classList.remove('opacity')
     }
     else {
@@ -763,7 +896,7 @@
     }
     // Кромки двери 4 шт.
     if (dooredges.checked) {
-      dooredges.value = 2000
+      dooredges.value = kromkiDvereiPrice;
       dooredgesSvg.classList.remove('opacity')
     }
     else {
@@ -772,14 +905,14 @@
     }
     // Погрузочная зона 
     if (loadingarea.checked) {
-      loadingarea.value = 2500
+      loadingarea.value = pogruzZonaPrice;
     }
     else {
       loadingarea.value = 0
     }
     // Стойки лобового стекла 2 шт. 
     if (windshield.checked) {
-      windshield.value = 4750
+      windshield.value = stoykiLobovogoSteklaPrice;
       windshieldSvg.classList.remove('opacity')
     }
     else {
@@ -788,7 +921,7 @@
     }
     // Бампер 
     if (bumper.checked) {
-      bumper.value = 18000
+      bumper.value = bamperPrice;
       bumperSvg.classList.remove('opacity')
     }
     else {
@@ -798,7 +931,7 @@
     }
     // ПТФ 
     if (ptf.checked) {
-      ptf.value = 2000
+      ptf.value = ptfPrice;
       ptfSvg.classList.remove('opacity')
     }
     else {
@@ -807,7 +940,7 @@
     }
     // Под ручками 4 шт. 
     if (handles.checked) {
-      handles.value = 2000
+      handles.value = ruchkiPrice;
       handlesSvg.classList.remove('opacity')
     }
     else {
@@ -816,7 +949,7 @@
     }
     // Часть крыши 
     if (roof.checked) {
-      roof.value = 2750
+      roof.value = chastKryshiPrice;
       roofSvg.classList.remove('opacity')
     }
     else {
@@ -825,7 +958,7 @@
     }
     // Дверной проем 4 шт.
     if (doorway.checked) {
-      doorway.value = 5000
+      doorway.value = dvernProemPrice;
       doorwaySvg.classList.remove('opacity')
     }
     else {
@@ -834,16 +967,27 @@
     }
     // Глянцевые стойки дверей 4 шт. 
     if (pillars.checked) {
-      pillars.value = 4000
+      pillars.value = stoykiDveriPrice;
       pillarsSvg.classList.remove('opacity')
     }
     else {
       pillars.value = 0
       pillarsSvg.classList.add('opacity')
     }
+    // Оставщиеся части кузова 
+    if (otherElem.checked) {
+      otherElem.value = ostavshChastiPrice;
+      otherElemSvg.classList.remove('hidden')
+    }
+    else {
+      otherElem.value = 0
+      otherElemSvg.classList.add('hidden')
+    }
 
-    sum = Number(optics.value) + Number(hood.value) + Number(mirror.value) + Number(wings.value) + Number(thresholds.value) + Number(dooredges.value) + Number(loadingarea.value) + Number(windshield.value) + Number(bumper.value) + Number(ptf.value) + Number(handles.value) + Number(roof.value) + Number(bonnet.value) + Number(partwings.value) + Number(doorway.value) + Number(pillars.value);
+    sum = Number(optics.value) + Number(hood.value) + Number(mirror.value) + Number(wings.value) + Number(thresholds.value) + Number(dooredges.value) + Number(loadingarea.value) + Number(windshield.value) + Number(bumper.value) + Number(ptf.value) + Number(handles.value) + Number(roof.value) + Number(bonnet.value) + Number(partwings.value) + Number(doorway.value) + Number(pillars.value) + Number(otherElem.value);
 
     price.innerHTML = sum + ' ₽';
   });
+
+
 </script>

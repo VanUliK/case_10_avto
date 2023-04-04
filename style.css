@@ -3,11 +3,17 @@
   flex-direction: column;
   align-items: center;
 }
+
 .hidden {
   display: none;
 }
+
 .opacity {
   opacity: 0;
+}
+
+.checkbox-other-element {
+  display: none;
 }
 
 .button-block {
@@ -23,76 +29,95 @@
   position: absolute;
 }
 
+/* цвет выделенных элементов */
 .svg-image {
   position: relative;
   opacity: 0.5;
-  fill: rgb(83, 109, 109);
+  fill: #536d6d;
 }
+
 .price {
   font-size: 24px;
 }
 
-.bamper :hover {
-  fill: rgb(24, 35, 57);
+/* цвет элементов при наведении */
+.bamper:hover {
+  fill: #182339;
   cursor: cell;
 }
-.krysha :hover {
-  fill: rgb(24, 35, 57);
+
+.krysha:hover {
+  fill: #182339;
+
   cursor: cell;
 }
-.proem :hover {
-  fill: rgb(24, 35, 57);
+
+.proem:hover {
+  fill: #182339;
   cursor: cell;
 }
+
 .zerkalo:hover {
-  fill: rgb(24, 35, 57);
+  fill: #182339;
   cursor: cell;
 }
-.capot :hover {
-  fill: rgb(24, 35, 57);
+
+.capot:hover {
+  fill: #182339;
   cursor: cell;
 }
-.kromki :hover {
-  fill: rgb(24, 35, 57);
+
+.kromki:hover {
+  fill: #182339;
   cursor: cell;
 }
-.krylia :hover {
-  fill: rgb(24, 35, 57);
+
+.krylia:hover {
+  fill: #182339;
   cursor: cell;
 }
-.optika :hover {
-  fill: rgb(24, 35, 57);
+
+.optika:hover {
+  fill: #182339;
   cursor: cell;
 }
+
 .porogi:hover {
-  fill: rgb(24, 35, 57);
+  fill: #182339;
   cursor: cell;
 }
+
 .ptf:hover {
-  fill: rgb(24, 35, 57);
+  fill: #182339;
   cursor: cell;
 }
+
 .ruchki:hover {
-  fill: rgb(24, 35, 57);
+  fill: #182339;
   cursor: cell;
 }
+
 .stekla:hover {
-  fill: rgb(24, 35, 57);
+  fill: #182339;
   cursor: cell;
 }
-.dverei :hover {
-  fill: rgb(24, 35, 57);
+
+.dverei:hover {
+  fill: #182339;
   cursor: cell;
 }
-.chast-capot :hover {
-  fill: rgb(24, 35, 57);
+
+.chast-capot:hover {
+  fill: #182339;
   cursor: cell;
 }
-.ch-krylia :hover {
-  fill: rgb(24, 35, 57);
+
+.ch-krylia:hover {
+  fill: #182339;
   cursor: cell;
 }
-.other-elem :hover {
-  fill: rgb(24, 35, 57);
+
+.other-elem:hover {
+  fill: #182339;
   cursor: cell;
 }

@@ -19,5 +19,4 @@ function priceShow(data) {
     // console.log(part.element);
     // pillars.value = data[2]
   };
-
 }
