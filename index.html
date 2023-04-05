@@ -38,8 +38,24 @@
         </div>
       </div>
       <div class="block-check-element">
-        <div class="block-head">2. Уровень защиты
+        <div class="block-head">2. Выберите тип пленки
         </div>
+
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Тип пленки</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#home">Оптимальная по соотношению цена/качество (Hexis 180мк)</a>
+            <a href="#about">Максимальная защита, цена не важна (Llumar)</a>
+            <a href="#contact">Подешевле, но чтобы была защита (Crystal Ultra 180мк или аналоги)</a>
+          </div>
+        </div>
+
+
+
+
+        <div class="block-head">3. Уровень защиты
+        </div>
+
         <div class="button-block">
           <div class="block-part">
             <div class="part-1">
@@ -86,6 +102,7 @@
             </div>
           </div>
         </div>
+
         <div class="checkbox-block">
           <div class="left-block">
             <div class="checkbox-element">
@@ -1092,7 +1109,28 @@ https://static.tildacdn.com/tild3237-3235-4438-a631-356630633565/Group_134.svg
 
 
   </script>
+  <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
 
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function (event) {
+      if (!event.target.matches('.dropbtn')) {
+
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+  </script>
 
 </body>
 
