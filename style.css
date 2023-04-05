@@ -3,127 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-.center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* background-color: #ec622a; */
-}
-
-.hidden {
-  display: none;
-}
-
-.opacity {
-  opacity: 0;
-}
-
-.block-part {
-  padding-top: 40px;
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(4, 140px);
-  justify-content: center;
-}
-.part-1,
-.part-2,
-.part-3,
-.part-4 {
-  display: flex;
-  flex-direction: column;
-}
-
-.tilda-block {
-  background-color: #fff;
-  width: 800px;
-  padding-top: 30px;
-  border-radius: 30px;
-}
-.up-dsc {
-  display: flex;
-  justify-content: flex-end;
-  padding-bottom: 20px;
-}
-.block-text-dsc {
-  margin-right: 20px;
-  margin-bottom: 20px;
-  width: 380px;
-  background-color: rgba(200, 200, 200, 0.7);
-  border-radius: 15px;
-}
-.text-dsc {
-  padding: 20px;
-  color: #ec622a;
-  font-family: Onest;
-  font-size: 20px;
-  font-weight: 500;
-}
-.button-img {
-  border: 2px solid #ccc;
-  border-radius: 5px;
-}
-.button-img:hover {
-  border: 2px solid #ec622a;
-  cursor: pointer;
-}
-.checkbox-block {
-  display: flex;
-  justify-content: space-evenly;
-  padding-bottom: 20px;
-  font-size: 18px;
-}
-
-.price-block-itog {
-  padding-left: 30px;
-}
-
-.show {
-  position: absolute;
-}
-.images-car {
-  border-radius: 30px;
-}
-
-.text {
-  font-family: "Onest", Arial, sans-serif;
-  font-weight: 300;
-}
-.prev-text {
-  font-family: "Onest";
-  padding-bottom: 5px;
-  font-size: 20px;
-  font-weight: 500;
-}
-.dsc-text {
-  color: #000000;
-  font-size: 10px;
-  font-family: "Onest", Arial, sans-serif;
-  line-height: 1.15;
-  font-weight: 300;
-  opacity: 0.6;
-  background-position: center center;
-  border-color: transparent;
-  border-style: solid;
-}
-.head-dsc {
-  line-height: 1.1;
-}
-
-/* цвет выделенных элементов */
+/* цвет выделенных элементов машины*/
 .svg-image {
   position: relative;
   opacity: 0.5;
   fill: #536d6d;
 }
-
-.price {
-  color: rgb(236, 98, 42);
-  font-family: Onest;
-  font-size: 20px;
-  font-weight: 600;
-}
-
-/* цвет элементов при наведении */
+/* цвет элементов при наведении на элемент машины*/
 .bamper:hover {
   fill: #182339;
   cursor: cell;
@@ -204,6 +90,219 @@
   cursor: cell;
 }
 
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.opacity {
+  opacity: 0;
+}
+
+.block-part {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 140px);
+  justify-content: center;
+}
+.part-1,
+.part-2,
+.part-3,
+.part-4 {
+  display: flex;
+  flex-direction: column;
+}
+
+.tilda-block {
+  background-color: #fff;
+  width: 800px;
+  padding-top: 30px;
+  border-radius: 30px;
+}
+.up-dsc {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 20px;
+}
+.block-text-dsc {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 380px;
+  background-color: rgba(200, 200, 200, 0.7);
+  border-radius: 15px;
+}
+.text-dsc {
+  padding: 20px;
+  color: #ec622a;
+  font-family: Onest;
+  font-size: 20px;
+  font-weight: 500;
+}
+.button-img {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+.button-img:hover {
+  border: 2px solid #ec622a;
+  cursor: pointer;
+}
+.button-img-hover {
+  border: 2px solid #ec622a;
+  cursor: pointer;
+}
+.checkbox-block {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+  font-size: 18px;
+}
+.checkbox-block-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+.price-block-itog {
+  padding-left: 30px;
+}
+
+.show {
+  position: absolute;
+}
+.images-car {
+  border-radius: 30px;
+}
+
+.text {
+  font-family: "Onest", Arial, sans-serif;
+  font-weight: 300;
+}
+.prev-text {
+  font-family: "Onest";
+  padding-bottom: 5px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.dsc-text {
+  color: #000000;
+  font-size: 10px;
+  font-family: "Onest", Arial, sans-serif;
+  line-height: 1.15;
+  font-weight: 300;
+  opacity: 0.6;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+}
+.head-dsc {
+  line-height: 1.1;
+  text-align: center;
+}
+
+.price {
+  color: #ec622a;
+  font-family: "Onest";
+  font-size: 20px;
+  font-weight: 600;
+}
+.type-car-head,
+.block-head {
+  font-family: "Onest";
+  padding-bottom: 5px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.type-car {
+  cursor: pointer;
+  display: flex;
+  width: 110px;
+}
+.type-car-hover {
+  border: 2px solid #ec622a;
+  cursor: pointer;
+  padding: 5px;
+}
+.type-car:hover {
+  border: 2px solid #ec622a;
+  cursor: pointer;
+  padding: 5px;
+}
+
+input[type="checkbox"]:checked,
+input[type="checkbox"]:not(:checked),
+input[type="radio"]:checked,
+input[type="radio"]:not(:checked) {
+  display: none;
+}
+
+input[type="checkbox"]:checked + label,
+input[type="checkbox"]:not(:checked) + label {
+  display: inline-block;
+  position: relative;
+  padding-left: 28px;
+  line-height: 20px;
+  cursor: pointer;
+}
+input[type="checkbox"]:checked + label:before,
+input[type="checkbox"]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #aaa;
+  background-color: #ffffff;
+}
+
+input[type="checkbox"]:checked + label:before,
+input[type="checkbox"]:not(:checked) + label:before {
+  border-radius: 2px;
+}
+
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after {
+  left: 3px;
+  top: 4px;
+  width: 10px;
+  height: 5px;
+  border-radius: 1px;
+  border-left: 4px solid #ec622a;
+  border-bottom: 4px solid #ec622a;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+input[type="checkbox"]:not(:checked) + label:after,
+input[type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+}
+
+input[type="checkbox"]:checked + label:after,
+input[type="radio"]:checked + label:after {
+  opacity: 1;
+}
+
 @media (max-width: 980px) {
   .images-car {
     width: 640px;
@@ -251,6 +350,11 @@
   .checkbox-block {
     font-size: 14px;
   }
+  .checkbox-block-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
 }
 
 @media (max-width: 480px) {
@@ -269,7 +373,7 @@
   .block-part {
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(1, 120px);
+    grid-template-columns: repeat(2, 120px);
   }
   .checkbox-block {
     flex-direction: column;

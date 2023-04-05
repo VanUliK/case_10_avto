@@ -5,138 +5,14 @@
     box-sizing: border-box;
   }
 
-  .center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* background-color: #ec622a; */
-  }
-
-  .hidden {
-    display: none;
-  }
-
-  .opacity {
-    opacity: 0;
-  }
-
-  .block-part {
-    padding-top: 40px;
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(4, 140px);
-    justify-content: center;
-  }
-
-  .part-1,
-  .part-2,
-  .part-3,
-  .part-4 {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .tilda-block {
-    background-color: #fff;
-    width: 800px;
-    padding-top: 30px;
-    border-radius: 30px;
-  }
-
-  .up-dsc {
-    display: flex;
-    justify-content: flex-end;
-    padding-bottom: 20px;
-  }
-
-  .block-text-dsc {
-    margin-right: 20px;
-    margin-bottom: 20px;
-    width: 380px;
-    background-color: rgba(200, 200, 200, 0.7);
-    border-radius: 15px;
-  }
-
-  .text-dsc {
-    padding: 20px;
-    color: #ec622a;
-    font-family: Onest;
-    font-size: 20px;
-    font-weight: 500;
-  }
-
-  .button-img {
-    border: 2px solid #ccc;
-    border-radius: 5px;
-  }
-
-  .button-img:hover {
-    border: 2px solid #ec622a;
-    cursor: pointer;
-  }
-
-  .checkbox-block {
-    display: flex;
-    justify-content: space-evenly;
-    padding-bottom: 20px;
-    font-size: 18px;
-  }
-
-  .price-block-itog {
-    padding-left: 30px;
-  }
-
-  .show {
-    position: absolute;
-  }
-
-  .images-car {
-    border-radius: 30px;
-  }
-
-  .text {
-    font-family: "Onest", Arial, sans-serif;
-    font-weight: 300;
-  }
-
-  .prev-text {
-    font-family: "Onest";
-    padding-bottom: 5px;
-    font-size: 20px;
-    font-weight: 500;
-  }
-
-  .dsc-text {
-    color: #000000;
-    font-size: 10px;
-    font-family: "Onest", Arial, sans-serif;
-    line-height: 1.15;
-    font-weight: 300;
-    opacity: 0.6;
-    background-position: center center;
-    border-color: transparent;
-    border-style: solid;
-  }
-
-  .head-dsc {
-    line-height: 1.1;
-  }
-
-  /* цвет выделенных элементов */
+  /* цвет выделенных элементов машины*/
   .svg-image {
     position: relative;
     opacity: 0.5;
     fill: #536d6d;
   }
 
-  .price {
-    color: rgb(236, 98, 42);
-    font-family: Onest;
-    font-size: 20px;
-    font-weight: 600;
-  }
-
-  /* цвет элементов при наведении */
+  /* цвет элементов при наведении на элемент машины*/
   .bamper:hover {
     fill: #182339;
     cursor: cell;
@@ -217,6 +93,237 @@
     cursor: cell;
   }
 
+  .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .opacity {
+    opacity: 0;
+  }
+
+  .block-part {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 140px);
+    justify-content: center;
+  }
+
+  .part-1,
+  .part-2,
+  .part-3,
+  .part-4 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tilda-block {
+    background-color: #fff;
+    width: 800px;
+    padding-top: 30px;
+    border-radius: 30px;
+  }
+
+  .up-dsc {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+  }
+
+  .block-text-dsc {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 380px;
+    background-color: rgba(200, 200, 200, 0.7);
+    border-radius: 15px;
+  }
+
+  .text-dsc {
+    padding: 20px;
+    color: #ec622a;
+    font-family: Onest;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .button-img {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .button-img:hover {
+    border: 2px solid #ec622a;
+    cursor: pointer;
+  }
+
+  .button-img-hover {
+    border: 2px solid #ec622a;
+    cursor: pointer;
+  }
+
+  .checkbox-block {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .checkbox-block-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+  }
+
+  .price-block-itog {
+    padding-left: 30px;
+  }
+
+  .show {
+    position: absolute;
+  }
+
+  .images-car {
+    border-radius: 30px;
+  }
+
+  .text {
+    font-family: "Onest", Arial, sans-serif;
+    font-weight: 300;
+  }
+
+  .prev-text {
+    font-family: "Onest";
+    padding-bottom: 5px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .dsc-text {
+    color: #000000;
+    font-size: 10px;
+    font-family: "Onest", Arial, sans-serif;
+    line-height: 1.15;
+    font-weight: 300;
+    opacity: 0.6;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+  }
+
+  .head-dsc {
+    line-height: 1.1;
+    text-align: center;
+  }
+
+  .price {
+    color: #ec622a;
+    font-family: "Onest";
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .type-car-head,
+  .block-head {
+    font-family: "Onest";
+    padding-bottom: 5px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .type-car {
+    cursor: pointer;
+    display: flex;
+    width: 110px;
+  }
+
+  .type-car-hover {
+    border: 2px solid #ec622a;
+    cursor: pointer;
+    padding: 5px;
+  }
+
+  .type-car:hover {
+    border: 2px solid #ec622a;
+    cursor: pointer;
+    padding: 5px;
+  }
+
+  input[type="checkbox"]:checked,
+  input[type="checkbox"]:not(:checked),
+  input[type="radio"]:checked,
+  input[type="radio"]:not(:checked) {
+    display: none;
+  }
+
+  input[type="checkbox"]:checked+label,
+  input[type="checkbox"]:not(:checked)+label {
+    display: inline-block;
+    position: relative;
+    padding-left: 28px;
+    line-height: 20px;
+    cursor: pointer;
+  }
+
+  input[type="checkbox"]:checked+label:before,
+  input[type="checkbox"]:not(:checked)+label:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #aaa;
+    background-color: #ffffff;
+  }
+
+  input[type="checkbox"]:checked+label:before,
+  input[type="checkbox"]:not(:checked)+label:before {
+    border-radius: 2px;
+  }
+
+  input[type="checkbox"]:checked+label:after,
+  input[type="checkbox"]:not(:checked)+label:after {
+    content: "";
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+
+  input[type="checkbox"]:checked+label:after,
+  input[type="checkbox"]:not(:checked)+label:after {
+    left: 3px;
+    top: 4px;
+    width: 10px;
+    height: 5px;
+    border-radius: 1px;
+    border-left: 4px solid #ec622a;
+    border-bottom: 4px solid #ec622a;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  input[type="checkbox"]:not(:checked)+label:after,
+  input[type="radio"]:not(:checked)+label:after {
+    opacity: 0;
+  }
+
+  input[type="checkbox"]:checked+label:after,
+  input[type="radio"]:checked+label:after {
+    opacity: 1;
+  }
+
   @media (max-width: 980px) {
     .images-car {
       width: 640px;
@@ -272,6 +379,12 @@
     .checkbox-block {
       font-size: 14px;
     }
+
+    .checkbox-block-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+    }
   }
 
   @media (max-width: 480px) {
@@ -293,7 +406,7 @@
     .block-part {
       display: grid;
       gap: 20px;
-      grid-template-columns: repeat(1, 120px);
+      grid-template-columns: repeat(2, 120px);
     }
 
     .checkbox-block {
@@ -324,90 +437,162 @@
   }
 </style>
 
-<div class="center">
+<body>
+  <div class="center">
+    <form class="tilda-block">
+      <div class="up-dsc">
+        <div class="block-text-dsc">
+          <div class="text-dsc">Комплексы по оклейке бронеплёнкой Hexis 180 микрон со скидкой 10%</div>
+        </div>
+      </div>
+      <div class="block-type-car">
+        <div class="block-head">1. Выберите класс автомобиля
+        </div>
+        <div class="block-type-car  checkbox-block-grid ">
+          <input type="radio" name="typeCar" id="car-micro" class="type-element">
+          <label for="car-micro">
+            <img class="type-car car-micro"
+              src="https://static.tildacdn.com/tild6437-6539-4033-b461-346239626636/Group_114.png" alt=""></label>
+          <input type="radio" name="typeCar" id="car-sedan" class="type-element" checked>
+          <label for="car-sedan">
+            <img class="type-car car-sedan"
+              src="https://static.tildacdn.com/tild3732-6238-4638-b834-633330653835/Group_115.png" alt=""></label>
+          <input type="radio" name="typeCar" id="car-crossover" class="type-element">
+          <label for="car-crossover">
+            <img class="type-car car-crossover"
+              src="https://static.tildacdn.com/tild3732-3933-4434-b430-393237383332/Group_116.png" alt=""></label>
+          <input type="radio" name="typeCar" id="car-premium" class="type-element">
+          <label for="car-premium">
+            <img class="type-car car-premium"
+              src="https://static.tildacdn.com/tild6137-3038-4363-b964-366264373066/Group_117.png" alt=""></label>
+        </div>
+      </div>
+      <div class="block-check-element">
+        <div class="block-head">2. Уровень защиты
+        </div>
+        <div class="button-block">
+          <div class="block-part">
+            <div class="part-1">
+              <img class="button-img"
+                src="https://static.tildacdn.com/tild3766-3762-4436-a537-333232363435/Group_129.svg" alt="">
+              <div class="dsc">
+                <p class="head-dsc">Пакет минимальный:</p>
+                <p class="head-dsc hidden">Часть капота (60см).</p>
+                <p class="head-dsc hidden">Часть передних крыльев.</p>
+                <p class="head-dsc hidden">Фары.</p>
+                <p class="head-dsc hidden">Стойки лобового.</p>
+                <p class="head-dsc hidden">стекла.</p>
+                <p class="head-dsc hidden">Полоса на крышу.</p>
+              </div>
+            </div>
+            <div class="part-2">
+              <img class="button-img"
+                src="https://static.tildacdn.com/tild3932-3461-4339-b938-333838616565/Group_125.svg" alt="">
+              <div class="dsc">
+                <p class="head-dsc">Пакет Оптимальный:</p>
+                <p class="head-dsc hidden">Капот.</p>
+                <p class="head-dsc hidden">Фары.</p>
+                <p class="head-dsc hidden">Передний бампер.</p>
+                <p class="head-dsc hidden">Крылья.</p>
+                <p class="head-dsc hidden">Стойки лобового стекла.</p>
+                <p class="head-dsc hidden">Полоса на крышу.</p>
+                <p class="head-dsc hidden">Зеркала.</p>
+              </div>
+            </div>
+            <div class="part-3">
+              <img class="button-img"
+                src="https://static.tildacdn.com/tild3662-6431-4230-b537-323539663234/Group_131.svg" alt="">
+              <div class="dsc">
+                <p class="head-dsc">Пакет максимальный:</p>
+                <p class="head-dsc hidden">Полная оклейка автомобиля (без крыши ввиду возможного наличия люка)</p>
+              </div>
+            </div>
+            <div class="part-4">
+              <img class="button-img button-clear"
+                src="https://static.tildacdn.com/tild3237-3235-4438-a631-356630633565/Group_134.svg" alt="">
+              <div class="dsc">
+                <p class="head-dsc">Индивидуальный:</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="checkbox-block">
+          <div class="left-block">
+            <div class="checkbox-element">
+              <input type="checkbox" id="skin-elem-optika" name="work" class="checkbox-input" />
+              <label class="checkbox-label" for="skin-elem-optika">Оптика</label>
+            </div>
+            <div class="checkbox-element">
+              <input type="checkbox" id="skin-elem-capot" name="work" class="checkbox-input" />
+              <label class="checkbox-label" for="skin-elem-capot">Капот</label>
+            </div>
+            <div class="checkbox-element">
+              <input type="checkbox" id="skin-elem-zerkalo" name="work" class="checkbox-input" />
+              <label class="checkbox-label" for="skin-elem-zerkalo">Зеркала</label>
+            </div>
+            <div class="checkbox-element">
+              <input type="checkbox" id="skin-elem-krylia" name="work" class="checkbox-input skin-elem-krylia" />
+              <label class="checkbox-label" for="skin-elem-krylia">Крылья</label>
+            </div>
+            <div class="checkbox-element">
+              <input type="checkbox" id="skin-elem-porogi-2" name="work" class="checkbox-input" />
+              <label class="checkbox-label" for="skin-elem-porogi-2">Пороги 2 шт.</label>
+            </div>
+            <div class="checkbox-element">
+              <input type="checkbox" id="skin-elem-kromki" name="work" class="checkbox-input" />
+              <label class="checkbox-label" for="skin-elem-kromki">Кромки двери 4 шт.</label>
+            </div>
+            <div class="checkbox-element">
+              <input type="checkbox" id="loadingarea" name="work" class="checkbox-input" />
+              <label class="checkbox-label" for="loadingarea">Погрузочная зона</label>
+            </div>
+            <div class="checkbox-element">
+              <input type="checkbox" id="skin-elem-stoiki-stekla" name="work" class="checkbox-input" />
+              <label class="checkbox-label" for="skin-elem-stoiki-stekla">Стойки лобового стекла 2 шт.</label>
+            </div>
+          </div>
+          <div class="right-block">
+            <div class="checkbox-element">
+              <input type="checkbox" id="skin-elem-bamper" name="work" class="checkbox-input" />
+              <label class="checkbox-label" for="skin-elem-bamper">Бампер</label>
+            </div>
+            <div class="checkbox-element">
+              <input type="checkbox" id="skin-elem-ptf" name="work" class="checkbox-input" />
+              <label class="checkbox-label" for="skin-elem-ptf">ПТФ</label>
+            </div>
+            <div class="checkbox-element">
+              <input type="checkbox" id="skin-elem-ruchki" name="work" class="checkbox-input" />
+              <label class="checkbox-label" for="skin-elem-ruchki">Под ручками 4 шт.</label>
+            </div>
+            <div class="checkbox-element">
+              <input type="checkbox" id="skin-elem-krysha" name="work" class="checkbox-input" />
+              <label class="checkbox-label" for="skin-elem-krysha">Часть крыши</label>
+            </div>
+            <div class="checkbox-element">
+              <input type="checkbox" id="skin-elem-chast-capot" name="work" class="checkbox-input" />
+              <label class="checkbox-label" for="skin-elem-chast-capot">Часть капота</label>
+            </div>
+            <div class="checkbox-element">
+              <input type="checkbox" id="skin-elem-ch-krylia" name="work" class="checkbox-input skin-elem-ch-krylia" />
+              <label class="checkbox-label" for="skin-elem-ch-krylia">Часть крыльев</label>
+            </div>
+            <div class="checkbox-element">
+              <input type="checkbox" id="skin-elem-dver-proem" name="work" class="checkbox-input" />
+              <label class="checkbox-label" for="skin-elem-dver-proem">Дверной проем 4 шт.</label>
+            </div>
+            <div class="checkbox-element">
+              <input type="checkbox" id="skin-elem-stoiki-dverei" name="work" class="checkbox-input" />
+              <label class="checkbox-label" for="skin-elem-stoiki-dverei">Глянцевые стойки дверей 4 шт.</label>
+            </div>
+            <div class="checkbox-element hidden">
+              <input type="checkbox" id="other-elem" name="work" class="checkbox-input" />
+              <label class="checkbox-label" for="other-elem">Оставшиеся части</label>
+            </div>
+          </div>
+        </div>
+      </div>
 
-  <form class="tilda-block">
-    <div class="up-dsc">
-      <div class="block-text-dsc">
-        <div class="text-dsc">Комплексы по оклейке бронеплёнкой Hexis 180 микрон со скидкой 10%</div>
-      </div>
-    </div>
-    <div class="checkbox-block">
-      <div class="left-block">
-        <div class="checkbox-element">
-          <input type="checkbox" id="skin-elem-optika" name="work" class="checkbox-input" />
-          <label class="checkbox-label" for="skin-elem-optika">Оптика</label>
-        </div>
-        <div class="checkbox-element">
-          <input type="checkbox" id="skin-elem-capot" name="work" class="checkbox-input" />
-          <label class="checkbox-label" for="skin-elem-capot">Капот</label>
-        </div>
-        <div class="checkbox-element">
-          <input type="checkbox" id="skin-elem-zerkalo" name="work" class="checkbox-input" />
-          <label class="checkbox-label" for="skin-elem-zerkalo">Зеркала</label>
-        </div>
-        <div class="checkbox-element">
-          <input type="checkbox" id="skin-elem-krylia" name="work" class="checkbox-input skin-elem-krylia" />
-          <label class="checkbox-label" for="skin-elem-krylia">Крылья</label>
-        </div>
-        <div class="checkbox-element">
-          <input type="checkbox" id="skin-elem-porogi-2" name="work" class="checkbox-input" />
-          <label class="checkbox-label" for="skin-elem-porogi-2">Пороги 2 шт.</label>
-        </div>
-        <div class="checkbox-element">
-          <input type="checkbox" id="skin-elem-kromki" name="work" class="checkbox-input" />
-          <label class="checkbox-label" for="skin-elem-kromki">Кромки двери 4 шт.</label>
-        </div>
-        <div class="checkbox-element">
-          <input type="checkbox" id="loadingarea" name="work" class="checkbox-input" />
-          <label class="checkbox-label" for="loadingarea">Погрузочная зона</label>
-        </div>
-        <div class="checkbox-element">
-          <input type="checkbox" id="skin-elem-stoiki-stekla" name="work" class="checkbox-input" />
-          <label class="checkbox-label" for="skin-elem-stoiki-stekla">Стойки лобового стекла 2 шт.</label>
-        </div>
-      </div>
-      <div class="right-block">
-        <div class="checkbox-element">
-          <input type="checkbox" id="skin-elem-bamper" name="work" class="checkbox-input" />
-          <label class="checkbox-label" for="skin-elem-bamper">Бампер</label>
-        </div>
-        <div class="checkbox-element">
-          <input type="checkbox" id="skin-elem-ptf" name="work" class="checkbox-input" />
-          <label class="checkbox-label" for="skin-elem-ptf">ПТФ</label>
-        </div>
-        <div class="checkbox-element">
-          <input type="checkbox" id="skin-elem-ruchki" name="work" class="checkbox-input" />
-          <label class="checkbox-label" for="skin-elem-ruchki">Под ручками 4 шт.</label>
-        </div>
-        <div class="checkbox-element">
-          <input type="checkbox" id="skin-elem-krysha" name="work" class="checkbox-input" />
-          <label class="checkbox-label" for="skin-elem-krysha">Часть крыши</label>
-        </div>
-        <div class="checkbox-element">
-          <input type="checkbox" id="skin-elem-chast-capot" name="work" class="checkbox-input" />
-          <label class="checkbox-label" for="skin-elem-chast-capot">Часть капота</label>
-        </div>
-        <div class="checkbox-element">
-          <input type="checkbox" id="skin-elem-ch-krylia" name="work" class="checkbox-input skin-elem-ch-krylia" />
-          <label class="checkbox-label" for="skin-elem-ch-krylia">Часть крыльев</label>
-        </div>
-        <div class="checkbox-element">
-          <input type="checkbox" id="skin-elem-dver-proem" name="work" class="checkbox-input" />
-          <label class="checkbox-label" for="skin-elem-dver-proem">Дверной проем 4 шт.</label>
-        </div>
-        <div class="checkbox-element">
-          <input type="checkbox" id="skin-elem-stoiki-dverei" name="work" class="checkbox-input" />
-          <label class="checkbox-label" for="skin-elem-stoiki-dverei">Глянцевые стойки дверей 4 шт.</label>
-        </div>
-        <div class="checkbox-element hidden">
-          <input type="checkbox" id="other-elem" name="work" class="checkbox-input" />
-          <label class="checkbox-label" for="other-elem">Оставшиеся части</label>
-        </div>
-      </div>
-    </div>
-
-    <!-- 1
+      <!-- 1
 https://static.tildacdn.com/tild3766-3762-4436-a537-333232363435/Group_129.svg
 2
 https://static.tildacdn.com/tild3932-3461-4339-b938-333838616565/Group_125.svg
@@ -417,771 +602,923 @@ https://static.tildacdn.com/tild3662-6431-4230-b537-323539663234/Group_131.svg
 https://static.tildacdn.com/tild3237-3235-4438-a631-356630633565/Group_134.svg 
 -->
 
-    <div class="price-block-itog">
-      <div class="prev-text">Предварительная стоимость</div>
-      <div class="price"> <span>Итого: </span><span id="out">0</span> <span class="rub">₽</span></div>
-      <div class="dsc-text">*Не учитывает скидки и особенности вашего автомобиля
-      </div>
-    </div>
-    <div class="button-block">
-      <div class="block-part">
-        <div class="part-1">
-          <img class="button-img" src="https://static.tildacdn.com/tild3766-3762-4436-a537-333232363435/Group_129.svg"
-            alt="">
-          <div class="dsc">
-            <p class="head-dsc">Пакет минимальный:</p>
-            <p class="head-dsc hidden">Часть капота (60см).</p>
-            <p class="head-dsc hidden">Часть передних крыльев.</p>
-            <p class="head-dsc hidden">Фары.</p>
-            <p class="head-dsc hidden">Стойки лобового.</p>
-            <p class="head-dsc hidden">стекла.</p>
-            <p class="head-dsc hidden">Полоса на крышу.</p>
-          </div>
-        </div>
-        <div class="part-2">
-          <img class="button-img" src="https://static.tildacdn.com/tild3932-3461-4339-b938-333838616565/Group_125.svg"
-            alt="">
-          <div class="dsc">
-            <p class="head-dsc">Пакет Оптимальный:</p>
-            <p class="head-dsc hidden">Капот.</p>
-            <p class="head-dsc hidden">Фары.</p>
-            <p class="head-dsc hidden">Передний бампер.</p>
-            <p class="head-dsc hidden">Крылья.</p>
-            <p class="head-dsc hidden">Стойки лобового стекла.</p>
-            <p class="head-dsc hidden">Полоса на крышу.</p>
-            <p class="head-dsc hidden">Зеркала.</p>
-          </div>
-        </div>
-        <div class="part-3">
-          <img class="button-img" src="https://static.tildacdn.com/tild3662-6431-4230-b537-323539663234/Group_131.svg"
-            alt="">
-          <div class="dsc">
-            <p class="head-dsc">Пакет максимальный:</p>
-            <p class="head-dsc hidden">Полная оклейка автомобиля (без крыши ввиду возможного наличия люка)</p>
-          </div>
-        </div>
-        <div class="part-4">
-          <img class="button-img button-clear"
-            src="https://static.tildacdn.com/tild3237-3235-4438-a631-356630633565/Group_134.svg" alt="">
-          <div class="dsc">
-            <p class="head-dsc">Индивидуальный:</p>
-          </div>
+      <div class="price-block-itog">
+        <div class="prev-text">Предварительная стоимость</div>
+        <div class="price"> <span>Итого: </span><span id="out">0</span> <span class="rub">₽</span></div>
+        <div class="dsc-text">*Не учитывает скидки и особенности вашего автомобиля
         </div>
       </div>
-    </div>
 
 
 
-    <div class="box-images">
-      <!-- <img src="./img/skin-car-1-transformed.png" alt="" class="images-car show"> -->
-      <img src="https://static.tildacdn.com/tild3462-3163-4265-a434-656630353230/skin-car-1.png" alt=""
-        class="images-car show">
-
-      <!-- <img src="./img/skin-car-1.png" alt="" class="images-car show"> -->
-      <svg class="svg-image" version="1.0" xmlns="http://www.w3.org/2000/svg" width="800px" height="372px"
-        viewBox="0 0 2156.000000 1004.000000">
-        <!-- Оптика -->
-        <g data-name="skin-elem-optika" class="optika opacity">
-          <path
-            d="M761,495.7c-24,1.8-108.5,12-131,15.8-8,1.3-35,5.6-60,9.4s-50.2,7.8-55.8,8.7l-10.4,1.7.5,3.1c.5,3.2-6.4,30.5-10.2,40.7-3.4,8.9-11.1,19-18,23.7-5.8,3.8-5.9,4-3.3,4.5,1.5.3,7.9.3,14.2.1s28.2-.9,48.5-1.4c43-1,42.3-.9,63.5-10.9,14.1-6.7,17.8-7.9,32-9.6,2.5-.3,5-.2,5.6.3s1.4,3.2,1.8,6.2,1.1,6.2,1.6,6.9c1.8,3,32.3,2.4,73.9-1.4,14.9-1.4,16.2-1.7,43.6-10.4s47.9-16.8,59.5-23.4c11-6.2,34.5-25.4,48.8-40l9.4-9.4-7.4-3.1c-11.4-4.7-19.8-7-29.9-8.1C820.8,497.2,770.2,495,761,495.7Z">
-          </path>
-          <path
-            d="M145.5,500.8c-9.8,5.7-19.9,15.3-20.8,20-1.1,5.5,2.6,48.8,4.4,50.6.5.6,1.1.3,1.5-.7a2.77,2.77,0,0,1,2.5-1.7c1.3,0,2,1,2.5,3.7,1.5,8.1,3.7,11.5,8.4,12.8a30.53,30.53,0,0,1,5.8,2.2,33.07,33.07,0,0,0,6.8,2c3.4.6,3.4.5,3.4-3.1a35.51,35.51,0,0,0-2-9.3c-1.7-4.8-2-8.4-2.1-21.8,0-15.8.9-23.3,3.5-28.3,1.2-2.3,1.1-3.3-1.5-9.2-4.1-9.8-5.3-15.3-4.1-19,.6-1.6.8-2.9.4-2.9S149.9,498.3,145.5,500.8Z">
-          </path>
-        </g>
-        <!-- Капот -->
-        <g data-name="skin-elem-capot" class="capot opacity">
-          <path
-            d="M762.19,481.27c15.51-10,32.93-16,90.11-39.12,45.93-15.26,45.93-15.26,95.81-24.53,120.74-20,176.42-30.16,200.65-31.46,19.33-1,45.25-7.59,58.52-15.72l6.08-4.39-25.66-1.45c-53-2.6-268-7.1-301.7-6.4-5.2.1-15.3.3-22.5.5-67.6,1.2-185.8,6.7-199.3,9.2-2.6.5-8.1,1.2-12.2,1.6s-8.6.8-10,1-15.8,1.1-32,2c-44,2.2-55.7,3.3-104,10.1-31.5,4.4-49.1,7.4-79,13.4-8,1.6-23.7,4.3-35,6.1-43.6,6.6-85.5,16.4-113,26.4-12.9,4.6-90,42.3-106.5,52-17.1,10-20.5,16.5-21.1,24.6-.4,5.9-1,6.4.7,10.8l7.2,10,10.1-10.2c14.7-13,20.3-12.8,31.1-14.6,9.6-1.5,55.4-.6,70.9,1.8,13.2,2.2,13.6,1.1,19.3,5.5,1.65,3.8,5,5.45,10.3,5.59s12.65-1.24,14.3-3.49c8.7-3.5,9.7-2.5,32.94-6.1l.76-.1c11.4-1.5,20-2.3,56.5-2.5,23.7.1,46.6,1.7,50.9,2.3,13.4,1.8,26.3,8.5,37.4,20.3,6.3,6.6,5.5,9.5,25.8,6.1,8.1-1.4,16.8-2.5,19.3-2.5,5.7,0,21.8-3.3,28.7-5.3l147.1-21.8c7.46-1.24,12.76-1.86,16.61-2.41l-.75.06C737.39,497.19,755.18,486.57,762.19,481.27Zm-421.78,10c-13.54,5.91-26.16,6.94-28.19,2.3s7.31-13.2,20.85-19.11,26.16-6.94,28.19-2.3S354,485.34,340.41,491.25ZM740,496c-1.63,1.3-4.14,1.84-8.69,2.49l-.75.06c6.83-1.36,24.62-12,31.63-17.28,15.51-10,32.93-16,90.11-39.12,45.93-15.26,45.93-15.26,95.81-24.53,120.74-20,176.42-30.16,200.65-31.46,19.33-1,45.25-7.59,58.52-15.72l6.08-4.39,2.64.15-15.8,8.5C1183.2,385,1160,386,1142,388c-16.65,1.79-81,13.33-209,33.1-41,8.9-46.71,13.38-90.5,27.6C789.4,467.6,753.4,485.7,740,496Z">
-          </path>
-        </g>
-        <!-- Зеркала  -->
-        <g data-name="skin-elem-zerkalo" class="zerkalo opacity">
-          <path
-            d="M1383,297.6a135.53,135.53,0,0,0-31.6,5.5c-12,3.8-18,5.7-22.6,10.1-3,2.8-4.6,6.1-5.1,11.3a104.23,104.23,0,0,0,.3,15.5c2.4,24,3.4,22.3,1.2,24.3-1.1,1-6.8,3.8-12.5,6.2-14.9,6.2-25.1,13.1-25.7,17.5-.8,5.4-.5,5.5,8.3,5.2,17.5-.5,28.7-1.4,28.2-2.3a5.6,5.6,0,0,1,.1-3.4c.5-2,2.5-3.5,8.6-6.6,9.9-5,15.9-5.8,41.8-5.9,29.4-.1,57.6-1.7,64.5-3.5a106.17,106.17,0,0,0,14.3-5.6c11.4-5.5,16.7-10.8,19.2-27.5.7-4.4.5-8.8.9-9.8,1-2.8-.6-12.1-2.9-16.7s-6.3-6.3-16-8.3C1429,299,1394.17,296.62,1383,297.6Z">
-          </path>
-          <path
-            d="M705.5,318c-12.5,2.2-17.3,3.5-25.7,6.6-9.2,3.5-12.8,7.1-15.5,12.4-2.2,4.2-2.3,7-1.3,15.6,4,19.4,2.5,16.5,26-2.3,11.3-9,24.2-19.1,28.8-22.5,9.2-6.8,6-8.4,5.5-8.9C721,316,715.3,316.2,705.5,318Z">
-          </path>
-        </g>
-        <!-- Крылья -->
-        <g data-name="skin-elem-krylia" class="krylia opacity">
-          <path id="крылья"
-            d="M1263.69,608.08c4.61-43.91,5-52.61,3.62-73.44-2-32.35-6.7-87.16-8-95.69-.71-4.42-2.2-14.65-3.23-22.67l-2-14.74.07-13.2a158.76,158.76,0,0,1,7.56-17.45c3.31-5.43,2.32-7.63-1.5-6.71-.8.18-8.11.51-23.52.59l-23.11,1.12-.22.16,2.64.15-15.8,8.5C1183.2,385,1160,386,1142,388c-16.65,1.79-81,13.33-209,33.1-41,8.9-46.71,13.38-90.5,27.6-53.1,18.9-89.1,37-102.5,47.3-1.63,1.3-4.14,1.84-8.69,2.49l10-.84c19.85-2,41.15-1.85,72.2.59,32.65,2.58,40.82,4.14,55.3,10.34a72,72,0,0,0,11.92,4,245.22,245.22,0,0,1,27.3,9.17l18.32,7.06L933.3,535l12,14.19L961.74,540c25.26-9,38.26-13,63.56-13.09,16.79.85,24.74,3.37,38.81,9.57a103.17,103.17,0,0,1,39.58,31.41c9,11.59,14,14.53,23.45,40.13,4.83,13.1,7.27,22,8.17,22,2.1,0,3.95,1.56,6.46,15.62,5.12,28.31,6,38.63,5.89,68.14-.05,22,3.55,32.5,1.88,45.37-1.08,8.88-4.84,17.37-4.64,17.57,1.17,1.22,107.7-9.84,109.64-11.3a5.67,5.67,0,0,0,1.48-3.77c0-1.4,2-6.26,4.42-10.81,4.9-9.4,4.88-8.9,2.42-29.76C1257.52,674.66,1257.57,667.08,1263.69,608.08Z">
-          </path>
-        </g>
-        <!-- Пороги 2 шт. -->
-        <g data-name="skin-elem-porogi-2" class="porogi opacity">
-          <path
-            d="M1805,671.5a77.18,77.18,0,0,1-11.6.4c-.1.1-3.9,5.5-7.3,9.6-10.1,12.4-19.6,18.2-43.4,22.9-37.7,4.6-186.4,26.5-415.2,52.6-33.21,3.77-64.78,6.48-71,7.5-5.5.8-29.8,2.7-54,5.4s-49,6.2-51.5,6.6-5.6.7-7,.8c-2.9.2-.8,1.4-1.2,27.1l-1.3,15.8-1.8,2.3c-2,1.8-6.8,2.8-9.2,3.5-4.19.64-7.41,3-3,7.4,1.1,1.1,2.8,1.4,5.8,1,2.3-.2,69.2-7.6,148.7-16.4,140.5-15.5,156.2-17.1,212-22.5,14.6-1.4,52.4-5.3,84-8.5s68.3-6.9,81.5-8c100.3-8.5,149.1-12.2,150.7-13.7,3.8-1.3,3.9-3.6,5.8-24.8.7-6.6,1.7-23.7,3.6-38s4.4-31.8,4.4-32.8C1824,667.7,1820.8,669.6,1805,671.5Z">
-          </path>
-        </g>
-        <!-- Кромки двери 4 шт. -->
-        <g data-name="skin-elem-kromki" class="kromki opacity">
-          <path
-            d="M1856,360.8c0,.6.9,1.2,2,1.5s2,.3,2,.1-.9-.8-2-1.4S1856,360.3,1856,360.8Zm-2,12.8a108.58,108.58,0,0,0,4.8,11,53.56,53.56,0,0,1,4.3,12.8c1.3,7.7.7,21.7-1.3,30.8-1,4.7-1,7.8.2,16.5,1.8,14.6,2.4,38.8,1.1,47.4a145.31,145.31,0,0,1-4.2,16.7c-5.1,15.8-45.2,111.9-68.6,166.2l-.5,2.5,1.2-1a16.09,16.09,0,0,1,6.3-3l3.2-1.1,11.8-22.9c5.4-12.7,14.3-34.3,19.9-48s13.5-36,19-49.5c16.7-40.8,19.5-50.1,20.8-69.4.9-12.1.7-16.3-1.1-30.9-2-16-2-17.3-.5-25.5,3-16.5,1.4-35.6-3.7-44.6a71.6,71.6,0,0,1-4.2-8.8L1860,367l-3,.3-4.7.2Zm-259,1.9c0,.4,2.7,5,6,10.3,10.4,17.1,12.1,15.5,13.1,47.6.5,15.4.6,38.7,1.4,51.6s1.5,28.4,1.5,34.5c0,12.3-2.2,47-4.5,70-2.3,23.6-2.3,24-1.2,62.5,0,0,1.3,33,1,36.5s-4.5,13.5-4.5,13.5c-3.6,9-6.8,18.2-6.8,21.7,0,.6,5,.3,9.6-.5.4-.2.4-1.2,1.7-4.8.4-2.3,2.7-9.3,5.1-15.7,6.6-14.7,4.88-10.32,3.1-59.7-.6-30.7,1.5-39,2.9-52.5.9-8.8,2.5-28.2,3.5-43,1.5-23.6,1.6-29.6.5-48-.7-11.6-3.7-34.3-4.3-50.5-1.8-49.5-2.6-48.4-12-64l-5.7-9.5-4.2-.3C1598,375,1595,375.2,1595,375.5Z">
-          </path>
-        </g>
-        <!-- Стойки лобового стекла 2 шт. -->
-        <g data-name="skin-elem-stoiki-stekla" class="stekla opacity">
-          <path id="стойки_стелка" data-name="стойки стелка"
-            d="M1341,198.7c-18,17.3-62.8,79.4-80.7,107.8-4.8,7.7-15.2,24-23.1,36.4s-14.1,23.5-14,23.5,10.6,0,20.8-.2l20.5-1.3,16.5-26.2c44.9-71.4,64.2-98,89-122.7,10.5-10.5,16.6-14.8,24-19.2,5.2-3.2,9.2-6.2,10-6.7,1-.7-9.3-1-26.2-1l-27.6-.1Z">
-          </path>
-        </g>
-        <!-- Бампер  -->
-        <g class="bamper opacity">
-          <path
-            d="M874,509.87c.8,1.31-22.33,22.33-36.31,33.6a208,208,0,0,1-20.12,14.38c-13.08,7.44-34.6,15.89-63.67,24.94l-25.66,7.55L708.62,592c-28.46,2.41-66.88,4.22-67.89,2.51-.5-.8-1.31-4.12-1.91-7.44l-1.11-6.14-4.43-.3c-8.55-.6-19.91,1.51-33.79,8.25-7.24,3.52-15.59,7.14-18.61,8-7.24,2.21-27.76,3.42-59.64,3.52-14.18.1-32.69,1.6-40.94,2.11l-15,1L456.08,609c-19.08,10-32.19,17.8-51.1,21.62-15.39,3.12-51.9,5.23-82.47,4.83-24.84-.3-27.06-.4-30.27-2.41-4.53-2.62-8-8.75-8-14.18,0-4-.2-4.22-3.42-4.83-4.93-1-7.84,0-11.36,4.93-3.82,5.33-7.65,9.15-13.28,11.16-9.05,3.12-50.89.41-71.11-4a45.62,45.62,0,0,1-11.77-4.53c-6.74-4.22-9.45-9.15-11.87-20.72-2.72-13.58-.31-12-4.64-12.08a36,36,0,0,1-10.55-2.21c-2.62-1.21-3.43-3.21-4.34-3.21-2.11,0-5.33-5.63-6.14-10.86-1.21-7.85-4.31-7.24-20.31,8.85-10,10.06-21,24.34-24.14,31.18-2.31,5.33-2.41,7-1.81,20.81,1.41,28.36,1.91,31.88,10.26,63.67,1.911,7.44,3.92,15.79,4.43,18.61s3.62,15.39,7,28.06,5.83,23.33,5.33,23.74c-2.41,2.31-15.61,3.35-17.6,5A41,41,0,0,0,91.08,781c0,.5-3,3.63-6.54,8.05S79,798.54,79,799.14c0,2.72,5.43,8.85,9.35,10.55,4.43,2,16.6,3.22,33.4,5,5.53.5,13.28,1.41,17.1,2s13.08,2.51,20.52,3.11c13.08,1.11,13.58.31,17.1,3.43,4.43,4,11.26,6.14,24.24,7.54,7.85.91,9.86,1.41,11.16,3.22,1.51,1.91,5.33,2.62,43.85,7.44,23.13,2.82,61.76,6.84,85.79,8.85,62.06,5,120.4119,9.45,139.3,10.56,19.21,1,21.73.4,28.16-6.74l4.43-3.83L524.87,852c6.24.91,22.93,2.72,37,3.92,31.78,2.82,92.83,3.72,196.33,3l71.31-1.5,2.31-2.72c3-3.52,3.12-4,5-48.58,1.71-39.83,2.21-45.06,6.14-68.39,10.46-63.06,30.48-114.06,59.24-150.87,8.35-10.66,25.14-25.75,36.51-33.9l9.15-6.54-9.25-10.15-9.25-9.15-23.64-9C883,509.58,872.88,508.06,874,509.87ZM375.41,652.2c4.22,1.31,4.63,4.83,4.12,36.31l-.4,30.67,5.13.41c13.08,3.72,16.29,3.92,62.16,3.32l45.16-.5,3.12,2.82c4.32,3.92,4.53,10.16.5,15a10.21,10.21,0,0,0-2.82,6.84c0,3.72-4,12-8.75,17.9-1.91,2.41-2.72,9.05-2.72,9.05s-1.91,6-5.13,13.48c-2.82,4-5.93,8.85-7,10.56-5.53,8.85-11.26,12-13.58,13.2-5.93,3-17.8,5.23-29.47,5.43-13.58.2-12.7,1.33-19.31-2.34L405,811l-28.46-1.6c-47.37-1.11-59.44-1.61-63.16-2.72-1.91-.5-25.14-2-25.14-2s-23.43-1.5-25.65-2.11-7.64-.41-12.07-.91-13.48-1.61-20.12-2.51-17.5-2-24.14-2.51a58.1,58.1,0,0,1-13.78-2.51,5.32,5.32,0,0,0-3.82.5c-1.11.6-6.13,1.31-10,1.61-1.23.11-11-1.07-9.76-.41a40.48,40.48,0,0,0-7.14-2.72c-3.82-.8-15.79-9.16-19.11-14.49a22.33,22.33,0,0,1-2.92-6.94c-.3-1.81-1-3.52-1.51-3.82-1.41-.8-5.95-14.48-8.56-22-3.62-10.36-7.44-25.45-7.44-29.17a16.22,16.22,0,0,0-1.71-6.54c-1.41-3-1.53-2.13-2.2-5.93,1.71-3,6.14-4,8.65-1.91,1.11.91,4.12,2.21,9.55,2a57.64,57.64,0,0,1,12.17.91c2.31.7,6.54.31,9.45.41a37.11,37.11,0,0,1,10.76,2.82c3.12,1.41,6.83,1.21,7.14.71s-.2-12.28.11-27.36c.5-31.88.8-35.5,3.32-37.31,1.51-1,19.21-.5,97.86,2.92C330.15,649.68,374.2,651.79,375.41,652.2Zm345.09,19.61c13.18,6.74,19.81,20.32,21.42,43.85.5,7.14,1.51,16.49,2.31,20.62a110.31,110.31,0,0,1,1.61,17.4c0,7,.5,10.76,1.61,13,2.11,4,5.43,20,5.43,25.95,0,5-3.52,13.48-6.74,16.39-1.11,1-4.22,2.21-6.94,2.72a78.59,78.59,0,0,0-10.46,2.92c-7.74.37-8.74.37-17.6.6-2.72-.8-5.23-1.21-5.73-.91s-5,1-10.16,1.41-15.29,1.41-22.63,2.11c-10.66,1-14.18,1-17.6,0a39.1,39.1,0,0,0-9.35-1.11,53.12,53.12,0,0,1-12.57-1.91c-4.12-1.11-9.45-2.62-12-3.22s-7.54-2-11.26-3a162,162,0,0,0-17.1-3.52,175.74,175.74,0,0,1-18.41-4c-4.43-1.31-10.06-2.82-12.57-3.32-5.73-1.21-10.06-5.73-10.06-10.46,0-1.81,1.71-6.34,4-10.56,2.21-4,4-8.25,4-9.25s1.41-3.52,3-5.33,3-4,3-4.73c0-1.61,6.74-15,8.55-17.1a33.43,33.43,0,0,0,3.32-7c4.83-13.68,7.85-20,11.67-25.14,2.31-3,6.14-8.35,8.55-11.67A44.84,44.84,0,0,1,627.56,678c3.62-.5,7-1.21,7.64-1.61s6.64-1.11,13.38-1.51c25.45-1.71,40.63-3.12,46-4.53C702.59,668.29,715.06,669,720.49,671.81Z">
-          </path>
-        </g>
-        <!-- ПТФ -->
-        <g data-name="skin-elem-ptf" class="ptf opacity">
-          <path d="M104.6,710.5c.4.8.8,1.5,1,1.5s.4-.7.4-1.5-.4-1.5-1-1.5S104.3,709.7,104.6,710.5Z"></path>
-          <path
-            d="M649,728.2c-23.9.4-44.5,1-45.6,1.3-2.5.5-6.8,5.9-8.9,10.9-2.9,6.8-4.8,6.6,54.5,6.6h52.8l.7-5.8c.3-3.2.2-6.9-.4-8.4-1.2-3.2-4.8-5.9-7.6-5.6C693.4,727.3,672.9,727.7,649,728.2Z">
-          </path>
-        </g>
-        <!-- Под ручками 4 шт. -->
-        <g data-name="skin-elem-ruchki" class="ruchki opacity">
-          <path
-            d="M1565.5,414c-19.05,0-36.5,11.42-36.5,25.5s18.45,25.5,37.5,25.5c23.5,0,31.5-11.42,31.5-25.5S1584.55,414,1565.5,414Zm28.5,32c-6,4-11,8-15,8,0,0-11.5-5.5-17.5-4.5a126.84,126.84,0,0,0-15,4s-5,4-6.5,2.5c0,0-9-7-9-10s-2-8,7-10,31-7,39-7,14-2,17,2S1600,442,1594,446Zm255-29c0,13.25-10.21,21-26.5,21-14.5-2-25.5-8-29.5-22,0-13.25,10.21-23,26.5-23,12.8,1.46,21.05,5.07,25.73,13.17L1845,406c-3-2-26,1-39,3s-13,5-12,9,6,10,6,10c1.5,2.5,8.5-2.5,8.5-2.5s10-3,15-2,7.5,5.5,9.5,4.5S1846,421,1849,417Z">
-          </path>
-        </g>
-        <!-- Часть крыши  -->
-        <g data-name="skin-elem-krysha" class="krysha opacity">
-          <path
-            d="M1179.5,156.5c-52.5,5.5-74.8,7.6-82,8.6-20.2,2.7-60.6,9.2-76.5,12.4-9.6,1.9-21.8,4.2-27,5-30.3,4.6-60.8,12.8-81.2,21.9l-5.3,2.4,3,1.2c5,2,8.7,1.4,18.6-2.8,9-3.8,10.9-4.3,34-7.1C1080,187,1206,182,1323,188.8l19.5,1.8,6.3-3.7c.27-.33,2.69,2.26,3.25,1.78,4.7-4,17.89-16.5,27.45-20,11.2-4.2,34.5-7.7,36.5-8.2C1392,152,1232,151,1179.5,156.5Z">
-          </path>
-        </g>
-        <!-- Часть крыльев -->
-        <g data-name="skin-elem-ch-krylia" class="ch-krylia opacity">
-          <path id="крылья"
-            d="M1004.82,409.84c-15.15,0-45.17,7.15-71.82,11.26-41,8.9-46.71,13.38-90.5,27.6-53.1,18.9-89.1,37-102.5,47.3-1.63,1.3-4.14,1.84-8.69,2.49l10-.84c19.85-2,41.15-1.85,72.2.59,32.65,2.58,40.82,4.14,55.3,10.34a72,72,0,0,0,11.92,4,245.22,245.22,0,0,1,27.3,9.17l18.32,7.06L933.3,535l12,14.19L961.74,540c25.26-9,38.26-13,63.56-13.09,16.79.85,24.74,3.37,38.81,9.57C1064.11,536.48,1071,435,1004.82,409.84Z">
-          </path>
-        </g>
-        <!-- Часть капота  -->
-        <g data-name="skin-elem-chast-capot" class="chast-capot opacity">
-          <path
-            d="M340.41,491.25c-13.54,5.91-26.16,6.94-28.19,2.3s7.31-13.2,20.85-19.11,26.16-6.94,28.19-2.3S354,485.34,340.41,491.25ZM933,421.1c-41,8.9-46.71,13.38-90.5,27.6-53.1,18.9-89.1,37-102.5,47.3-1.63,1.3-4.14,1.84-8.69,2.49l-.75.06c6.83-1.36,24.62-12,31.63-17.28,15.51-10,32.93-16,90.11-39.12,45.93-15.26,45.93-15.26,95.81-24.53C948.11,417.62,726,375,427,396c-8.14.57-23.7,4.3-35,6.1-43.6,6.6-85.5,16.4-113,26.4-12.9,4.6-90,42.3-106.5,52-17.1,10-20.5,16.5-21.1,24.6-.4,5.9-1,6.4.7,10.8l7.2,10,10.1-10.2c14.7-13,20.3-12.8,31.1-14.6,9.6-1.5,55.4-.6,70.9,1.8,13.2,2.2,13.6,1.1,19.3,5.5,1.65,3.8,5,5.45,10.3,5.59s12.65-1.24,14.3-3.49c8.7-3.5,9.7-2.5,32.94-6.1l.76-.1c11.4-1.5,20-2.3,56.5-2.5,23.7.1,46.6,1.7,50.9,2.3,13.4,1.8,26.3,8.5,37.4,20.3,6.3,6.6,5.5,9.5,25.8,6.1,8.1-1.4,16.8-2.5,19.3-2.5,5.7,0,21.8-3.3,28.7-5.3l147.1-21.8c7.46-1.24,12.76-1.86,16.61-2.41l-.75.06c6.83-1.36,24.62-12,31.63-17.28,15.51-10,32.93-16,90.11-39.12,45.93-15.26,45.93-15.26,95.81-24.53">
-          </path>
-        </g>
-        <!-- Дверной проем 4 шт. -->
-        <g data-name="skin-elem-dver-proem" class="proem opacity">
-          <path class="cls-1"
-            d="M1262.49,746.83c-.55,1.16-1.23,2.45-2,4-2.42,4.55-4.42,9.41-4.42,10.81a5.66,5.66,0,0,1-.92,3l1.4-.18c6.22-1,37.79-3.73,71-7.5,228.8-26.1,377.5-48,415.2-52.6,19.39-3.83,29.28-8.39,37.75-16.65Z">
-          </path>
-        </g>
-        <!-- Глянцевые стойки дверей 4 шт. -->
-        <g data-name="skin-elem-stoiki-dverei" class="dverei opacity">
-          <path
-            d="M1523.1,190.6c2.9,7.4,10.4,32.6,14.5,48.9,9.7,38.6,17.4,92.8,17.4,122.9v6.9l9.8-.6c5.3-.4,19.4-.9,31.3-1.3l21.6-.7-1.9-8.6a819.24,819.24,0,0,0-48.4-151.6l-7.6-17.5H1547c-7,0-15.5-.3-18.9-.6l-6.2-.7Z">
-          </path>
-        </g>
-        <!-- Остальная часть -->
-        <g data-name="skin-elem-other-elem" class="other-elem hidden">
-          <path
-            d="M2079,539.4c-1.4-20.5-2.9-26.9-10.2-41-3.3-6.6-6.9-13.1-7.9-14.5s-3.6-6.4-5.9-10.9-4.4-8.6-4.9-8.9-1.1-4-1.4-8.1a57.32,57.32,0,0,0-2-11.6c-3.2-8.8-14.2-28.8-17.7-31.9-2.4-2.1-2.5-3.4-.6-4.9,1.3-.9,1-2.1-1.8-8.1-4.5-9.7-13.8-23.8-17.2-26.2a47.49,47.49,0,0,0-7.9-4.1c-11.6-4.8-29.4-11.5-34-12.9-19.8-5.9-38.6-17.3-65.5-39.8-9.6-8.1-20.9-17.2-25-20.3s-11.5-8.8-16.5-12.7-11.2-8.7-13.9-10.6c-14.2-10-18.5-13-34.1-23.3a528.53,528.53,0,0,0-61-35.5c-27.9-14.2-60.9-27.6-81.3-33-4.6-1.2-10.2-2.9-12.4-3.7-7-2.4-49.6-11.2-64.8-13.3-31.8-4.4-53.4-7.3-80.5-8.1-15.4-.5-33.4-.5-40-1.4-18.6-2.3-117-4.9-154-4-52.5,1.3-115.6,4-137,5.9-15.1,1.4-74.8,7.6-82,8.6-20.2,2.7-60.6,9.2-76.5,12.4-9.6,1.9-21.8,4.2-27,5-30.3,4.6-60.8,12.8-81.2,21.9l-5.3,2.4,3,1.2c5,2,8.7,1.4,18.6-2.8,9-3.8,10.9-4.3,34-7.1,93.4-11.7,194-16.7,284.8-14.2,47.7,1.3,82.9,2.9,97.8,4.7l6.2.7-8.6,9.1c-7.9,8.4-30.1,36.7-51.9,66.1-11.1,15-28,40.6-49.4,74.5l-16.5,26.3-25.5-.7L1255,779l561-47.5c2.3-24.6,9.1-71.4,12.5-86,13.5-57.5,29.6-84.2,51.1-107.4,23.3-25.1,48.3-28.8,71.4-17.9,20,13.8,32,34.6,38.5,60.2l2.8,25.3c.5,3.7,1,18.9,1,33.8-.3,27.5,1.2,38.5-2.8,59.9a88.38,88.38,0,0,0-1.5,12.5,34.86,34.86,0,0,1-.9,7.8l-2.9,7.2,10.2-6.3c2.8-1.3,7-3.5,9.4-4.9a28.45,28.45,0,0,1,4.7-2.7c.3,0,6.5-3.4,13.8-7.6,28.4-16.4,33.2-20.7,36.5-33.2a110.57,110.57,0,0,0,2.7-11.7c.4-2.2,3.1-15.2,6.1-28.8C2077.9,589.3,2080.6,564.9,2079,539.4ZM1594,446c-6,4-11,8-15,8,0,0-11.5-5.5-17.5-4.5a126.84,126.84,0,0,0-15,4s-5,4-6.5,2.5c0,0-9-7-9-10s-2-8,7-10,31-7,39-7,14-2,17,2S1600,442,1594,446Zm254-31c-2,5-6.5,11.5-14.5,12.5s-3,0-3,0a14.09,14.09,0,0,0-5-3c-3-1-10-2-14-1S1800,428,1800,428s-5-5-6-9-2-8,10-10,30-5,35-4S1850,410,1848,415Zm19.5-55.5c-3.1,6.1-.5,8.5-23,8.5-40.6,0-198.9,4-236.5,6-16.3.8-163.6,9.7-248,14.9-16.8,1.1-30.8,1.6-31.2,1.3-3.8-3.7,11-12.6,23.5-14.2,4-.5,16-1,26.7-1,29.4-.1,57.6-1.7,64.5-3.5a106.17,106.17,0,0,0,14.3-5.6c11.4-5.5,14.7-10.8,17.2-27.5a88.13,88.13,0,0,1,1.9-9.8c1-2.8-.6-12.1-2.9-16.7a14.72,14.72,0,0,0-4.8-5.3c-7.5-3.9-48.4-8.9-72.2-8.8-18.4,0-27.1,1.2-40.5,5.3-12,3.7-18.1,6.7-22.7,11.1-3,2.8-3.6,4.1-4.1,9.3a104.24,104.24,0,0,0,.3,15.5c2.4,24,2.4,23.3.2,25.3-1.1,1-6.8,3.8-12.5,6.2-17.1,7.1-26.1,13.8-25.9,19.4.1,2.8,0,2.9-6.6,3.5-3.7.3-12.4.8-19.5,1.2l-12.7.7,3.5-9.9c5.3-14.7,8.2-20.1,28.6-52.4,43.5-69.1,61.1-93.3,85.9-118,16-16,26.7-23.2,37.7-25.6,47.8-10.4,68.9-9.9,108.3-10.2,9.1-.1,24.2.3,33.5.8,65.4,3.9,120.3,15.5,169.8,35.1,24.4,9.7,58.7,28.2,96.7,55.4,15.6,11.2,31.8,29.3,43.7,46.7l4.8,8,4,12.7S1869.2,356,1867.5,359.5Z">
-          </path>
-        </g>
-      </svg>
-    </div>
-  </form>
-</div>
-
-<script>
-  const
-    optics = document.querySelector('#skin-elem-optika'),
-    opticsSvg = document.querySelector('.optika'),
-    hood = document.querySelector('#skin-elem-capot'),
-    hoodSvg = document.querySelector('.capot'),
-    mirror = document.querySelector('#skin-elem-zerkalo'),
-    mirrorSvg = document.querySelector('.zerkalo'),
-    wings = document.querySelector('#skin-elem-krylia'),
-    wingsSvg = document.querySelector('.krylia'),
-    thresholds = document.querySelector('#skin-elem-porogi-2'),
-    thresholdsSvg = document.querySelector('.porogi'),
-    dooredges = document.querySelector('#skin-elem-kromki'),
-    dooredgesSvg = document.querySelector('.kromki'),
-    loadingarea = document.querySelector('#loadingarea'),
-    windshield = document.querySelector('#skin-elem-stoiki-stekla'),
-    windshieldSvg = document.querySelector('.stekla'),
-    bumper = document.querySelector('#skin-elem-bamper'),
-    bumperSvg = document.querySelector('.bamper'),
-    ptf = document.querySelector('#skin-elem-ptf'),
-    ptfSvg = document.querySelector('.ptf'),
-    handles = document.querySelector('#skin-elem-ruchki'),
-    handlesSvg = document.querySelector('.ruchki'),
-    roof = document.querySelector('#skin-elem-krysha'),
-    roofSvg = document.querySelector('.krysha'),
-    bonnet = document.querySelector('#skin-elem-chast-capot'),
-    bonnetSvg = document.querySelector('.chast-capot'),
-    partwings = document.querySelector('#skin-elem-ch-krylia'),
-    partwingsSvg = document.querySelector('.ch-krylia'),
-    doorway = document.querySelector('#skin-elem-dver-proem'),
-    doorwaySvg = document.querySelector('.proem'),
-    pillars = document.querySelector('#skin-elem-stoiki-dverei'),
-    pillarsSvg = document.querySelector('.dverei'),
-    otherElem = document.querySelector('#other-elem'),
-    otherElemSvg = document.querySelector('.other-elem'),
-    hidden = document.querySelector(".skin-img"),
-    clickClear = document.querySelector('.button-clear'),
-    carEl = document.querySelector('.svg-image'),
-    checkbox = document.querySelectorAll("input[name=work]"),
-    price = document.querySelector('.price'),
-    priceEl = document.querySelectorAll('.checkbox-element > input');
 
 
-  let sum = 0;
-  // Нажатие на кнопку "Стереть всё"
-  function clearEl(e) {
-    {
-      for (let i = 0; i < carEl.children.length; i++) {
-        const element = carEl.children[i];
-        element.classList.add('opacity')
-        Array.prototype.forEach.call(checkbox, function (cb) {
-          cb.checked = e.target.checked;
-        })
-        price.innerHTML = '0.0 ₽';
-        sum = 0;
+      <div class="box-images">
+        <!-- <img src="./img/skin-car-1-transformed.png" alt="" class="images-car show"> -->
+        <img src="https://static.tildacdn.com/tild3462-3163-4265-a434-656630353230/skin-car-1.png" alt=""
+          class="images-car show">
+
+        <!-- <img src="./img/skin-car-1.png" alt="" class="images-car show"> -->
+        <svg class="svg-image" version="1.0" xmlns="http://www.w3.org/2000/svg" width="800px" height="372px"
+          viewBox="0 0 2156.000000 1004.000000">
+          <!-- Оптика -->
+          <g data-name="skin-elem-optika" class="optika opacity">
+            <path
+              d="M761,495.7c-24,1.8-108.5,12-131,15.8-8,1.3-35,5.6-60,9.4s-50.2,7.8-55.8,8.7l-10.4,1.7.5,3.1c.5,3.2-6.4,30.5-10.2,40.7-3.4,8.9-11.1,19-18,23.7-5.8,3.8-5.9,4-3.3,4.5,1.5.3,7.9.3,14.2.1s28.2-.9,48.5-1.4c43-1,42.3-.9,63.5-10.9,14.1-6.7,17.8-7.9,32-9.6,2.5-.3,5-.2,5.6.3s1.4,3.2,1.8,6.2,1.1,6.2,1.6,6.9c1.8,3,32.3,2.4,73.9-1.4,14.9-1.4,16.2-1.7,43.6-10.4s47.9-16.8,59.5-23.4c11-6.2,34.5-25.4,48.8-40l9.4-9.4-7.4-3.1c-11.4-4.7-19.8-7-29.9-8.1C820.8,497.2,770.2,495,761,495.7Z">
+            </path>
+            <path
+              d="M145.5,500.8c-9.8,5.7-19.9,15.3-20.8,20-1.1,5.5,2.6,48.8,4.4,50.6.5.6,1.1.3,1.5-.7a2.77,2.77,0,0,1,2.5-1.7c1.3,0,2,1,2.5,3.7,1.5,8.1,3.7,11.5,8.4,12.8a30.53,30.53,0,0,1,5.8,2.2,33.07,33.07,0,0,0,6.8,2c3.4.6,3.4.5,3.4-3.1a35.51,35.51,0,0,0-2-9.3c-1.7-4.8-2-8.4-2.1-21.8,0-15.8.9-23.3,3.5-28.3,1.2-2.3,1.1-3.3-1.5-9.2-4.1-9.8-5.3-15.3-4.1-19,.6-1.6.8-2.9.4-2.9S149.9,498.3,145.5,500.8Z">
+            </path>
+          </g>
+          <!-- Капот -->
+          <g data-name="skin-elem-capot" class="capot opacity">
+            <path
+              d="M762.19,481.27c15.51-10,32.93-16,90.11-39.12,45.93-15.26,45.93-15.26,95.81-24.53,120.74-20,176.42-30.16,200.65-31.46,19.33-1,45.25-7.59,58.52-15.72l6.08-4.39-25.66-1.45c-53-2.6-268-7.1-301.7-6.4-5.2.1-15.3.3-22.5.5-67.6,1.2-185.8,6.7-199.3,9.2-2.6.5-8.1,1.2-12.2,1.6s-8.6.8-10,1-15.8,1.1-32,2c-44,2.2-55.7,3.3-104,10.1-31.5,4.4-49.1,7.4-79,13.4-8,1.6-23.7,4.3-35,6.1-43.6,6.6-85.5,16.4-113,26.4-12.9,4.6-90,42.3-106.5,52-17.1,10-20.5,16.5-21.1,24.6-.4,5.9-1,6.4.7,10.8l7.2,10,10.1-10.2c14.7-13,20.3-12.8,31.1-14.6,9.6-1.5,55.4-.6,70.9,1.8,13.2,2.2,13.6,1.1,19.3,5.5,1.65,3.8,5,5.45,10.3,5.59s12.65-1.24,14.3-3.49c8.7-3.5,9.7-2.5,32.94-6.1l.76-.1c11.4-1.5,20-2.3,56.5-2.5,23.7.1,46.6,1.7,50.9,2.3,13.4,1.8,26.3,8.5,37.4,20.3,6.3,6.6,5.5,9.5,25.8,6.1,8.1-1.4,16.8-2.5,19.3-2.5,5.7,0,21.8-3.3,28.7-5.3l147.1-21.8c7.46-1.24,12.76-1.86,16.61-2.41l-.75.06C737.39,497.19,755.18,486.57,762.19,481.27Zm-421.78,10c-13.54,5.91-26.16,6.94-28.19,2.3s7.31-13.2,20.85-19.11,26.16-6.94,28.19-2.3S354,485.34,340.41,491.25ZM740,496c-1.63,1.3-4.14,1.84-8.69,2.49l-.75.06c6.83-1.36,24.62-12,31.63-17.28,15.51-10,32.93-16,90.11-39.12,45.93-15.26,45.93-15.26,95.81-24.53,120.74-20,176.42-30.16,200.65-31.46,19.33-1,45.25-7.59,58.52-15.72l6.08-4.39,2.64.15-15.8,8.5C1183.2,385,1160,386,1142,388c-16.65,1.79-81,13.33-209,33.1-41,8.9-46.71,13.38-90.5,27.6C789.4,467.6,753.4,485.7,740,496Z">
+            </path>
+          </g>
+          <!-- Зеркала  -->
+          <g data-name="skin-elem-zerkalo" class="zerkalo opacity">
+            <path
+              d="M1383,297.6a135.53,135.53,0,0,0-31.6,5.5c-12,3.8-18,5.7-22.6,10.1-3,2.8-4.6,6.1-5.1,11.3a104.23,104.23,0,0,0,.3,15.5c2.4,24,3.4,22.3,1.2,24.3-1.1,1-6.8,3.8-12.5,6.2-14.9,6.2-25.1,13.1-25.7,17.5-.8,5.4-.5,5.5,8.3,5.2,17.5-.5,28.7-1.4,28.2-2.3a5.6,5.6,0,0,1,.1-3.4c.5-2,2.5-3.5,8.6-6.6,9.9-5,15.9-5.8,41.8-5.9,29.4-.1,57.6-1.7,64.5-3.5a106.17,106.17,0,0,0,14.3-5.6c11.4-5.5,16.7-10.8,19.2-27.5.7-4.4.5-8.8.9-9.8,1-2.8-.6-12.1-2.9-16.7s-6.3-6.3-16-8.3C1429,299,1394.17,296.62,1383,297.6Z">
+            </path>
+            <path
+              d="M705.5,318c-12.5,2.2-17.3,3.5-25.7,6.6-9.2,3.5-12.8,7.1-15.5,12.4-2.2,4.2-2.3,7-1.3,15.6,4,19.4,2.5,16.5,26-2.3,11.3-9,24.2-19.1,28.8-22.5,9.2-6.8,6-8.4,5.5-8.9C721,316,715.3,316.2,705.5,318Z">
+            </path>
+          </g>
+          <!-- Крылья -->
+          <g data-name="skin-elem-krylia" class="krylia opacity">
+            <path id="крылья"
+              d="M1263.69,608.08c4.61-43.91,5-52.61,3.62-73.44-2-32.35-6.7-87.16-8-95.69-.71-4.42-2.2-14.65-3.23-22.67l-2-14.74.07-13.2a158.76,158.76,0,0,1,7.56-17.45c3.31-5.43,2.32-7.63-1.5-6.71-.8.18-8.11.51-23.52.59l-23.11,1.12-.22.16,2.64.15-15.8,8.5C1183.2,385,1160,386,1142,388c-16.65,1.79-81,13.33-209,33.1-41,8.9-46.71,13.38-90.5,27.6-53.1,18.9-89.1,37-102.5,47.3-1.63,1.3-4.14,1.84-8.69,2.49l10-.84c19.85-2,41.15-1.85,72.2.59,32.65,2.58,40.82,4.14,55.3,10.34a72,72,0,0,0,11.92,4,245.22,245.22,0,0,1,27.3,9.17l18.32,7.06L933.3,535l12,14.19L961.74,540c25.26-9,38.26-13,63.56-13.09,16.79.85,24.74,3.37,38.81,9.57a103.17,103.17,0,0,1,39.58,31.41c9,11.59,14,14.53,23.45,40.13,4.83,13.1,7.27,22,8.17,22,2.1,0,3.95,1.56,6.46,15.62,5.12,28.31,6,38.63,5.89,68.14-.05,22,3.55,32.5,1.88,45.37-1.08,8.88-4.84,17.37-4.64,17.57,1.17,1.22,107.7-9.84,109.64-11.3a5.67,5.67,0,0,0,1.48-3.77c0-1.4,2-6.26,4.42-10.81,4.9-9.4,4.88-8.9,2.42-29.76C1257.52,674.66,1257.57,667.08,1263.69,608.08Z">
+            </path>
+          </g>
+          <!-- Пороги 2 шт. -->
+          <g data-name="skin-elem-porogi-2" class="porogi opacity">
+            <path
+              d="M1805,671.5a77.18,77.18,0,0,1-11.6.4c-.1.1-3.9,5.5-7.3,9.6-10.1,12.4-19.6,18.2-43.4,22.9-37.7,4.6-186.4,26.5-415.2,52.6-33.21,3.77-64.78,6.48-71,7.5-5.5.8-29.8,2.7-54,5.4s-49,6.2-51.5,6.6-5.6.7-7,.8c-2.9.2-.8,1.4-1.2,27.1l-1.3,15.8-1.8,2.3c-2,1.8-6.8,2.8-9.2,3.5-4.19.64-7.41,3-3,7.4,1.1,1.1,2.8,1.4,5.8,1,2.3-.2,69.2-7.6,148.7-16.4,140.5-15.5,156.2-17.1,212-22.5,14.6-1.4,52.4-5.3,84-8.5s68.3-6.9,81.5-8c100.3-8.5,149.1-12.2,150.7-13.7,3.8-1.3,3.9-3.6,5.8-24.8.7-6.6,1.7-23.7,3.6-38s4.4-31.8,4.4-32.8C1824,667.7,1820.8,669.6,1805,671.5Z">
+            </path>
+          </g>
+          <!-- Кромки двери 4 шт. -->
+          <g data-name="skin-elem-kromki" class="kromki opacity">
+            <path
+              d="M1856,360.8c0,.6.9,1.2,2,1.5s2,.3,2,.1-.9-.8-2-1.4S1856,360.3,1856,360.8Zm-2,12.8a108.58,108.58,0,0,0,4.8,11,53.56,53.56,0,0,1,4.3,12.8c1.3,7.7.7,21.7-1.3,30.8-1,4.7-1,7.8.2,16.5,1.8,14.6,2.4,38.8,1.1,47.4a145.31,145.31,0,0,1-4.2,16.7c-5.1,15.8-45.2,111.9-68.6,166.2l-.5,2.5,1.2-1a16.09,16.09,0,0,1,6.3-3l3.2-1.1,11.8-22.9c5.4-12.7,14.3-34.3,19.9-48s13.5-36,19-49.5c16.7-40.8,19.5-50.1,20.8-69.4.9-12.1.7-16.3-1.1-30.9-2-16-2-17.3-.5-25.5,3-16.5,1.4-35.6-3.7-44.6a71.6,71.6,0,0,1-4.2-8.8L1860,367l-3,.3-4.7.2Zm-259,1.9c0,.4,2.7,5,6,10.3,10.4,17.1,12.1,15.5,13.1,47.6.5,15.4.6,38.7,1.4,51.6s1.5,28.4,1.5,34.5c0,12.3-2.2,47-4.5,70-2.3,23.6-2.3,24-1.2,62.5,0,0,1.3,33,1,36.5s-4.5,13.5-4.5,13.5c-3.6,9-6.8,18.2-6.8,21.7,0,.6,5,.3,9.6-.5.4-.2.4-1.2,1.7-4.8.4-2.3,2.7-9.3,5.1-15.7,6.6-14.7,4.88-10.32,3.1-59.7-.6-30.7,1.5-39,2.9-52.5.9-8.8,2.5-28.2,3.5-43,1.5-23.6,1.6-29.6.5-48-.7-11.6-3.7-34.3-4.3-50.5-1.8-49.5-2.6-48.4-12-64l-5.7-9.5-4.2-.3C1598,375,1595,375.2,1595,375.5Z">
+            </path>
+          </g>
+          <!-- Стойки лобового стекла 2 шт. -->
+          <g data-name="skin-elem-stoiki-stekla" class="stekla opacity">
+            <path id="стойки_стелка" data-name="стойки стелка"
+              d="M1341,198.7c-18,17.3-62.8,79.4-80.7,107.8-4.8,7.7-15.2,24-23.1,36.4s-14.1,23.5-14,23.5,10.6,0,20.8-.2l20.5-1.3,16.5-26.2c44.9-71.4,64.2-98,89-122.7,10.5-10.5,16.6-14.8,24-19.2,5.2-3.2,9.2-6.2,10-6.7,1-.7-9.3-1-26.2-1l-27.6-.1Z">
+            </path>
+          </g>
+          <!-- Бампер  -->
+          <g class="bamper opacity">
+            <path
+              d="M874,509.87c.8,1.31-22.33,22.33-36.31,33.6a208,208,0,0,1-20.12,14.38c-13.08,7.44-34.6,15.89-63.67,24.94l-25.66,7.55L708.62,592c-28.46,2.41-66.88,4.22-67.89,2.51-.5-.8-1.31-4.12-1.91-7.44l-1.11-6.14-4.43-.3c-8.55-.6-19.91,1.51-33.79,8.25-7.24,3.52-15.59,7.14-18.61,8-7.24,2.21-27.76,3.42-59.64,3.52-14.18.1-32.69,1.6-40.94,2.11l-15,1L456.08,609c-19.08,10-32.19,17.8-51.1,21.62-15.39,3.12-51.9,5.23-82.47,4.83-24.84-.3-27.06-.4-30.27-2.41-4.53-2.62-8-8.75-8-14.18,0-4-.2-4.22-3.42-4.83-4.93-1-7.84,0-11.36,4.93-3.82,5.33-7.65,9.15-13.28,11.16-9.05,3.12-50.89.41-71.11-4a45.62,45.62,0,0,1-11.77-4.53c-6.74-4.22-9.45-9.15-11.87-20.72-2.72-13.58-.31-12-4.64-12.08a36,36,0,0,1-10.55-2.21c-2.62-1.21-3.43-3.21-4.34-3.21-2.11,0-5.33-5.63-6.14-10.86-1.21-7.85-4.31-7.24-20.31,8.85-10,10.06-21,24.34-24.14,31.18-2.31,5.33-2.41,7-1.81,20.81,1.41,28.36,1.91,31.88,10.26,63.67,1.911,7.44,3.92,15.79,4.43,18.61s3.62,15.39,7,28.06,5.83,23.33,5.33,23.74c-2.41,2.31-15.61,3.35-17.6,5A41,41,0,0,0,91.08,781c0,.5-3,3.63-6.54,8.05S79,798.54,79,799.14c0,2.72,5.43,8.85,9.35,10.55,4.43,2,16.6,3.22,33.4,5,5.53.5,13.28,1.41,17.1,2s13.08,2.51,20.52,3.11c13.08,1.11,13.58.31,17.1,3.43,4.43,4,11.26,6.14,24.24,7.54,7.85.91,9.86,1.41,11.16,3.22,1.51,1.91,5.33,2.62,43.85,7.44,23.13,2.82,61.76,6.84,85.79,8.85,62.06,5,120.4119,9.45,139.3,10.56,19.21,1,21.73.4,28.16-6.74l4.43-3.83L524.87,852c6.24.91,22.93,2.72,37,3.92,31.78,2.82,92.83,3.72,196.33,3l71.31-1.5,2.31-2.72c3-3.52,3.12-4,5-48.58,1.71-39.83,2.21-45.06,6.14-68.39,10.46-63.06,30.48-114.06,59.24-150.87,8.35-10.66,25.14-25.75,36.51-33.9l9.15-6.54-9.25-10.15-9.25-9.15-23.64-9C883,509.58,872.88,508.06,874,509.87ZM375.41,652.2c4.22,1.31,4.63,4.83,4.12,36.31l-.4,30.67,5.13.41c13.08,3.72,16.29,3.92,62.16,3.32l45.16-.5,3.12,2.82c4.32,3.92,4.53,10.16.5,15a10.21,10.21,0,0,0-2.82,6.84c0,3.72-4,12-8.75,17.9-1.91,2.41-2.72,9.05-2.72,9.05s-1.91,6-5.13,13.48c-2.82,4-5.93,8.85-7,10.56-5.53,8.85-11.26,12-13.58,13.2-5.93,3-17.8,5.23-29.47,5.43-13.58.2-12.7,1.33-19.31-2.34L405,811l-28.46-1.6c-47.37-1.11-59.44-1.61-63.16-2.72-1.91-.5-25.14-2-25.14-2s-23.43-1.5-25.65-2.11-7.64-.41-12.07-.91-13.48-1.61-20.12-2.51-17.5-2-24.14-2.51a58.1,58.1,0,0,1-13.78-2.51,5.32,5.32,0,0,0-3.82.5c-1.11.6-6.13,1.31-10,1.61-1.23.11-11-1.07-9.76-.41a40.48,40.48,0,0,0-7.14-2.72c-3.82-.8-15.79-9.16-19.11-14.49a22.33,22.33,0,0,1-2.92-6.94c-.3-1.81-1-3.52-1.51-3.82-1.41-.8-5.95-14.48-8.56-22-3.62-10.36-7.44-25.45-7.44-29.17a16.22,16.22,0,0,0-1.71-6.54c-1.41-3-1.53-2.13-2.2-5.93,1.71-3,6.14-4,8.65-1.91,1.11.91,4.12,2.21,9.55,2a57.64,57.64,0,0,1,12.17.91c2.31.7,6.54.31,9.45.41a37.11,37.11,0,0,1,10.76,2.82c3.12,1.41,6.83,1.21,7.14.71s-.2-12.28.11-27.36c.5-31.88.8-35.5,3.32-37.31,1.51-1,19.21-.5,97.86,2.92C330.15,649.68,374.2,651.79,375.41,652.2Zm345.09,19.61c13.18,6.74,19.81,20.32,21.42,43.85.5,7.14,1.51,16.49,2.31,20.62a110.31,110.31,0,0,1,1.61,17.4c0,7,.5,10.76,1.61,13,2.11,4,5.43,20,5.43,25.95,0,5-3.52,13.48-6.74,16.39-1.11,1-4.22,2.21-6.94,2.72a78.59,78.59,0,0,0-10.46,2.92c-7.74.37-8.74.37-17.6.6-2.72-.8-5.23-1.21-5.73-.91s-5,1-10.16,1.41-15.29,1.41-22.63,2.11c-10.66,1-14.18,1-17.6,0a39.1,39.1,0,0,0-9.35-1.11,53.12,53.12,0,0,1-12.57-1.91c-4.12-1.11-9.45-2.62-12-3.22s-7.54-2-11.26-3a162,162,0,0,0-17.1-3.52,175.74,175.74,0,0,1-18.41-4c-4.43-1.31-10.06-2.82-12.57-3.32-5.73-1.21-10.06-5.73-10.06-10.46,0-1.81,1.71-6.34,4-10.56,2.21-4,4-8.25,4-9.25s1.41-3.52,3-5.33,3-4,3-4.73c0-1.61,6.74-15,8.55-17.1a33.43,33.43,0,0,0,3.32-7c4.83-13.68,7.85-20,11.67-25.14,2.31-3,6.14-8.35,8.55-11.67A44.84,44.84,0,0,1,627.56,678c3.62-.5,7-1.21,7.64-1.61s6.64-1.11,13.38-1.51c25.45-1.71,40.63-3.12,46-4.53C702.59,668.29,715.06,669,720.49,671.81Z">
+            </path>
+          </g>
+          <!-- ПТФ -->
+          <g data-name="skin-elem-ptf" class="ptf opacity">
+            <path d="M104.6,710.5c.4.8.8,1.5,1,1.5s.4-.7.4-1.5-.4-1.5-1-1.5S104.3,709.7,104.6,710.5Z"></path>
+            <path
+              d="M649,728.2c-23.9.4-44.5,1-45.6,1.3-2.5.5-6.8,5.9-8.9,10.9-2.9,6.8-4.8,6.6,54.5,6.6h52.8l.7-5.8c.3-3.2.2-6.9-.4-8.4-1.2-3.2-4.8-5.9-7.6-5.6C693.4,727.3,672.9,727.7,649,728.2Z">
+            </path>
+          </g>
+          <!-- Под ручками 4 шт. -->
+          <g data-name="skin-elem-ruchki" class="ruchki opacity">
+            <path
+              d="M1565.5,414c-19.05,0-36.5,11.42-36.5,25.5s18.45,25.5,37.5,25.5c23.5,0,31.5-11.42,31.5-25.5S1584.55,414,1565.5,414Zm28.5,32c-6,4-11,8-15,8,0,0-11.5-5.5-17.5-4.5a126.84,126.84,0,0,0-15,4s-5,4-6.5,2.5c0,0-9-7-9-10s-2-8,7-10,31-7,39-7,14-2,17,2S1600,442,1594,446Zm255-29c0,13.25-10.21,21-26.5,21-14.5-2-25.5-8-29.5-22,0-13.25,10.21-23,26.5-23,12.8,1.46,21.05,5.07,25.73,13.17L1845,406c-3-2-26,1-39,3s-13,5-12,9,6,10,6,10c1.5,2.5,8.5-2.5,8.5-2.5s10-3,15-2,7.5,5.5,9.5,4.5S1846,421,1849,417Z">
+            </path>
+          </g>
+          <!-- Часть крыши  -->
+          <g data-name="skin-elem-krysha" class="krysha opacity">
+            <path
+              d="M1179.5,156.5c-52.5,5.5-74.8,7.6-82,8.6-20.2,2.7-60.6,9.2-76.5,12.4-9.6,1.9-21.8,4.2-27,5-30.3,4.6-60.8,12.8-81.2,21.9l-5.3,2.4,3,1.2c5,2,8.7,1.4,18.6-2.8,9-3.8,10.9-4.3,34-7.1C1080,187,1206,182,1323,188.8l19.5,1.8,6.3-3.7c.27-.33,2.69,2.26,3.25,1.78,4.7-4,17.89-16.5,27.45-20,11.2-4.2,34.5-7.7,36.5-8.2C1392,152,1232,151,1179.5,156.5Z">
+            </path>
+          </g>
+          <!-- Часть крыльев -->
+          <g data-name="skin-elem-ch-krylia" class="ch-krylia opacity">
+            <path id="крылья"
+              d="M1004.82,409.84c-15.15,0-45.17,7.15-71.82,11.26-41,8.9-46.71,13.38-90.5,27.6-53.1,18.9-89.1,37-102.5,47.3-1.63,1.3-4.14,1.84-8.69,2.49l10-.84c19.85-2,41.15-1.85,72.2.59,32.65,2.58,40.82,4.14,55.3,10.34a72,72,0,0,0,11.92,4,245.22,245.22,0,0,1,27.3,9.17l18.32,7.06L933.3,535l12,14.19L961.74,540c25.26-9,38.26-13,63.56-13.09,16.79.85,24.74,3.37,38.81,9.57C1064.11,536.48,1071,435,1004.82,409.84Z">
+            </path>
+          </g>
+          <!-- Часть капота  -->
+          <g data-name="skin-elem-chast-capot" class="chast-capot opacity">
+            <path
+              d="M340.41,491.25c-13.54,5.91-26.16,6.94-28.19,2.3s7.31-13.2,20.85-19.11,26.16-6.94,28.19-2.3S354,485.34,340.41,491.25ZM933,421.1c-41,8.9-46.71,13.38-90.5,27.6-53.1,18.9-89.1,37-102.5,47.3-1.63,1.3-4.14,1.84-8.69,2.49l-.75.06c6.83-1.36,24.62-12,31.63-17.28,15.51-10,32.93-16,90.11-39.12,45.93-15.26,45.93-15.26,95.81-24.53C948.11,417.62,726,375,427,396c-8.14.57-23.7,4.3-35,6.1-43.6,6.6-85.5,16.4-113,26.4-12.9,4.6-90,42.3-106.5,52-17.1,10-20.5,16.5-21.1,24.6-.4,5.9-1,6.4.7,10.8l7.2,10,10.1-10.2c14.7-13,20.3-12.8,31.1-14.6,9.6-1.5,55.4-.6,70.9,1.8,13.2,2.2,13.6,1.1,19.3,5.5,1.65,3.8,5,5.45,10.3,5.59s12.65-1.24,14.3-3.49c8.7-3.5,9.7-2.5,32.94-6.1l.76-.1c11.4-1.5,20-2.3,56.5-2.5,23.7.1,46.6,1.7,50.9,2.3,13.4,1.8,26.3,8.5,37.4,20.3,6.3,6.6,5.5,9.5,25.8,6.1,8.1-1.4,16.8-2.5,19.3-2.5,5.7,0,21.8-3.3,28.7-5.3l147.1-21.8c7.46-1.24,12.76-1.86,16.61-2.41l-.75.06c6.83-1.36,24.62-12,31.63-17.28,15.51-10,32.93-16,90.11-39.12,45.93-15.26,45.93-15.26,95.81-24.53">
+            </path>
+          </g>
+          <!-- Дверной проем 4 шт. -->
+          <g data-name="skin-elem-dver-proem" class="proem opacity">
+            <path class="cls-1"
+              d="M1262.49,746.83c-.55,1.16-1.23,2.45-2,4-2.42,4.55-4.42,9.41-4.42,10.81a5.66,5.66,0,0,1-.92,3l1.4-.18c6.22-1,37.79-3.73,71-7.5,228.8-26.1,377.5-48,415.2-52.6,19.39-3.83,29.28-8.39,37.75-16.65Z">
+            </path>
+          </g>
+          <!-- Глянцевые стойки дверей 4 шт. -->
+          <g data-name="skin-elem-stoiki-dverei" class="dverei opacity">
+            <path
+              d="M1523.1,190.6c2.9,7.4,10.4,32.6,14.5,48.9,9.7,38.6,17.4,92.8,17.4,122.9v6.9l9.8-.6c5.3-.4,19.4-.9,31.3-1.3l21.6-.7-1.9-8.6a819.24,819.24,0,0,0-48.4-151.6l-7.6-17.5H1547c-7,0-15.5-.3-18.9-.6l-6.2-.7Z">
+            </path>
+          </g>
+          <!-- Остальная часть -->
+          <g data-name="skin-elem-other-elem" class="other-elem hidden">
+            <path
+              d="M2079,539.4c-1.4-20.5-2.9-26.9-10.2-41-3.3-6.6-6.9-13.1-7.9-14.5s-3.6-6.4-5.9-10.9-4.4-8.6-4.9-8.9-1.1-4-1.4-8.1a57.32,57.32,0,0,0-2-11.6c-3.2-8.8-14.2-28.8-17.7-31.9-2.4-2.1-2.5-3.4-.6-4.9,1.3-.9,1-2.1-1.8-8.1-4.5-9.7-13.8-23.8-17.2-26.2a47.49,47.49,0,0,0-7.9-4.1c-11.6-4.8-29.4-11.5-34-12.9-19.8-5.9-38.6-17.3-65.5-39.8-9.6-8.1-20.9-17.2-25-20.3s-11.5-8.8-16.5-12.7-11.2-8.7-13.9-10.6c-14.2-10-18.5-13-34.1-23.3a528.53,528.53,0,0,0-61-35.5c-27.9-14.2-60.9-27.6-81.3-33-4.6-1.2-10.2-2.9-12.4-3.7-7-2.4-49.6-11.2-64.8-13.3-31.8-4.4-53.4-7.3-80.5-8.1-15.4-.5-33.4-.5-40-1.4-18.6-2.3-117-4.9-154-4-52.5,1.3-115.6,4-137,5.9-15.1,1.4-74.8,7.6-82,8.6-20.2,2.7-60.6,9.2-76.5,12.4-9.6,1.9-21.8,4.2-27,5-30.3,4.6-60.8,12.8-81.2,21.9l-5.3,2.4,3,1.2c5,2,8.7,1.4,18.6-2.8,9-3.8,10.9-4.3,34-7.1,93.4-11.7,194-16.7,284.8-14.2,47.7,1.3,82.9,2.9,97.8,4.7l6.2.7-8.6,9.1c-7.9,8.4-30.1,36.7-51.9,66.1-11.1,15-28,40.6-49.4,74.5l-16.5,26.3-25.5-.7L1255,779l561-47.5c2.3-24.6,9.1-71.4,12.5-86,13.5-57.5,29.6-84.2,51.1-107.4,23.3-25.1,48.3-28.8,71.4-17.9,20,13.8,32,34.6,38.5,60.2l2.8,25.3c.5,3.7,1,18.9,1,33.8-.3,27.5,1.2,38.5-2.8,59.9a88.38,88.38,0,0,0-1.5,12.5,34.86,34.86,0,0,1-.9,7.8l-2.9,7.2,10.2-6.3c2.8-1.3,7-3.5,9.4-4.9a28.45,28.45,0,0,1,4.7-2.7c.3,0,6.5-3.4,13.8-7.6,28.4-16.4,33.2-20.7,36.5-33.2a110.57,110.57,0,0,0,2.7-11.7c.4-2.2,3.1-15.2,6.1-28.8C2077.9,589.3,2080.6,564.9,2079,539.4ZM1594,446c-6,4-11,8-15,8,0,0-11.5-5.5-17.5-4.5a126.84,126.84,0,0,0-15,4s-5,4-6.5,2.5c0,0-9-7-9-10s-2-8,7-10,31-7,39-7,14-2,17,2S1600,442,1594,446Zm254-31c-2,5-6.5,11.5-14.5,12.5s-3,0-3,0a14.09,14.09,0,0,0-5-3c-3-1-10-2-14-1S1800,428,1800,428s-5-5-6-9-2-8,10-10,30-5,35-4S1850,410,1848,415Zm19.5-55.5c-3.1,6.1-.5,8.5-23,8.5-40.6,0-198.9,4-236.5,6-16.3.8-163.6,9.7-248,14.9-16.8,1.1-30.8,1.6-31.2,1.3-3.8-3.7,11-12.6,23.5-14.2,4-.5,16-1,26.7-1,29.4-.1,57.6-1.7,64.5-3.5a106.17,106.17,0,0,0,14.3-5.6c11.4-5.5,14.7-10.8,17.2-27.5a88.13,88.13,0,0,1,1.9-9.8c1-2.8-.6-12.1-2.9-16.7a14.72,14.72,0,0,0-4.8-5.3c-7.5-3.9-48.4-8.9-72.2-8.8-18.4,0-27.1,1.2-40.5,5.3-12,3.7-18.1,6.7-22.7,11.1-3,2.8-3.6,4.1-4.1,9.3a104.24,104.24,0,0,0,.3,15.5c2.4,24,2.4,23.3.2,25.3-1.1,1-6.8,3.8-12.5,6.2-17.1,7.1-26.1,13.8-25.9,19.4.1,2.8,0,2.9-6.6,3.5-3.7.3-12.4.8-19.5,1.2l-12.7.7,3.5-9.9c5.3-14.7,8.2-20.1,28.6-52.4,43.5-69.1,61.1-93.3,85.9-118,16-16,26.7-23.2,37.7-25.6,47.8-10.4,68.9-9.9,108.3-10.2,9.1-.1,24.2.3,33.5.8,65.4,3.9,120.3,15.5,169.8,35.1,24.4,9.7,58.7,28.2,96.7,55.4,15.6,11.2,31.8,29.3,43.7,46.7l4.8,8,4,12.7S1869.2,356,1867.5,359.5Z">
+            </path>
+          </g>
+        </svg>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    // -----------------------------------------------------------
+    // -----------------------------------------------------------
+    // -----------------------------------------------------------
+    // Прайс-лист
+    let opticPrice,
+      kapotPrice,
+      chastKapotaPrice,
+      zerkaloPrice,
+      kryloPrice,
+      porogiPrice,
+      kromkiDvereiPrice,
+      stoykiLobovogoSteklaPrice,
+      bamperPrice,
+      ptfPrice,
+      ruchkiPrice,
+      chastKryshiPrice,
+      chastKrylaPrice,
+      stoykiDveriPrice,
+      dvernProemPrice,
+      pogruzZonaPrice,
+      ostavshChastiPrice;
+
+    document.addEventListener('click', function (e) {
+      for (let i = 0; i < rad.length; i++) {
+        const element = rad[i];
+        // Микро
+        if (rad[0].checked) {
+          opticPrice = 5000;
+          kapotPrice = 9600;
+          chastKapotaPrice = 3000;
+          zerkaloPrice = 4000;
+          kryloPrice = 4800;
+          porogiPrice = 2000;
+          kromkiDvereiPrice = 2000;
+          stoykiLobovogoSteklaPrice = 2000;
+          bamperPrice = 15600;
+          ptfPrice = 1000;
+          ruchkiPrice = 4000;
+          chastKryshiPrice = 3000;
+          chastKrylaPrice = 1500;
+          stoykiDveriPrice = 1000;
+          dvernProemPrice = 0;
+          pogruzZonaPrice = 3000;
+          ostavshChastiPrice = 10000 * 4 + 15000 + 8000;
+        }
+        // Седан
+        if (rad[1].checked) {
+          opticPrice = 5000;
+          kapotPrice = 19000;
+          chastKapotaPrice = 7500;
+          zerkaloPrice = 4000;
+          kryloPrice = 9800;
+          porogiPrice = 2000;
+          kromkiDvereiPrice = 2000;
+          stoykiLobovogoSteklaPrice = 4750;
+          bamperPrice = 18000;
+          ptfPrice = 2000;
+          ruchkiPrice = 4000;
+          chastKryshiPrice = 4000;
+          chastKrylaPrice = 3000;
+          stoykiDveriPrice = 1000;
+          dvernProemPrice = 5000;
+          pogruzZonaPrice = 4000;
+          ostavshChastiPrice = 12500 * 4 + 18000 + 12000;
+        }
+        // Внедорожник
+        if (rad[2].checked) {
+          opticPrice = 5000;
+          kapotPrice = 22500;
+          chastKapotaPrice = 8000;
+          zerkaloPrice = 6000;
+          kryloPrice = 12000;
+          porogiPrice = 2000;
+          kromkiDvereiPrice = 2000;
+          stoykiLobovogoSteklaPrice = 4750;
+          bamperPrice = 21200;
+          ptfPrice = 2000;
+          ruchkiPrice = 4000;
+          chastKryshiPrice = 5000;
+          chastKrylaPrice = 4000;
+          stoykiDveriPrice = 1000;
+          dvernProemPrice = 5000;
+          pogruzZonaPrice = 4000;
+          ostavshChastiPrice = 14000 * 4 + 24400 + 19000;
+        }
+        // Премиум
+        if (rad[3].checked) {
+          opticPrice = 5000;
+          kapotPrice = 24600;
+          chastKapotaPrice = 8000;
+          zerkaloPrice = 6000;
+          kryloPrice = 12600;
+          porogiPrice = 2000;
+          kromkiDvereiPrice = 2000;
+          stoykiLobovogoSteklaPrice = 4750;
+          bamperPrice = 24000;
+          ptfPrice = 2000;
+          ruchkiPrice = 4000;
+          chastKryshiPrice = 5000;
+          chastKrylaPrice = 4000;
+          stoykiDveriPrice = 1000;
+          dvernProemPrice = 5000;
+          pogruzZonaPrice = 4000;
+          ostavshChastiPrice = 15000 * 4 + 25000 + 22000;
+        }
       }
-    };
-  }
-  clickClear.addEventListener('click', function (e) {
-    clearEl(e)
-  });
+    });
+    // -----------------------------------------------------------
+    // -----------------------------------------------------------
+    // -----------------------------------------------------------
+  </script>
+  <script>
+    const
+      optics = document.querySelector('#skin-elem-optika'),
+      opticsSvg = document.querySelector('.optika'),
+      hood = document.querySelector('#skin-elem-capot'),
+      hoodSvg = document.querySelector('.capot'),
+      mirror = document.querySelector('#skin-elem-zerkalo'),
+      mirrorSvg = document.querySelector('.zerkalo'),
+      wings = document.querySelector('#skin-elem-krylia'),
+      wingsSvg = document.querySelector('.krylia'),
+      thresholds = document.querySelector('#skin-elem-porogi-2'),
+      thresholdsSvg = document.querySelector('.porogi'),
+      dooredges = document.querySelector('#skin-elem-kromki'),
+      dooredgesSvg = document.querySelector('.kromki'),
+      loadingarea = document.querySelector('#loadingarea'),
+      windshield = document.querySelector('#skin-elem-stoiki-stekla'),
+      windshieldSvg = document.querySelector('.stekla'),
+      bumper = document.querySelector('#skin-elem-bamper'),
+      bumperSvg = document.querySelector('.bamper'),
+      ptf = document.querySelector('#skin-elem-ptf'),
+      ptfSvg = document.querySelector('.ptf'),
+      handles = document.querySelector('#skin-elem-ruchki'),
+      handlesSvg = document.querySelector('.ruchki'),
+      roof = document.querySelector('#skin-elem-krysha'),
+      roofSvg = document.querySelector('.krysha'),
+      bonnet = document.querySelector('#skin-elem-chast-capot'),
+      bonnetSvg = document.querySelector('.chast-capot'),
+      partwings = document.querySelector('#skin-elem-ch-krylia'),
+      partwingsSvg = document.querySelector('.ch-krylia'),
+      doorway = document.querySelector('#skin-elem-dver-proem'),
+      doorwaySvg = document.querySelector('.proem'),
+      pillars = document.querySelector('#skin-elem-stoiki-dverei'),
+      pillarsSvg = document.querySelector('.dverei'),
+      otherElem = document.querySelector('#other-elem'),
+      otherElemSvg = document.querySelector('.other-elem'),
+      hidden = document.querySelector(".skin-img"),
+      buttonClear = document.querySelector('.button-clear'),
+      carEl = document.querySelector('.svg-image'),
+      checkbox = document.querySelectorAll("input[name=work]"),
+      price = document.querySelector('.price'),
+      priceEl = document.querySelectorAll('.checkbox-element > input');
+    const rad = document.getElementsByName('typeCar'),
+      microCar = document.querySelector('.car-micro'),
+      microCarRadio = document.querySelector('#car-micro'),
+      sedanCar = document.querySelector('.car-sedan'),
+      sedanCarRadio = document.querySelector('#car-sedan'),
+      crossoverCar = document.querySelector('.car-crossover'),
+      crossCarRadio = document.querySelector('#car-crossover'),
+      premiumCar = document.querySelector('.car-premium'),
+      premiumCarRadio = document.querySelector('#car-premium');
 
 
-  // Готовые наборы
-  const part1 = document.querySelector('.part-1');
-  part1.addEventListener('click', function (e) {
-    //стереть все элементы
-    clearEl(e)
 
-    //выбраные элементы
-    roofEl() // Часть крыши 
-    bonnetEl() // Часть капота
-    partwingsEl() // Часть крыльев 
-    opticEl() //Оптика
-    windshieldEl() // Стойки лобового стекла 2 шт. 
-  });
-
-  const part2 = document.querySelector('.part-2');
-  part2.addEventListener('click', function (e) {
-    //стереть все элементы
-    clearEl(e)
-    //выбраные элементы
-    opticEl() //Оптика
-    hoodEl() //Капот
-    bumperEl() // Бампер 
-    wingsEl() // Крылья 
-    windshieldEl() // Стойки лобового стекла 2 шт. 
-    roofEl() // Часть крыши 
-    mirrorEl() //Зеркала 
-
-  });
-
-  const part3 = document.querySelector('.part-3');
-  part3.addEventListener('click', function (e) {
-    //стереть все элементы
-    clearEl(e)
-    otherElemSvg.classList.remove('opacity')
-    otherElemSvg.classList.remove('hidden')
-    opticEl() //Оптика
-    hoodEl() //Капот
-    mirrorEl() //Зеркала 
-    wingsEl() // Крылья 
-    thresholdsEl() // Пороги 2 шт. 
-    dooredgesEl() // Кромки двери 4 шт.
-    windshieldEl() // Стойки лобового стекла 2 шт. 
-    bumperEl() // Бампер 
-    ptfEl() // ПТФ 
-    handlesEl() // Под ручками 4 шт. 
-    doorwayEl() // Дверной проем 4 шт.
-    pillarsEl() // Глянцевые стойки дверей 4 шт. 
-    loadingarea.checked = true;
-    otherEl()
-  });
-
-  const part4 = document.querySelector('.part-4');
-  part4.addEventListener('click', function (e) {
-    // clearEl(e)
-    // otherElemSvg.classList.remove('opacity')
-    // otherElemSvg.classList.remove('hidden')
-    // opticEl() //Оптика
-    // hoodEl() //Капот
-    // mirrorEl() //Зеркала 
-    // wingsEl() // Крылья 
-    // thresholdsEl() // Пороги 2 шт. 
-    // dooredgesEl() // Кромки двери 4 шт.
-    // windshieldEl() // Стойки лобового стекла 2 шт. 
-    // bumperEl() // Бампер 
-    // ptfEl() // ПТФ 
-    // handlesEl() // Под ручками 4 шт. 
-    // roofEl() // Часть крыши 
-    // // bonnetEl() // Часть капота
-    // // partwingsEl() // Часть крыльев 
-    // doorwayEl() // Дверной проем 4 шт.
-    // pillarsEl() // Глянцевые стойки дверей 4 шт. 
-    // loadingarea.checked = true;
-    // otherEl()
-  });
-  // -----------------------------------------------------------
-  // -----------------------------------------------------------
-  // -----------------------------------------------------------
-  // Прайс-лист
-  let opticPrice = 5000,
-    kapotPrice = 19000,
-    chastKapotaPrice = 4150,
-    zerkaloPrice = 3800,
-    kryloPrice = 9250,
-    porogiPrice = 7750,
-    kromkiDvereiPrice = 2000,
-    stoykiLobovogoSteklaPrice = 4750,
-    bamperPrice = 9250,
-    ptfPrice = 1350,
-    ruchkiPrice = 2000,
-    chastKryshiPrice = 2750,
-    chastKrylaPrice = 3800,
-    stoykiDveriPrice = 4000,
-    dvernProemPrice = 5000,
-    pogruzZonaPrice = 2500,
-    ostavshChastiPrice = 10000;
-  // -----------------------------------------------------------
-  // -----------------------------------------------------------
-  // -----------------------------------------------------------
+    let sum = 0;
+    // Нажатие на кнопку "Стереть всё"
+    function clearEl(e) {
+      {
+        for (let i = 0; i < carEl.children.length; i++) {
+          const element = carEl.children[i];
+          element.classList.add('opacity')
+          Array.prototype.forEach.call(checkbox, function (cb) {
+            cb.checked = e.target.checked;
+          })
+          price.innerHTML = 'Итого: 0 ₽';
+          sum = 0;
+        }
+      };
+    }
+    buttonClear.addEventListener('click', function (e) {
+      clearEl(e)
+    });
 
 
-  // Оптика
-  function opticEl() {
-    opticsSvg.classList.toggle('opacity')
-    if (optics.checked) {
-      optics.checked = false;
-      optics.value = 0;
-    }
-    else {
-      optics.checked = true;
-      optics.value = opticPrice;
-    }
-  }
-  opticsSvg.addEventListener('click', function () {
-    opticEl();
-  });
+    document.addEventListener('click', function (e) {
+      if (microCarRadio.checked) {
+        microCar.classList.add('type-car-hover')
+        sedanCar.classList.remove('type-car-hover')
+        crossoverCar.classList.remove('type-car-hover')
+        premiumCar.classList.remove('type-car-hover')
+      }
+      if (sedanCarRadio.checked) {
+        microCar.classList.remove('type-car-hover')
+        sedanCar.classList.add('type-car-hover')
+        crossoverCar.classList.remove('type-car-hover')
+        premiumCar.classList.remove('type-car-hover')
+      }
+      if (crossCarRadio.checked) {
+        microCar.classList.remove('type-car-hover')
+        sedanCar.classList.remove('type-car-hover')
+        crossoverCar.classList.add('type-car-hover')
+        premiumCar.classList.remove('type-car-hover')
+      }
+      if (premiumCarRadio.checked) {
+        microCar.classList.remove('type-car-hover')
+        sedanCar.classList.remove('type-car-hover')
+        crossoverCar.classList.remove('type-car-hover')
+        premiumCar.classList.add('type-car-hover')
+      }
 
-  // Капот
-  function hoodEl() {
-    hoodSvg.classList.toggle('opacity')
-    bonnetSvg.classList.add('opacity')
-    bonnet.checked = false;
-    if (hood.checked) {
-      hood.checked = false;
-      hood.value = 0;
-    }
-    else {
-      hood.checked = true;
-      hood.value = kapotPrice; zerkaloPrice;
-    }
-  }
-  hoodSvg.addEventListener('click', function () {
-    hoodEl()
-  });
+    });
 
-  // Зеркала 
-  function mirrorEl() {
-    mirrorSvg.classList.toggle('opacity')
-    if (mirror.checked) {
-      mirror.checked = false;
-      mirror.value = 0;
-    }
-    else {
-      mirror.checked = true;
-      mirror.value = zerkaloPrice;
-    }
-  }
-  mirrorSvg.addEventListener('click', function () {
-    mirrorEl()
-  });
 
-  // Крылья 
-  function wingsEl() {
-    wingsSvg.classList.toggle('opacity')
-    partwingsSvg.classList.add('opacity')
-    partwings.checked = false;
-    if (wings.checked) {
-      wings.checked = false;
-      wings.value = 0;
-    }
-    else {
-      wings.checked = true;
-      wings.value = kryloPrice;
-    }
-  }
-  wingsSvg.addEventListener('click', function () {
-    wingsEl()
-  });
+    document.addEventListener('click', function () {
+      if (optics.checked
+        && hood.checked == false
+        && mirror.checked == false
+        && wings.checked == false
+        && thresholds.checked == false
+        && dooredges.checked == false
+        && windshield.checked
+        && bumper.checked == false
+        && ptf.checked == false
+        && handles.checked == false
+        && roof.checked
+        && bonnet.checked
+        && partwings.checked
+        && doorway.checked == false
+        && pillars.checked == false
+        && loadingarea.checked == false
+      ) {
+        part1.firstElementChild.classList.add('button-img-hover')
+      }
+      else {
+        part1.firstElementChild.classList.remove('button-img-hover')
+      }
+      if (optics.checked
+        && hood.checked
+        && mirror.checked
+        && wings.checked
+        && thresholds.checked == false
+        && dooredges.checked == false
+        && windshield.checked
+        && bumper.checked
+        && ptf.checked == false
+        && handles.checked == false
+        && roof.checked
+        && bonnet.checked == false
+        && partwings.checked == false
+        && doorway.checked == false
+        && pillars.checked == false
+        && loadingarea.checked == false
+      ) {
+        part2.firstElementChild.classList.add('button-img-hover')
+      }
+      else {
+        part2.firstElementChild.classList.remove('button-img-hover')
+      }
+      if (optics.checked
+        && hood.checked
+        && mirror.checked
+        && wings.checked
+        && thresholds.checked
+        && dooredges.checked
+        && windshield.checked
+        && bumper.checked
+        && ptf.checked
+        && handles.checked
+        && roof.checked == false
+        && bonnet.checked == false
+        && partwings.checked == false
+        && doorway.checked
+        && pillars.checked
+        && loadingarea.checked
 
-  // Пороги 2 шт. 
-  function thresholdsEl() {
-    thresholdsSvg.classList.toggle('opacity')
-    if (thresholds.checked) {
-      thresholds.checked = false;
-      thresholds.value = 0;
-    }
-    else {
-      thresholds.checked = true;
-      thresholds.value = porogiPrice;
-    }
-  }
-  thresholdsSvg.addEventListener('click', function () {
-    thresholdsEl()
-  });
+      ) {
+        part3.firstElementChild.classList.add('button-img-hover')
+      }
+      else {
+        part3.firstElementChild.classList.remove('button-img-hover')
+      }
+    });
 
-  // Кромки двери 4 шт.
-  function dooredgesEl() {
-    dooredgesSvg.classList.toggle('opacity')
-    if (dooredges.checked) {
-      dooredges.checked = false;
-      dooredges.value = 0;
-    }
-    else {
-      dooredges.checked = true;
-      dooredges.value = kromkiDvereiPrice;
-    }
-  }
-  dooredgesSvg.addEventListener('click', function () {
-    dooredgesEl()
-  });
+    // Готовые наборы
+    const part1 = document.querySelector('.part-1');
+    part1.addEventListener('click', function (e) {
+      //стереть все элементы
+      clearEl(e)
+      //выбраные элементы
+      roofEl() // Часть крыши 
+      bonnetEl() // Часть капота
+      partwingsEl() // Часть крыльев 
+      opticsEl() //Оптика
+      windshieldEl() // Стойки лобового стекла 2 шт. 
+    });
 
-  // Стойки лобового стекла 2 шт. 
-  function windshieldEl() {
-    windshieldSvg.classList.toggle('opacity')
-    if (windshield.checked) {
-      windshield.checked = false;
-      windshield.value = 0;
-    }
-    else {
-      windshield.checked = true;
-      windshield.value = stoykiLobovogoSteklaPrice;
-    }
-  }
-  windshieldSvg.addEventListener('click', function () {
-    windshieldEl()
-  });
+    const part2 = document.querySelector('.part-2');
+    part2.addEventListener('click', function (e) {
+      //стереть все элементы
+      clearEl(e)
+      //выбраные элементы
+      opticsEl() //Оптика
+      hoodEl() //Капот
+      bumperEl() // Бампер 
+      wingsEl() // Крылья 
+      windshieldEl() // Стойки лобового стекла 2 шт. 
+      roofEl() // Часть крыши 
+      mirrorEl() //Зеркала 
 
-  // Бампер 
-  function bumperEl() {
-    bumperSvg.classList.toggle('opacity')
-    if (bumper.checked) {
-      bumper.checked = false;
-      bumper.value = 0;
-    }
-    else {
-      bumper.checked = true;
-      bumper.value = bamperPrice;
-    }
-  }
-  bumperSvg.addEventListener('click', function () {
-    bumperEl()
-  });
+    });
 
-  // ПТФ 
-  function ptfEl() {
-    ptfSvg.classList.toggle('opacity')
-    if (ptf.checked) {
-      ptf.checked = false;
-      ptf.value = 0;
-    }
-    else {
-      ptf.checked = true;
-      ptf.value = ptfPrice;
-    }
-  }
-  ptfSvg.addEventListener('click', function () {
-    ptfEl()
-  });
-
-  // Под ручками 4 шт. 
-  function handlesEl() {
-    handlesSvg.classList.toggle('opacity')
-    if (handles.checked) {
-      handles.checked = false;
-      handles.value = 0;
-    }
-    else {
-      handles.checked = true;
-      handles.value = ruchkiPrice;
-    }
-  }
-  handlesSvg.addEventListener('click', function () {
-    handlesEl()
-  });
-
-  // Часть крыши 
-  function roofEl() {
-    roofSvg.classList.toggle('opacity')
-    if (roof.checked) {
-      roof.checked = false;
-      roof.value = 0;
-    }
-    else {
-      roof.checked = true;
-      roof.value = chastKryshiPrice;
-    }
-  }
-  roofSvg.addEventListener('click', function () {
-    roofEl()
-  });
-
-  // Часть капота 
-  function bonnetEl() {
-    bonnetSvg.classList.toggle('opacity')
-    hoodSvg.classList.add('opacity')
-    hood.checked = false;
-    if (bonnet.checked) {
-      bonnet.checked = false;
-      bonnet.value = 0;
-    }
-    else {
-      bonnet.checked = true;
-      bonnet.value = chastKapotaPrice;
-    }
-  }
-  bonnetSvg.addEventListener('click', function () {
-    bonnetEl()
-  });
-
-  // Часть крыльев 
-  function partwingsEl() {
-    partwingsSvg.classList.toggle('opacity')
-    wingsSvg.classList.add('opacity')
-    wings.checked = false;
-    if (partwings.checked) {
-      partwings.checked = false;
-      partwings.value = 0;
-    }
-    else {
-      partwings.checked = true;
-      partwings.value = chastKrylaPrice;
-    }
-  }
-  partwingsSvg.addEventListener('click', function () {
-    partwingsEl()
-  });
-
-  // Дверной проем 4 шт.
-  function doorwayEl() {
-    doorwaySvg.classList.toggle('opacity')
-    if (doorway.checked) {
-      doorway.checked = false;
-      doorway.value = 0;
-    }
-    else {
-      doorway.checked = true;
-      doorway.value = dvernProemPrice;
-    }
-  }
-  doorwaySvg.addEventListener('click', function () {
-    doorwayEl()
-  });
-
-  // Глянцевые стойки дверей 4 шт. 
-  function pillarsEl() {
-    pillarsSvg.classList.toggle('opacity')
-    if (pillars.checked) {
-      pillars.checked = false;
-      pillars.value = 0;
-    }
-    else {
-      pillars.checked = true;
-      pillars.value = stoykiDveriPrice;
-    }
-  }
-  pillarsSvg.addEventListener('click', function () {
-    pillarsEl();
-  });
-
-  // Оставщиеся части кузова 
-  function otherEl() {
-    otherElemSvg.classList.toggle('hidden')
-    if (otherElem.checked) {
-      otherElem.checked = false;
-      otherElem.value = 0;
-    }
-    else {
-      otherElem.checked = true;
-      otherElem.value = ostavshChastiPrice;
-    }
-  }
-  otherElemSvg.addEventListener('click', function () {
-    otherEl()
-  });
-
-  // ---------------------------------------------------------
-  // ---------------------------------------------------------
-  // ---------------------------------------------------------
-
-  document.addEventListener('click', function (e) {
-    // Оптика
-    if (optics.checked) {
-      optics.value = opticPrice
-      opticsSvg.classList.remove('opacity')
-    }
-    else {
-      optics.value = 0
-      opticsSvg.classList.add('opacity')
-    }
-    // Капот
-    if (hood.checked) {
-      hood.value = kapotPrice;
-      bonnet.checked = false;
-      hoodSvg.classList.remove('opacity')
-    }
-    else {
-      hood.value = 0
-      hoodSvg.classList.add('opacity')
-    }
-    // Часть капота 
-    if (bonnet.checked) {
-      bonnet.value = chastKapotaPrice;
-      hood.checked = false;
-      bonnetSvg.classList.remove('opacity')
-    }
-    else {
-      bonnet.value = 0
-      bonnetSvg.classList.add('opacity')
-    }
-    // Зеркала 
-    if (mirror.checked) {
-      mirror.value = zerkaloPrice;
-      mirrorSvg.classList.remove('opacity')
-    }
-    else {
-      mirror.value = 0
-      mirrorSvg.classList.add('opacity')
-    }
-    // Крылья 
-    if (wings.checked) {
-      wings.value = kryloPrice;
-      partwings.checked = false;
-      wingsSvg.classList.remove('opacity')
-    }
-    else {
-      wings.value = 0
-      wingsSvg.classList.add('opacity')
-    }
-    // Часть крыльев 
-    if (partwings.checked) {
-      partwings.value = chastKrylaPrice;
-      wings.checked = false;
-      partwingsSvg.classList.remove('opacity')
-    }
-    else {
-      partwings.value = 0
-      partwingsSvg.classList.add('opacity')
-    }
-    // Пороги 2 шт. 
-    if (thresholds.checked) {
-      thresholds.value = porogiPrice;
-      thresholdsSvg.classList.remove('opacity')
-    }
-    else {
-      thresholds.value = 0
-      thresholdsSvg.classList.add('opacity')
-
-    }
-    // Кромки двери 4 шт.
-    if (dooredges.checked) {
-      dooredges.value = kromkiDvereiPrice;
-      dooredgesSvg.classList.remove('opacity')
-    }
-    else {
-      dooredges.value = 0
-      dooredgesSvg.classList.add('opacity')
-    }
-    // Погрузочная зона 
-    if (loadingarea.checked) {
-      loadingarea.value = pogruzZonaPrice;
-    }
-    else {
-      loadingarea.value = 0
-    }
-    // Стойки лобового стекла 2 шт. 
-    if (windshield.checked) {
-      windshield.value = stoykiLobovogoSteklaPrice;
-      windshieldSvg.classList.remove('opacity')
-    }
-    else {
-      windshield.value = 0
-      windshieldSvg.classList.add('opacity')
-    }
-    // Бампер 
-    if (bumper.checked) {
-      bumper.value = bamperPrice;
-      bumperSvg.classList.remove('opacity')
-    }
-    else {
-      bumper.value = 0
-      bumperSvg.classList.add('opacity')
-
-    }
-    // ПТФ 
-    if (ptf.checked) {
-      ptf.value = ptfPrice;
-      ptfSvg.classList.remove('opacity')
-    }
-    else {
-      ptf.value = 0
-      ptfSvg.classList.add('opacity')
-    }
-    // Под ручками 4 шт. 
-    if (handles.checked) {
-      handles.value = ruchkiPrice;
-      handlesSvg.classList.remove('opacity')
-    }
-    else {
-      handles.value = 0
-      handlesSvg.classList.add('opacity')
-    }
-    // Часть крыши 
-    if (roof.checked) {
-      roof.value = chastKryshiPrice;
-      roofSvg.classList.remove('opacity')
-    }
-    else {
-      roof.value = 0
-      roofSvg.classList.add('opacity')
-    }
-    // Дверной проем 4 шт.
-    if (doorway.checked) {
-      doorway.value = dvernProemPrice;
-      doorwaySvg.classList.remove('opacity')
-    }
-    else {
-      doorway.value = 0
-      doorwaySvg.classList.add('opacity')
-    }
-    // Глянцевые стойки дверей 4 шт. 
-    if (pillars.checked) {
-      pillars.value = stoykiDveriPrice;
-      pillarsSvg.classList.remove('opacity')
-    }
-    else {
-      pillars.value = 0
-      pillarsSvg.classList.add('opacity')
-    }
-    // Оставщиеся части кузова 
-    if (otherElem.checked) {
-      otherElem.value = ostavshChastiPrice;
+    const part3 = document.querySelector('.part-3');
+    part3.addEventListener('click', function (e) {
+      //стереть все элементы
+      clearEl(e)
+      otherElemSvg.classList.remove('opacity')
       otherElemSvg.classList.remove('hidden')
+      opticsEl() //Оптика
+      hoodEl() //Капот
+      mirrorEl() //Зеркала 
+      wingsEl() // Крылья 
+      thresholdsEl() // Пороги 2 шт. 
+      dooredgesEl() // Кромки двери 4 шт.
+      windshieldEl() // Стойки лобового стекла 2 шт. 
+      bumperEl() // Бампер 
+      ptfEl() // ПТФ 
+      handlesEl() // Под ручками 4 шт. 
+      doorwayEl() // Дверной проем 4 шт.
+      pillarsEl() // Глянцевые стойки дверей 4 шт. 
+      loadingarea.checked = true;
+      otherEl()
+    });
+
+    const part4 = document.querySelector('.part-4');
+    part4.addEventListener('click', function (e) {
+      // clearEl(e)
+      // otherElemSvg.classList.remove('opacity')
+      // otherElemSvg.classList.remove('hidden')
+      // opticsEl() //Оптика
+      // hoodEl() //Капот
+      // mirrorEl() //Зеркала 
+      // wingsEl() // Крылья 
+      // thresholdsEl() // Пороги 2 шт. 
+      // dooredgesEl() // Кромки двери 4 шт.
+      // windshieldEl() // Стойки лобового стекла 2 шт. 
+      // bumperEl() // Бампер 
+      // ptfEl() // ПТФ 
+      // handlesEl() // Под ручками 4 шт. 
+      // roofEl() // Часть крыши 
+      // // bonnetEl() // Часть капота
+      // // partwingsEl() // Часть крыльев 
+      // doorwayEl() // Дверной проем 4 шт.
+      // pillarsEl() // Глянцевые стойки дверей 4 шт. 
+      // loadingarea.checked = true;
+      // otherEl()
+    });
+
+
+    // Оптика
+    function opticsEl() {
+      opticsSvg.classList.toggle('opacity')
+      if (optics.checked) {
+        optics.checked = false;
+        optics.value = 0;
+      }
+      else {
+        optics.checked = true;
+        optics.value = opticPrice;
+      }
     }
-    else {
-      otherElem.value = 0
-      otherElemSvg.classList.add('hidden')
+    opticsSvg.addEventListener('click', function () {
+      opticsEl();
+    });
+
+    // Капот
+    function hoodEl() {
+      hoodSvg.classList.toggle('opacity')
+      bonnetSvg.classList.add('opacity')
+      bonnet.checked = false;
+      if (hood.checked) {
+        hood.checked = false;
+        hood.value = 0;
+      }
+      else {
+        hood.checked = true;
+        hood.value = kapotPrice; zerkaloPrice;
+      }
     }
+    hoodSvg.addEventListener('click', function () {
+      hoodEl()
+    });
 
-    sum = Number(optics.value) + Number(hood.value) + Number(mirror.value) + Number(wings.value) + Number(thresholds.value) + Number(dooredges.value) + Number(loadingarea.value) + Number(windshield.value) + Number(bumper.value) + Number(ptf.value) + Number(handles.value) + Number(roof.value) + Number(bonnet.value) + Number(partwings.value) + Number(doorway.value) + Number(pillars.value) + Number(otherElem.value);
+    // Зеркала 
+    function mirrorEl() {
+      mirrorSvg.classList.toggle('opacity')
+      if (mirror.checked) {
+        mirror.checked = false;
+        mirror.value = 0;
+      }
+      else {
+        mirror.checked = true;
+        mirror.value = zerkaloPrice;
+      }
+    }
+    mirrorSvg.addEventListener('click', function () {
+      mirrorEl()
+    });
 
-    price.innerHTML = 'Итого: ' + sum + ' ₽';
-  });
+    // Крылья 
+    function wingsEl() {
+      wingsSvg.classList.toggle('opacity')
+      partwingsSvg.classList.add('opacity')
+      partwings.checked = false;
+      if (wings.checked) {
+        wings.checked = false;
+        wings.value = 0;
+      }
+      else {
+        wings.checked = true;
+        wings.value = kryloPrice;
+      }
+    }
+    wingsSvg.addEventListener('click', function () {
+      wingsEl()
+    });
+
+    // Пороги 2 шт. 
+    function thresholdsEl() {
+      thresholdsSvg.classList.toggle('opacity')
+      if (thresholds.checked) {
+        thresholds.checked = false;
+        thresholds.value = 0;
+      }
+      else {
+        thresholds.checked = true;
+        thresholds.value = porogiPrice;
+      }
+    }
+    thresholdsSvg.addEventListener('click', function () {
+      thresholdsEl()
+    });
+
+    // Кромки двери 4 шт.
+    function dooredgesEl() {
+      dooredgesSvg.classList.toggle('opacity')
+      if (dooredges.checked) {
+        dooredges.checked = false;
+        dooredges.value = 0;
+      }
+      else {
+        dooredges.checked = true;
+        dooredges.value = kromkiDvereiPrice;
+      }
+    }
+    dooredgesSvg.addEventListener('click', function () {
+      dooredgesEl()
+    });
+
+    // Стойки лобового стекла 2 шт. 
+    function windshieldEl() {
+      windshieldSvg.classList.toggle('opacity')
+      if (windshield.checked) {
+        windshield.checked = false;
+        windshield.value = 0;
+      }
+      else {
+        windshield.checked = true;
+        windshield.value = stoykiLobovogoSteklaPrice;
+      }
+    }
+    windshieldSvg.addEventListener('click', function () {
+      windshieldEl()
+    });
+
+    // Бампер 
+    function bumperEl() {
+      bumperSvg.classList.toggle('opacity')
+      if (bumper.checked) {
+        bumper.checked = false;
+        bumper.value = 0;
+      }
+      else {
+        bumper.checked = true;
+        bumper.value = bamperPrice;
+      }
+    }
+    bumperSvg.addEventListener('click', function () {
+      bumperEl()
+    });
+
+    // ПТФ 
+    function ptfEl() {
+      ptfSvg.classList.toggle('opacity')
+      if (ptf.checked) {
+        ptf.checked = false;
+        ptf.value = 0;
+      }
+      else {
+        ptf.checked = true;
+        ptf.value = ptfPrice;
+      }
+    }
+    ptfSvg.addEventListener('click', function () {
+      ptfEl()
+    });
+
+    // Под ручками 4 шт. 
+    function handlesEl() {
+      handlesSvg.classList.toggle('opacity')
+      if (handles.checked) {
+        handles.checked = false;
+        handles.value = 0;
+      }
+      else {
+        handles.checked = true;
+        handles.value = ruchkiPrice;
+      }
+    }
+    handlesSvg.addEventListener('click', function () {
+      handlesEl()
+    });
+
+    // Часть крыши 
+    function roofEl() {
+      roofSvg.classList.toggle('opacity')
+      if (roof.checked) {
+        roof.checked = false;
+        roof.value = 0;
+      }
+      else {
+        roof.checked = true;
+        roof.value = chastKryshiPrice;
+      }
+    }
+    roofSvg.addEventListener('click', function () {
+      roofEl()
+    });
+
+    // Часть капота 
+    function bonnetEl() {
+      bonnetSvg.classList.toggle('opacity')
+      hoodSvg.classList.add('opacity')
+      hood.checked = false;
+      if (bonnet.checked) {
+        bonnet.checked = false;
+        bonnet.value = 0;
+      }
+      else {
+        bonnet.checked = true;
+        bonnet.value = chastKapotaPrice;
+      }
+    }
+    bonnetSvg.addEventListener('click', function () {
+      bonnetEl()
+    });
+
+    // Часть крыльев 
+    function partwingsEl() {
+      partwingsSvg.classList.toggle('opacity')
+      wingsSvg.classList.add('opacity')
+      wings.checked = false;
+      if (partwings.checked) {
+        partwings.checked = false;
+        partwings.value = 0;
+      }
+      else {
+        partwings.checked = true;
+        partwings.value = chastKrylaPrice;
+      }
+    }
+    partwingsSvg.addEventListener('click', function () {
+      partwingsEl()
+    });
+
+    // Дверной проем 4 шт.
+    function doorwayEl() {
+      doorwaySvg.classList.toggle('opacity')
+      if (doorway.checked) {
+        doorway.checked = false;
+        doorway.value = 0;
+      }
+      else {
+        doorway.checked = true;
+        doorway.value = dvernProemPrice;
+      }
+    }
+    doorwaySvg.addEventListener('click', function () {
+      doorwayEl()
+    });
+
+    // Глянцевые стойки дверей 4 шт. 
+    function pillarsEl() {
+      pillarsSvg.classList.toggle('opacity')
+      if (pillars.checked) {
+        pillars.checked = false;
+        pillars.value = 0;
+      }
+      else {
+        pillars.checked = true;
+        pillars.value = stoykiDveriPrice;
+      }
+    }
+    pillarsSvg.addEventListener('click', function () {
+      pillarsEl();
+    });
+
+    // Оставщиеся части кузова 
+    function otherEl() {
+      otherElemSvg.classList.toggle('hidden')
+      if (otherElem.checked) {
+        otherElem.checked = false;
+        otherElem.value = 0;
+      }
+      else {
+        otherElem.checked = true;
+        otherElem.value = ostavshChastiPrice;
+      }
+    }
+    otherElemSvg.addEventListener('click', function () {
+      otherEl()
+    });
+
+    // ---------------------------------------------------------
+    // ---------------------------------------------------------
+    // ---------------------------------------------------------
+
+    document.addEventListener('click', function (e) {
+      // Оптика
+      if (optics.checked) {
+        optics.value = opticPrice
+        opticsSvg.classList.remove('opacity')
+      }
+      else {
+        optics.value = 0
+        opticsSvg.classList.add('opacity')
+      }
+      // Капот
+      if (hood.checked) {
+        hood.value = kapotPrice;
+        bonnet.checked = false;
+        hoodSvg.classList.remove('opacity')
+      }
+      else {
+        hood.value = 0
+        hoodSvg.classList.add('opacity')
+      }
+      // Часть капота 
+      if (bonnet.checked) {
+        bonnet.value = chastKapotaPrice;
+        hood.checked = false;
+        bonnetSvg.classList.remove('opacity')
+      }
+      else {
+        bonnet.value = 0
+        bonnetSvg.classList.add('opacity')
+      }
+      // Зеркала 
+      if (mirror.checked) {
+        mirror.value = zerkaloPrice;
+        mirrorSvg.classList.remove('opacity')
+      }
+      else {
+        mirror.value = 0
+        mirrorSvg.classList.add('opacity')
+      }
+      // Крылья 
+      if (wings.checked) {
+        wings.value = kryloPrice;
+        partwings.checked = false;
+        wingsSvg.classList.remove('opacity')
+      }
+      else {
+        wings.value = 0
+        wingsSvg.classList.add('opacity')
+      }
+      // Часть крыльев 
+      if (partwings.checked) {
+        partwings.value = chastKrylaPrice;
+        wings.checked = false;
+        partwingsSvg.classList.remove('opacity')
+      }
+      else {
+        partwings.value = 0
+        partwingsSvg.classList.add('opacity')
+      }
+      // Пороги 2 шт. 
+      if (thresholds.checked) {
+        thresholds.value = porogiPrice;
+        thresholdsSvg.classList.remove('opacity')
+      }
+      else {
+        thresholds.value = 0
+        thresholdsSvg.classList.add('opacity')
+
+      }
+      // Кромки двери 4 шт.
+      if (dooredges.checked) {
+        dooredges.value = kromkiDvereiPrice;
+        dooredgesSvg.classList.remove('opacity')
+      }
+      else {
+        dooredges.value = 0
+        dooredgesSvg.classList.add('opacity')
+      }
+      // Погрузочная зона 
+      if (loadingarea.checked) {
+        loadingarea.value = pogruzZonaPrice;
+      }
+      else {
+        loadingarea.value = 0
+      }
+      // Стойки лобового стекла 2 шт. 
+      if (windshield.checked) {
+        windshield.value = stoykiLobovogoSteklaPrice;
+        windshieldSvg.classList.remove('opacity')
+      }
+      else {
+        windshield.value = 0
+        windshieldSvg.classList.add('opacity')
+      }
+      // Бампер 
+      if (bumper.checked) {
+        bumper.value = bamperPrice;
+        bumperSvg.classList.remove('opacity')
+      }
+      else {
+        bumper.value = 0
+        bumperSvg.classList.add('opacity')
+
+      }
+      // ПТФ 
+      if (ptf.checked) {
+        ptf.value = ptfPrice;
+        ptfSvg.classList.remove('opacity')
+      }
+      else {
+        ptf.value = 0
+        ptfSvg.classList.add('opacity')
+      }
+      // Под ручками 4 шт. 
+      if (handles.checked) {
+        handles.value = ruchkiPrice;
+        handlesSvg.classList.remove('opacity')
+      }
+      else {
+        handles.value = 0
+        handlesSvg.classList.add('opacity')
+      }
+      // Часть крыши 
+      if (roof.checked) {
+        roof.value = chastKryshiPrice;
+        roofSvg.classList.remove('opacity')
+      }
+      else {
+        roof.value = 0
+        roofSvg.classList.add('opacity')
+      }
+      // Дверной проем 4 шт.
+      if (doorway.checked) {
+        doorway.value = dvernProemPrice;
+        doorwaySvg.classList.remove('opacity')
+      }
+      else {
+        doorway.value = 0
+        doorwaySvg.classList.add('opacity')
+      }
+      // Глянцевые стойки дверей 4 шт. 
+      if (pillars.checked) {
+        pillars.value = stoykiDveriPrice;
+        pillarsSvg.classList.remove('opacity')
+      }
+      else {
+        pillars.value = 0
+        pillarsSvg.classList.add('opacity')
+      }
+      // Оставщиеся части кузова 
+      if (otherElem.checked) {
+        otherElem.value = ostavshChastiPrice;
+        otherElemSvg.classList.remove('hidden')
+      }
+      else {
+        otherElem.value = 0
+        otherElemSvg.classList.add('hidden')
+      }
+
+      sum = Number(optics.value) + Number(hood.value) + Number(mirror.value) + Number(wings.value) + Number(thresholds.value) + Number(dooredges.value) + Number(loadingarea.value) + Number(windshield.value) + Number(bumper.value) + Number(ptf.value) + Number(handles.value) + Number(roof.value) + Number(bonnet.value) + Number(partwings.value) + Number(doorway.value) + Number(pillars.value) + Number(otherElem.value);
+
+      price.innerHTML = 'Итого: ' + sum + ' ₽';
+    });
 
 
-</script>
+  </script>
