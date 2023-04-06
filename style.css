@@ -90,12 +90,6 @@
   cursor: cell;
 }
 
-.center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .hidden {
   display: none;
 }
@@ -122,9 +116,9 @@
 }
 
 .tilda-block {
-  padding: 0px 20px;
-  background-color: #fff;
-  width: 440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 30px;
   border-radius: 30px;
 }
@@ -143,6 +137,7 @@
 
 .flex-block {
   display: flex;
+  justify-content: center;
 }
 
 .button-plenka {
@@ -158,25 +153,24 @@
 .plenka-1 {
   border-radius: 12px 0 0 12px;
 }
-.plenka-1:hover,
 .plenka-2:hover,
-.plenka-3:hover {
+.plenka-3:hover,
+.plenka-1:hover {
   background-color: #ec622a;
   cursor: pointer;
 }
-.plenka-1-hover,
 .plenka-2-hover,
-.plenka-3-hover {
+.plenka-3-hover,
+.plenka-1-hover {
   border: 2px solid #ec622a;
-  /* background-color: #ec622a; */
 }
 .plenka-3 {
   border-radius: 0 12px 12px 0;
 }
 
-.plenka-1-hide,
 .plenka-2-hide,
-.plenka-3-hide {
+.plenka-3-hide,
+.plenka-1-hide {
   text-align: center;
   padding-bottom: 10px;
   opacity: 0.7;
@@ -185,7 +179,7 @@
 .text-dsc {
   padding: 20px;
   color: #ec622a;
-  font-family: Onest;
+  font-family: "Onest";
   font-size: 20px;
   font-weight: 500;
 }
@@ -221,7 +215,7 @@
 }
 
 .price-block-itog {
-  padding-left: 30px;
+  padding-left: 5px;
 }
 
 .show {
@@ -266,7 +260,10 @@
   line-height: 1.1;
   text-align: center;
 }
-
+.car-size {
+  width: 100px;
+  height: 46px;
+}
 .price {
   color: #ec622a;
   font-family: "Onest";
@@ -282,6 +279,7 @@
   padding-bottom: 5px;
   font-size: 20px;
   font-weight: 500;
+  text-align: center;
 }
 .type-car {
   cursor: pointer;
@@ -380,11 +378,26 @@ input[type="radio"]:checked + label:after {
     height: 204px;
   }
   .tilda-block {
-    background-color: #fff;
-    width: 440px;
+    width: 540px;
   }
   .checkbox-block {
     font-size: 16px;
+  }
+  .type-car-head,
+  .block-head {
+    font-size: 12px;
+  }
+  .button-plenka {
+    font-size: 12px;
+  }
+  .button-img {
+    width: 80px;
+  }
+  .head-dsc,
+  .car-txt,
+  .text,
+  .prev-text {
+    font-size: 14px;
   }
 }
 
@@ -393,22 +406,20 @@ input[type="radio"]:checked + label:after {
     width: 300px;
     height: 139px;
   }
-
+  .type-car {
+    width: 80px;
+  }
   .svg-image {
     width: 300px;
     height: 139px;
   }
   .tilda-block {
-    background-color: #fff;
-    width: 300px;
+    width: 440px;
   }
   .block-part {
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .block-text-dsc {
-    margin: 0;
+    grid-template-columns: repeat(4, 1fr);
   }
   .up-dsc {
     display: flex;
@@ -419,26 +430,34 @@ input[type="radio"]:checked + label:after {
   }
   .checkbox-block-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-items: center;
   }
-  .button-plenka {
-    font-size: 14px;
+  .button-plenka,
+  .text {
+    font-size: 10px;
+  }
+  .button-img {
+    width: 60px;
+  }
+  .head-dsc,
+  .car-txt,
+  .prev-text {
+    font-size: 12px;
   }
 }
 
 @media (max-width: 480px) {
   .images-car {
-    width: 300px;
-    height: 139px;
+    width: 200px;
+    height: 93px;
   }
   .svg-image {
-    width: 300px;
-    height: 139px;
+    width: 200px;
+    height: 93px;
   }
   .tilda-block {
-    background-color: #fff;
-    width: 300px;
+    width: 280px;
   }
   .block-part {
     display: grid;
@@ -449,25 +468,23 @@ input[type="radio"]:checked + label:after {
     flex-direction: column;
     padding-left: 50px;
   }
-  .button-plenka {
-    font-size: 12px;
+  .checkbox-block-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 320px) {
   .images-car {
-    width: 300px;
-    height: 139px;
+    width: 150px;
+    height: 69px;
   }
   .svg-image {
-    width: 300px;
-    height: 139px;
+    width: 150px;
+    height: 69px;
   }
   .tilda-block {
-    background-color: #fff;
-    width: 300px;
   }
   .text-dsc {
-    font-size: 16px;
+    font-size: 10px;
   }
 }

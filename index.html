@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html>
 <link rel="stylesheet" href="style.css">
-<!-- https://platinum-garage.ru/services/zashhitnye-plenki/ -->
-<!-- https://glosscare.ru/servises#all-price -->
 <style>
 
 </style>
 
 <body>
   <div class="center">
-    <form class="tilda-block">
+    <div class="tilda-block">
       <!-- <div class="up-dsc">
         <div class="block-text-dsc">
           <div class="text-dsc">Комплексы по оклейке бронеплёнкой Hexis 180 микрон со скидкой 10%</div>
@@ -51,19 +49,20 @@
         </div>
 
         <div class="dropdown flex-block">
-          <div class="button-plenka plenka-1">Оптимальная защита</div>
-          <div class="button-plenka plenka-2">Максимальная защита</div>
-          <div class="button-plenka plenka-3">Простая защита </div>
+          <div class="button-plenka plenka-1">Crystal Ultra 180мк или аналоги</div>
+          <div class="button-plenka plenka-2">Hexis 180мк</div>
+          <div class="button-plenka plenka-3">Llumar</div>
         </div>
         <div class="dropdown hidden plenka-1-hide">
-          <p class="text">Оптимальная по соотношению цена/качество (Hexis 180мк)</p>
-        </div>
-        <div class="dropdown hidden plenka-2-hide">
-          <p class="text">Максимальная защита, цена не важна (Llumar)</p>
-        </div>
-        <div class="dropdown hidden plenka-3-hide">
           <p class="text">Подешевле, но чтобы была защита (Crystal Ultra 180мк или аналоги)</p>
         </div>
+        <div class="dropdown hidden plenka-2-hide">
+          <p class="text">Оптимальная по соотношению цена/качество (Hexis 180мк)</p>
+        </div>
+        <div class="dropdown hidden plenka-3-hide">
+          <p class="text">Максимальная защита, цена не важна (Llumar)</p>
+        </div>
+
       </div>
       <!-- блок с пакетами -->
       <div class="block-check-element">
@@ -210,13 +209,13 @@
       <div class="box-images">
         <!-- <img src="./img/skin-car-1-transformed.png" alt="" class="images-car show"> -->
         <img src="https://static.tildacdn.com/tild3462-3163-4265-a434-656630353230/skin-car-1.png" alt=""
-          class="images-car show">
+          class="images-car show car-size">
 
         <!-- <img src="./img/skin-car-1.png" alt="" class="images-car show"> -->
-        <svg class="svg-image" version="1.0" xmlns="http://www.w3.org/2000/svg" width="440px" height="204px"
+        <svg class="svg-image car-size" version="1.0" xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 2156.000000 1004.000000">
           <!-- Оптика -->
-          <g data-name="skin-elem-optika" class="optika opacity">
+          <g data-name="skin-elem-optika" class="optika opacity ">
             <path
               d="M761,495.7c-24,1.8-108.5,12-131,15.8-8,1.3-35,5.6-60,9.4s-50.2,7.8-55.8,8.7l-10.4,1.7.5,3.1c.5,3.2-6.4,30.5-10.2,40.7-3.4,8.9-11.1,19-18,23.7-5.8,3.8-5.9,4-3.3,4.5,1.5.3,7.9.3,14.2.1s28.2-.9,48.5-1.4c43-1,42.3-.9,63.5-10.9,14.1-6.7,17.8-7.9,32-9.6,2.5-.3,5-.2,5.6.3s1.4,3.2,1.8,6.2,1.1,6.2,1.6,6.9c1.8,3,32.3,2.4,73.9-1.4,14.9-1.4,16.2-1.7,43.6-10.4s47.9-16.8,59.5-23.4c11-6.2,34.5-25.4,48.8-40l9.4-9.4-7.4-3.1c-11.4-4.7-19.8-7-29.9-8.1C820.8,497.2,770.2,495,761,495.7Z">
             </path>
@@ -320,7 +319,7 @@
           </g>
         </svg>
       </div>
-    </form>
+    </div>
   </div>
 
   <script>
@@ -347,13 +346,13 @@
       ostavshChastiPrice;
 
     // выделение нажатого блока с плёнкой
-    const plenka1 = document.querySelector('.plenka-1');
-    const plenka1Hidden = document.querySelector('.plenka-1-hide');
+    const plenka1 = document.querySelector('.plenka-2');
+    const plenka1Hidden = document.querySelector('.plenka-2-hide');
     // цены для плёнки "Оптимальный"
     plenka1.addEventListener('click', function (e) {
-      plenka1.classList.add('plenka-1-hover')
-      plenka2.classList.remove('plenka-2-hover')
-      plenka3.classList.remove('plenka-3-hover')
+      plenka1.classList.add('plenka-2-hover')
+      plenka2.classList.remove('plenka-3-hover')
+      plenka3.classList.remove('plenka-1-hover')
       plenka1Hidden.classList.remove('hidden')
       plenka2Hidden.classList.add('hidden')
       plenka3Hidden.classList.add('hidden')
@@ -440,13 +439,13 @@
       }
 
     });
-    const plenka2 = document.querySelector('.plenka-2');
-    const plenka2Hidden = document.querySelector('.plenka-2-hide');
+    const plenka2 = document.querySelector('.plenka-3');
+    const plenka2Hidden = document.querySelector('.plenka-3-hide');
     // цены для плёнки "Максимальный"
     plenka2.addEventListener('click', function (e) {
-      plenka1.classList.remove('plenka-1-hover')
-      plenka2.classList.add('plenka-2-hover')
-      plenka3.classList.remove('plenka-3-hover')
+      plenka1.classList.remove('plenka-2-hover')
+      plenka2.classList.add('plenka-3-hover')
+      plenka3.classList.remove('plenka-1-hover')
       plenka1Hidden.classList.add('hidden')
       plenka2Hidden.classList.remove('hidden')
       plenka3Hidden.classList.add('hidden')
@@ -533,12 +532,12 @@
 
     });
     // цены для плёнки "Простой"
-    const plenka3 = document.querySelector('.plenka-3');
-    const plenka3Hidden = document.querySelector('.plenka-3-hide');
+    const plenka3 = document.querySelector('.plenka-1');
+    const plenka3Hidden = document.querySelector('.plenka-1-hide');
     plenka3.addEventListener('click', function (e) {
-      plenka1.classList.remove('plenka-1-hover')
-      plenka2.classList.remove('plenka-2-hover')
-      plenka3.classList.add('plenka-3-hover')
+      plenka1.classList.remove('plenka-2-hover')
+      plenka2.classList.remove('plenka-3-hover')
+      plenka3.classList.add('plenka-1-hover')
       plenka1Hidden.classList.add('hidden')
       plenka2Hidden.classList.add('hidden')
       plenka3Hidden.classList.remove('hidden')
