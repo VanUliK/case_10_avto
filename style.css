@@ -98,11 +98,16 @@
   opacity: 0;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+}
+
 .block-part {
   padding-top: 10px;
   padding-bottom: 20px;
   display: grid;
-  gap: 10px;
+  /* gap: 10px; */
   grid-template-columns: repeat(4, 1fr);
   justify-content: center;
 }
@@ -138,17 +143,19 @@
 .flex-block {
   display: flex;
   justify-content: center;
+  padding: 0 20px;
 }
 
 .button-plenka {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f1f1f1;
-  height: 50px;
+  /* background-color: #f1f1f1; */
+  height: 30px;
   width: 33%;
   margin: 5px 0;
   text-align: center;
+  border: 2px solid #ccc;
 }
 .plenka-1 {
   border-radius: 12px 0 0 12px;
@@ -156,7 +163,7 @@
 .plenka-2:hover,
 .plenka-3:hover,
 .plenka-1:hover {
-  background-color: #ec622a;
+  background-color: #f1f1f1;
   cursor: pointer;
 }
 .plenka-2-hover,
@@ -201,6 +208,7 @@
 }
 .block-check-element {
   padding-bottom: 10px;
+  width: 100%;
 }
 .checkbox-block {
   display: flex;
@@ -260,10 +268,10 @@
   line-height: 1.1;
   text-align: center;
 }
-.car-size {
+/* .car-size {
   width: 100px;
   height: 46px;
-}
+} */
 .price {
   color: #ec622a;
   font-family: "Onest";
@@ -272,6 +280,7 @@
 }
 .block-type-car {
   padding-bottom: 10px;
+  width: 100%;
 }
 .type-car-head,
 .block-head {
@@ -416,10 +425,13 @@ input[type="radio"]:checked + label:after {
   .tilda-block {
     width: 440px;
   }
+  .flex-block {
+    padding: 0 10px;
+  }
   .block-part {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(4, 1fr);
+    /* display: grid; */
+    /* gap: 10px; */
+    /* grid-template-columns: repeat(4, 1fr); */
   }
   .up-dsc {
     display: flex;
@@ -443,7 +455,7 @@ input[type="radio"]:checked + label:after {
   .head-dsc,
   .car-txt,
   .prev-text {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 
@@ -459,29 +471,32 @@ input[type="radio"]:checked + label:after {
   .tilda-block {
     width: 280px;
   }
+  .type-car {
+    width: 60px;
+  }
   .block-part {
     display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(2, 1fr);
+    /* gap: 10px; */
+    /* grid-template-columns: repeat(2, 1fr); */
   }
   .checkbox-block {
     flex-direction: column;
     padding-left: 50px;
   }
   .checkbox-block-grid {
-    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(2, 1fr); */
   }
 }
 
 @media (max-width: 320px) {
-  .images-car {
+  /* .images-car {
     width: 150px;
     height: 69px;
   }
   .svg-image {
     width: 150px;
     height: 69px;
-  }
+  } */
   .tilda-block {
   }
   .text-dsc {

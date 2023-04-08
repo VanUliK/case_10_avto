@@ -101,16 +101,11 @@
     opacity: 0;
   }
 
-  .center {
-    display: flex;
-    justify-content: center;
-  }
-
   .block-part {
     padding-top: 10px;
     padding-bottom: 20px;
     display: grid;
-    /* gap: 10px; */
+    gap: 10px;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
   }
@@ -149,19 +144,17 @@
   .flex-block {
     display: flex;
     justify-content: center;
-    padding: 0 20px;
   }
 
   .button-plenka {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: #f1f1f1; */
-    height: 30px;
+    background-color: #f1f1f1;
+    height: 50px;
     width: 33%;
     margin: 5px 0;
     text-align: center;
-    border: 2px solid #ccc;
   }
 
   .plenka-1 {
@@ -171,7 +164,7 @@
   .plenka-2:hover,
   .plenka-3:hover,
   .plenka-1:hover {
-    background-color: #f1f1f1;
+    background-color: #ec622a;
     cursor: pointer;
   }
 
@@ -222,7 +215,9 @@
 
   .block-check-element {
     padding-bottom: 10px;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .checkbox-block {
@@ -289,10 +284,7 @@
     text-align: center;
   }
 
-  /* .car-size {
-  width: 100px;
-  height: 46px;
-} */
+
   .price {
     color: #ec622a;
     font-family: "Onest";
@@ -302,7 +294,6 @@
 
   .block-type-car {
     padding-bottom: 10px;
-    width: 100%;
   }
 
   .type-car-head,
@@ -464,14 +455,10 @@
       width: 440px;
     }
 
-    .flex-block {
-      padding: 0 10px;
-    }
-
     .block-part {
-      /* display: grid; */
-      /* gap: 10px; */
-      /* grid-template-columns: repeat(4, 1fr); */
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(4, 1fr);
     }
 
     .up-dsc {
@@ -501,7 +488,7 @@
     .head-dsc,
     .car-txt,
     .prev-text {
-      font-size: 10px;
+      font-size: 12px;
     }
   }
 
@@ -520,14 +507,10 @@
       width: 280px;
     }
 
-    .type-car {
-      width: 60px;
-    }
-
     .block-part {
       display: grid;
-      /* gap: 10px; */
-      /* grid-template-columns: repeat(2, 1fr); */
+      gap: 10px;
+      grid-template-columns: repeat(2, 1fr);
     }
 
     .checkbox-block {
@@ -536,20 +519,21 @@
     }
 
     .checkbox-block-grid {
-      /* grid-template-columns: repeat(2, 1fr); */
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 
   @media (max-width: 320px) {
+    .images-car {
+      width: 150px;
+      height: 69px;
+    }
 
-    /* .images-car {
-    width: 150px;
-    height: 69px;
-  }
-  .svg-image {
-    width: 150px;
-    height: 69px;
-  } */
+    .svg-image {
+      width: 150px;
+      height: 69px;
+    }
+
     .tilda-block {}
 
     .text-dsc {
@@ -561,10 +545,10 @@
 <div class="center">
   <div class="tilda-block">
     <!-- <div class="up-dsc">
-        <div class="block-text-dsc">
-          <div class="text-dsc">Комплексы по оклейке бронеплёнкой Hexis 180 микрон со скидкой 10%</div>
-        </div>
-      </div> -->
+      <div class="block-text-dsc">
+        <div class="text-dsc">Комплексы по оклейке бронеплёнкой Hexis 180 микрон со скидкой 10%</div>
+      </div>
+    </div> -->
     <div class="block-type-car">
       <div class="block-head">1. Выберите класс автомобиля
       </div>
@@ -601,7 +585,7 @@
       </div>
 
       <div class="dropdown flex-block">
-        <div class="button-plenka plenka-1">Crystal или аналоги</div>
+        <div class="button-plenka plenka-1">Crystal Ultra или аналоги</div>
         <div class="button-plenka plenka-2">Hexis</div>
         <div class="button-plenka plenka-3">Llumar</div>
       </div>
@@ -627,7 +611,7 @@
             <img class="button-img" src="https://static.tildacdn.com/tild3766-3762-4436-a537-333232363435/Group_129.svg"
               alt="">
             <div class="dsc">
-              <p class="head-dsc">Минимальный</p>
+              <p class="head-dsc">Минимальный:</p>
               <p class="head-dsc hidden">Часть капота (60см).</p>
               <p class="head-dsc hidden">Часть передних крыльев.</p>
               <p class="head-dsc hidden">Фары.</p>
@@ -640,7 +624,7 @@
             <img class="button-img" src="https://static.tildacdn.com/tild3932-3461-4339-b938-333838616565/Group_125.svg"
               alt="">
             <div class="dsc">
-              <p class="head-dsc">Оптимальный</p>
+              <p class="head-dsc">Оптимальный:</p>
               <p class="head-dsc hidden">Капот.</p>
               <p class="head-dsc hidden">Фары.</p>
               <p class="head-dsc hidden">Передний бампер.</p>
@@ -654,7 +638,7 @@
             <img class="button-img" src="https://static.tildacdn.com/tild3662-6431-4230-b537-323539663234/Group_131.svg"
               alt="">
             <div class="dsc">
-              <p class="head-dsc">Максимальный</p>
+              <p class="head-dsc">Максимальный:</p>
               <p class="head-dsc hidden">Полная оклейка автомобиля (без крыши ввиду возможного наличия люка)</p>
             </div>
           </div>
@@ -662,7 +646,7 @@
             <img class="button-img button-clear"
               src="https://static.tildacdn.com/tild3237-3235-4438-a631-356630633565/Group_134.svg" alt="">
             <div class="dsc">
-              <p class="head-dsc">Индивидуальный</p>
+              <p class="head-dsc">Индивидуальный:</p>
             </div>
           </div>
         </div>
@@ -1175,95 +1159,95 @@
 
   });
 
-    // document.addEventListener('click', function (e) {
-    //   for (let i = 0; i < carType.length; i++) {
-    //     const element = carType[i];
-    //     // Микро
-    //     if (carType[0].checked) {
-    //       opticPrice = 5000;
-    //       kapotPrice = 9600;
-    //       chastKapotaPrice = 3000;
-    //       zerkaloPrice = 4000;
-    //       kryloPrice = 4800;
-    //       porogiPrice = 2000;
-    //       kromkiDvereiPrice = 2000;
-    //       stoykiLobovogoSteklaPrice = 2000;
-    //       bamperPrice = 15600;
-    //       ptfPrice = 1000;
-    //       ruchkiPrice = 4000;
-    //       chastKryshiPrice = 3000;
-    //       chastKrylaPrice = 1500;
-    //       stoykiDveriPrice = 1000;
-    //       dvernProemPrice = 0;
-    //       pogruzZonaPrice = 3000;
-    //       ostavshChastiPrice = 10000 * 4 + 15000 + 8000;
-    //     }
-    //     // Седан
-    //     if (carType[1].checked) {
-    //       opticPrice = 5000;
-    //       kapotPrice = 19000;
-    //       chastKapotaPrice = 7500;
-    //       zerkaloPrice = 4000;
-    //       kryloPrice = 9800;
-    //       porogiPrice = 2000;
-    //       kromkiDvereiPrice = 2000;
-    //       stoykiLobovogoSteklaPrice = 4750;
-    //       bamperPrice = 18000;
-    //       ptfPrice = 2000;
-    //       ruchkiPrice = 4000;
-    //       chastKryshiPrice = 4000;
-    //       chastKrylaPrice = 3000;
-    //       stoykiDveriPrice = 1000;
-    //       dvernProemPrice = 5000;
-    //       pogruzZonaPrice = 4000;
-    //       ostavshChastiPrice = 12500 * 4 + 18000 + 12000;
-    //     }
-    //     // Внедорожник
-    //     if (carType[2].checked) {
-    //       opticPrice = 5000;
-    //       kapotPrice = 22500;
-    //       chastKapotaPrice = 8000;
-    //       zerkaloPrice = 6000;
-    //       kryloPrice = 12000;
-    //       porogiPrice = 2000;
-    //       kromkiDvereiPrice = 2000;
-    //       stoykiLobovogoSteklaPrice = 4750;
-    //       bamperPrice = 21200;
-    //       ptfPrice = 2000;
-    //       ruchkiPrice = 4000;
-    //       chastKryshiPrice = 5000;
-    //       chastKrylaPrice = 4000;
-    //       stoykiDveriPrice = 1000;
-    //       dvernProemPrice = 5000;
-    //       pogruzZonaPrice = 4000;
-    //       ostavshChastiPrice = 14000 * 4 + 24400 + 19000;
-    //     }
-    //     // Премиум
-    //     if (carType[3].checked) {
-    //       opticPrice = 5000;
-    //       kapotPrice = 24600;
-    //       chastKapotaPrice = 8000;
-    //       zerkaloPrice = 6000;
-    //       kryloPrice = 12600;
-    //       porogiPrice = 2000;
-    //       kromkiDvereiPrice = 2000;
-    //       stoykiLobovogoSteklaPrice = 4750;
-    //       bamperPrice = 24000;
-    //       ptfPrice = 2000;
-    //       ruchkiPrice = 4000;
-    //       chastKryshiPrice = 5000;
-    //       chastKrylaPrice = 4000;
-    //       stoykiDveriPrice = 1000;
-    //       dvernProemPrice = 5000;
-    //       pogruzZonaPrice = 4000;
-    //       ostavshChastiPrice = 15000 * 4 + 25000 + 22000;
-    //     }
-    //   }
-    // });
+  // document.addEventListener('click', function (e) {
+  //   for (let i = 0; i < carType.length; i++) {
+  //     const element = carType[i];
+  //     // Микро
+  //     if (carType[0].checked) {
+  //       opticPrice = 5000;
+  //       kapotPrice = 9600;
+  //       chastKapotaPrice = 3000;
+  //       zerkaloPrice = 4000;
+  //       kryloPrice = 4800;
+  //       porogiPrice = 2000;
+  //       kromkiDvereiPrice = 2000;
+  //       stoykiLobovogoSteklaPrice = 2000;
+  //       bamperPrice = 15600;
+  //       ptfPrice = 1000;
+  //       ruchkiPrice = 4000;
+  //       chastKryshiPrice = 3000;
+  //       chastKrylaPrice = 1500;
+  //       stoykiDveriPrice = 1000;
+  //       dvernProemPrice = 0;
+  //       pogruzZonaPrice = 3000;
+  //       ostavshChastiPrice = 10000 * 4 + 15000 + 8000;
+  //     }
+  //     // Седан
+  //     if (carType[1].checked) {
+  //       opticPrice = 5000;
+  //       kapotPrice = 19000;
+  //       chastKapotaPrice = 7500;
+  //       zerkaloPrice = 4000;
+  //       kryloPrice = 9800;
+  //       porogiPrice = 2000;
+  //       kromkiDvereiPrice = 2000;
+  //       stoykiLobovogoSteklaPrice = 4750;
+  //       bamperPrice = 18000;
+  //       ptfPrice = 2000;
+  //       ruchkiPrice = 4000;
+  //       chastKryshiPrice = 4000;
+  //       chastKrylaPrice = 3000;
+  //       stoykiDveriPrice = 1000;
+  //       dvernProemPrice = 5000;
+  //       pogruzZonaPrice = 4000;
+  //       ostavshChastiPrice = 12500 * 4 + 18000 + 12000;
+  //     }
+  //     // Внедорожник
+  //     if (carType[2].checked) {
+  //       opticPrice = 5000;
+  //       kapotPrice = 22500;
+  //       chastKapotaPrice = 8000;
+  //       zerkaloPrice = 6000;
+  //       kryloPrice = 12000;
+  //       porogiPrice = 2000;
+  //       kromkiDvereiPrice = 2000;
+  //       stoykiLobovogoSteklaPrice = 4750;
+  //       bamperPrice = 21200;
+  //       ptfPrice = 2000;
+  //       ruchkiPrice = 4000;
+  //       chastKryshiPrice = 5000;
+  //       chastKrylaPrice = 4000;
+  //       stoykiDveriPrice = 1000;
+  //       dvernProemPrice = 5000;
+  //       pogruzZonaPrice = 4000;
+  //       ostavshChastiPrice = 14000 * 4 + 24400 + 19000;
+  //     }
+  //     // Премиум
+  //     if (carType[3].checked) {
+  //       opticPrice = 5000;
+  //       kapotPrice = 24600;
+  //       chastKapotaPrice = 8000;
+  //       zerkaloPrice = 6000;
+  //       kryloPrice = 12600;
+  //       porogiPrice = 2000;
+  //       kromkiDvereiPrice = 2000;
+  //       stoykiLobovogoSteklaPrice = 4750;
+  //       bamperPrice = 24000;
+  //       ptfPrice = 2000;
+  //       ruchkiPrice = 4000;
+  //       chastKryshiPrice = 5000;
+  //       chastKrylaPrice = 4000;
+  //       stoykiDveriPrice = 1000;
+  //       dvernProemPrice = 5000;
+  //       pogruzZonaPrice = 4000;
+  //       ostavshChastiPrice = 15000 * 4 + 25000 + 22000;
+  //     }
+  //   }
+  // });
 
-    // -----------------------------------------------------------
-    // -----------------------------------------------------------
-    // -----------------------------------------------------------
+  // -----------------------------------------------------------
+  // -----------------------------------------------------------
+  // -----------------------------------------------------------
 </script>
 <script>
   const
